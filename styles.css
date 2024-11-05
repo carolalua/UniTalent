@@ -1,3 +1,21 @@
+:root {
+    --text-color: #6C757D;
+    --text-white: #ffffff;
+    --text-orange: #f08504;
+    --link-color: #4a76ee;
+    --background-color: #fbfbfb;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+
 /* Container for the whole page */
 .page-container {
   display: grid;
