@@ -1,0 +1,70 @@
+/* Container for the whole page */
+.page-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12-column layout */
+  gap: 16px; /* Adjust spacing between columns */
+  padding: 0 16px; /* Adjust padding for the main container */
+}
+
+/* Hero section */
+.hero-section {
+  grid-column: 2 / span 10; /* Centered with a margin on both sides */
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.search-bar {
+  grid-column: 3 / span 8; /* Center the search bar within the hero section */
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.stats {
+  grid-column: 4 / span 6;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
+/* Recent Jobs Section */
+.recent-jobs {
+  grid-column: 2 / span 10;
+  margin-top: 32px;
+}
+
+.job-listing {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; /* Image, Job Info, Button */
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 16px 0;
+}
+
+/* Browse by Category */
+.categories-section {
+  grid-column: 2 / span 10;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns for categories */
+  gap: 24px;
+  margin-top: 32px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  grid-column: 2 / span 10;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns for testimonials */
+  gap: 24px;
+  margin-top: 32px;
+}
+
+/* Footer */
+.footer {
+  grid-column: 1 / -1;
+  margin-top: 32px;
+  padding: 16px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
