@@ -1,0 +1,330 @@
+/* General */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Base styling for the body */
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+
+/* Font Classes for Headings */
+.h1 {
+  font-size: 4.375rem; /* 70px */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.h2 {
+  font-size: 3.125rem; /* 50px */
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 14px;
+}
+
+.h3 {
+  font-size: 1.75rem; /* 28px */
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.h4 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.h5 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* Font Classes for Paragraphs */
+.p1 {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.p2 {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.p3 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.p4 {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.p5 {
+  font-size: 0.625rem; /* 10px */
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+/* Sections */
+
+/* Reset to Remove Browser Default Margins */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+container structures for home page 
+page-container
+  hero for landing page / header of other pages
+  main content
+    recent jobs
+    category
+    testimonial
+    add more content sections as necessary
+  footer
+*/
+
+.page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hero Section */
+.hero-section-container {
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 32px;
+}
+
+/* Main Content Container */
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-section-container {
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 32px;
+}
+
+footer {
+  background-color: #000000;
+  color: var(--text-white);
+  text-align: center;
+  padding: 20px 0 30px 0;
+  width: 100%;
+  margin: 0;
+}
+
+/* Start of Hnin's Section */
+/* Main Job Listing Container */
+/* Section Title Styling */
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; /* Aligns 'View All' and 'Recent Jobs Available' text along the same baseline */
+}
+
+.view-all-link {
+  font-size: 14px;
+  color: #ff6600;
+  text-decoration: none;
+  margin-right: 16px; /* Adds some space to the right */
+}
+
+.job-listing {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  margin-bottom: 24px; /* Add space between each job listing */
+}
+
+/* Top Container: Posted Time */
+.job-listing-top {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.posted-time {
+  background-color: #fff3e0;
+  color: #ff6600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Middle Container: Job Info */
+.job-listing-middle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.job-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.job-title-company h3 {
+  margin: 0;
+}
+
+.job-title-company p {
+  margin: 4px 0 0;
+  color: #666;
+}
+
+/* Bottom Container: Job Details and Button */
+.job-listing-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between items to push button to the right */
+  padding-top: 12px;
+}
+
+/* Container for job detail items (left-aligned group) */
+.job-detail-items {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Adjust spacing between job detail items */
+}
+
+.job-detail-item {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 14px;
+  gap: 4px;
+}
+
+.job-detail-item i {
+  color: #ff6600;
+}
+
+/* Job Details Button */
+.action-button button {
+  background-color: #ff6600;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+/* End of Hnin's Section */
+
+/* Vlad */
+
+/* Category Section */
+
+/* Full-width container */
+.categories-section-full {
+  width: 100%;
+  background-color: #fdf1e3; /* Light peach background */
+  padding: 60px 0; /* Increased padding for more spacing around header and section */
+}
+
+/* Centered container within the full-width container */
+.categories-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* "Browse by Category" header styling */
+.categories-section-container h2 {
+  font-size: 3.125rem; /* 50px */
+  margin-bottom: 40px; /* Add space below the header */
+  font-weight: 600;
+  color: #333;
+}
+
+/* Grid for Category Boxes */
+.categories-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1.1fr); /* Slightly larger column width */
+  gap: 32px; /* Increased gap between boxes */
+  margin: 0 auto;
+}
+
+/* Category Box Styling */
+.category-box {
+  background-color: #ffffff;
+  padding: 32px 24px; /* More padding for overall spacing within box */
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.category-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon Styling */
+.icon-category {
+  font-size: 40px; /* Slightly larger for better balance with padding */
+  color: #ff6600;
+  margin-bottom: 16px; /* Increased space between icon and category title */
+}
+
+/* Thinner font for Category Title */
+.category-box .h4 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 400;
+  color: #333;
+  margin: 16px 0; /* Space above and below title */
+}
+
+/* Job Count Styling */
+.job-count {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 300;
+  color: #ff6600;
+  background-color: #fff3e0;
+  padding: 6px 14px; /* Add more padding inside the job count badge */
+  border-radius: 8px;
+  margin-top: 12px; /* Space between job count and category title */
+}
