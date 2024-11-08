@@ -16,13 +16,17 @@
 }
 
 body {
-    background-image: url(../images/Hero.png);
     font-family: 'Poppins', sans-serif;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh;
     margin: 0;
     background-color: var(--background-color);
+}
+
+.hero-header-container {
+    background-image: url(../images/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2.5rem;
 }
 
 header {
@@ -199,7 +203,7 @@ select {
     display: flex;
     justify-content: space-around;
     margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
 }
 
 .icon-text {
