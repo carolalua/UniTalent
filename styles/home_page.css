@@ -367,3 +367,11 @@ h5 {
     font-size: 1.4rem;
   }
 }
+
+/* RESPONSIVE Tablet size */
+@media (max-width: 991px) {
+  /* Testimonial */
+  .testi-row-headline h2{
+    font-size: 1.9rem;
+  }
+}
