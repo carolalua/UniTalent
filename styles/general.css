@@ -358,3 +358,22 @@ footer a{
     order: 3;
   }
 }
+
+/* RESPONSIVE Tablet size */
+@media (max-width: 991px) {
+  /* Footer */
+  .footer-btm{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-aboutus {
+    order: 1;
+    margin: 2px 0
+  }
+  .footer-policy {
+    order: 2;
+  }
+  .footer-copyright {
+    order: 3;
+  }
+}
