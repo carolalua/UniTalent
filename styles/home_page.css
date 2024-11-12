@@ -351,3 +351,18 @@ h5 {
   border-radius: 50%;
   object-fit: cover;
 }
+
+
+/* RESPONSIVE Mobile size */
+@media (max-width: 478px) {
+  /*  Testimonial  */
+  .testi-row-headline h2{
+    font-size: 1.5rem;
+  }
+  .testi-row-cards {
+    flex-direction: column;
+    justify-self: center;
+  }
+  .phrase h4 {
+    font-size: 1.4rem;
+  }
