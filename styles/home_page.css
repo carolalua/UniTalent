@@ -37,7 +37,8 @@
     border: none;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
-    padding-left: 10px;
+    padding-left: 40px;
+    width: 300px;
     font-size: 18px;
 }
 
