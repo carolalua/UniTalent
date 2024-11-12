@@ -334,3 +334,27 @@ footer a{
     color: #555;
     font-size: 12px;
 }
+
+
+
+/* RESPONSIVE  Mobile size */
+@media (max-width: 478px) {
+  /* Footer */
+  .footer-top{
+    flex-direction: column;
+  }
+  .footer-btm{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-aboutus {
+    order: 1;
+    margin: 2px 0
+  }
+  .footer-policy {
+    order: 2;
+  }
+  .footer-copyright {
+    order: 3;
+  }
+}
