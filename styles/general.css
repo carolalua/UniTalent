@@ -142,6 +142,10 @@ header {
   align-items: center;
 }
 
+.nav-links, .menu-toggle, .hamburger-icon {
+  display: none;
+}
+
 #home {
   font-weight: bold;
 }
@@ -341,6 +345,58 @@ footer a {
 
 /*  RESPONSIVE */
 @media (max-width: 478px) {
+  /* hero */ 
+  header {
+    margin-left: 10px;
+  }
+
+  .logo-icon {
+    font-size: 20px;
+  }
+
+  .header, .right {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: #f08504;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .hamburger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .menu-toggle:checked + .hamburger-icon + .nav-links {
+    display: flex;
+  }
+
    /* Footer */
   .footer-top{
     flex-direction: column;
@@ -366,6 +422,15 @@ footer a {
 }
 
 @media (max-width: 991px) {
+  /* Header */ 
+  .logo-icon {
+    font-size: 25px;
+  }
+
+  .left a {
+      font-size: 1.25rem;
+  }
+
   /* Footer */
   .footer-btm{
     flex-direction: column;
@@ -380,5 +445,56 @@ footer a {
   }
   .footer-copyright {
     order: 3;
+  }
+}
+
+
+/*hero only*/
+@media (min-width: 478px) and (max-width: 764px) {
+  header {
+    margin-left: 10px;
+  }
+
+  .header, .right {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: #f08504;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .hamburger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .menu-toggle:checked + .hamburger-icon + .nav-links {
+    display: flex;
   }
 }
