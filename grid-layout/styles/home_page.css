@@ -411,15 +411,11 @@ body {
 
 /* Tablet (≤ 991px) */
 @media (max-width: 991px) {
+  
+  /* hnin start */
   .page-container {
     grid-template-columns: repeat(8, 1fr); /* Reduce to 8 columns */
     padding: 12px; /* Reduce padding */
-  }
-
-  header,
-  main,
-  footer {
-    grid-column: 1 / -1; /* Span full width */
   }
 
   h1 {
@@ -430,9 +426,21 @@ body {
     font-size: 0.9rem;
     padding: 10px 20px; /* Smaller buttons */
   }
+
+   /* Add margin for job cards */
   .job-listing {
+    width: calc(100% - 60px); /* Add 30px margin on each side */
+    margin: 0 auto; /* Center the job card horizontally */
     padding: 12px; /* Reduce padding for smaller screens */
   }
+
+  /* Section title adjustments for alignment */
+  .section-title {
+    width: calc(100% - 60px); /* Match job card width */
+    margin: 0 auto; /* Center the section title */
+  }
+
+  /* hnin end */
 
 
     /* Category */
@@ -453,22 +461,25 @@ body {
 
 
 @media (max-width: 478px) {
-  /* Ensure the entire job listing stacks correctly */
+
+  /* hnin start */
+
   .job-listing {
+    gap: 0; /* Ensure no extra gaps between elements */
+    margin: 4px auto; /* Small vertical spacing between cards */
     display: flex;
     flex-direction: column; /* Stack all elements vertically */
-    align-items: flex-start; /* Align all elements to the left */
-    padding: 12px;
-    gap: 16px;
-    width: 100%; /* Ensure full width for the card */
+    align-items: flex-start; /* Align content to the left */
+    padding: 20px; /* Increase inner spacing */
+    width: calc(100% - 40px); /* Add space on left and right */
+    margin: 2px auto; /* Center the card with top/bottom spacing */
   }
 
   /* Ensure the middle section aligns correctly */
   .job-listing-middle {
     display: flex;
     flex-direction: column; /* Stack logo and job info vertically */
-    align-items: flex-start; /* Left-align all content */
-    gap: 8px;
+    align-items: flex-start; /* Align all content to the left */
     width: 100%; /* Full width to align with parent */
   }
 
@@ -480,7 +491,7 @@ body {
   }
 
   .job-title-company h3 {
-    font-size: 1.4rem; /* Larger for mobile */
+    font-size: 1.4rem; /* Adjust font size for readability */
   }
 
   .job-title-company p {
@@ -488,30 +499,26 @@ body {
     color: #666;
   }
 
-  /* Ensure job details section stacks and aligns correctly */
+  /* Job Details Section */
   .job-listing-bottom {
     display: flex;
     flex-direction: column; /* Stack details and button vertically */
     align-items: flex-start; /* Align everything to the left */
-    gap: 12px; /* Add space between details and button */
-    width: 100% !important; /* Force full width for the container */
+    width: 100% !important;
   }
 
-  /* Align individual job details to the left */
+  /* Individual Job Details */
   .job-detail-items {
     display: flex;
     flex-direction: column; /* Stack job details vertically */
-    gap: 8px; /* Add spacing between job details */
-    width: 100%; /* Ensure it spans full width */
+    text-align: left; /* Align text to the left */
+    align-items: flex-start;
+    font-size: 1rem; /* Adjust font size for readability */
+    gap: 2px;
+    width: 100%;
   }
 
-  .job-detail-item {
-    text-align: left; /* Ensure text alignment to the left */
-    font-size: 1rem; /* Ensure readability */
-    width: 100%; /* Spans full width for consistency */
-  }
-
-  /* Full-Width Button */
+    /* Full-Width Button */
   .action-button {
     width: 100% !important; /* Force parent container to full width */
   }
@@ -533,33 +540,36 @@ body {
   }
 
   .action-button button:hover {
-    background-color: #e65c00; /* Slightly darker hover effect */
+    background-color: #e65c00; /* Slightly darker on hover */
   }
 
+  /* Section title container */
   .section-title {
-    display: flex; /* Flexbox for alignment */
-    justify-content: space-between; /* Keep title on the left, link on the right */
-    align-items: flex-end; /* Align elements to the bottom */
-    margin: 0 auto;
-    width: 100%;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Align title on the left, link on the right */
+    align-items: center; /* Align vertically */
+    width: calc(100% - 40px); /* Match the job listing width */
   }
 
   /* Title styling for mobile */
   .section-title h2 {
-    font-size: 1.2rem; /* Smaller font size for mobile */
+    font-size: 1.5rem; /* Smaller font size for the title */
     margin: 0; /* Reset margins */
     padding: 0; /* Reset padding */
-    line-height: 1; /* Consistent spacing */
+    line-height: 1.2; /* Adjust line height for readability */
   }
 
-  /* "View All" link styling for mobile */
+  /* "View All" link styling */
   .view-all-link {
-    font-size: 0.9rem; /* Smaller font size for mobile */
+    font-size: 1rem !important; /* Make the link text smaller */
     text-decoration: none; /* Remove underline */
-    color: #ff6600; /* Maintain link color */
-    line-height: 1; /* Consistent spacing */
+    color: #ff6600; /* Keep the link color */
+    line-height: 1; /* Ensure proper spacing */
     margin: 0;
+    padding: 0; /* Ensure no extra spacing */
   }
+
+  /* hnin end */
 
 
     /* Category */
