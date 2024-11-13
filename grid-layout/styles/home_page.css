@@ -424,6 +424,12 @@ body {
   }
 
 
+    /* Category */
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+  }
+
+
     /* Testimonial */
   .testi-row-headline h2{
     font-size: 1.9rem;
@@ -545,6 +551,14 @@ body {
   }
 
 
+    /* Category */
+  .category-grid {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+
+
+  
+
     /* Testimonial */
   .testi-row-headline h2{
     font-size: 1.5rem;
@@ -559,3 +573,12 @@ body {
 }
 
 /* End of Hnin Responsive part, home page */
+
+
+/* Only for Category section */ 
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
