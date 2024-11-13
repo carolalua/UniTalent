@@ -290,14 +290,23 @@ h5 {
 /* Category Section */
 
 /* Full-width container */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Ensures consistent sizing */
+}
+
 .category-full {
   width: 100%;
   background-color: #fff5e8;
   padding: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .category-section {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   border-radius: 10px;
   text-align: center;
@@ -305,8 +314,9 @@ h5 {
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1.1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  align-items: stretch;
 }
 
 .category-card {
@@ -316,6 +326,7 @@ h5 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.2s;
+  width: 100%;
 }
 
 .category-card:hover {
