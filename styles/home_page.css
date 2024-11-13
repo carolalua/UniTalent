@@ -327,6 +327,8 @@ h5 {
   text-align: center;
   transition: transform 0.2s;
   width: 100%;
+  max-width: 250px; /* Optional: Limit the max width to prevent stretching */
+  margin: 0 auto; /* Centers the cards */
 }
 
 .category-card:hover {
@@ -572,9 +574,13 @@ body {
   /* hnin end */
 
 
-    /* Category */
+   /* Category */
   .category-grid {
-    grid-template-columns: 1fr; /* 1 column on small screens */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .category-full {
+    padding: 20px 10px; /* Compact padding for mobile view */
   }
 
 
@@ -600,6 +606,7 @@ body {
 @media (max-width: 768px) {
   .category-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    gap: 15px; /* Reduced gap for tighter layout */
   }
 }
 
