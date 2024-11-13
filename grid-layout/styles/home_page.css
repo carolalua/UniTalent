@@ -419,14 +419,21 @@ body {
     font-size: 0.9rem;
     padding: 10px 20px; /* Smaller buttons */
   }
-}
-
-/* Tablet: ≤ 991px */
-@media (max-width: 991px) {
   .job-listing {
     padding: 12px; /* Reduce padding for smaller screens */
   }
+
+
+    /* Testimonial */
+  .testi-row-headline h2{
+    font-size: 1.9rem;
+  }
+  .phrase h4 {
+    font-size: 1.26rem;
+  }
+
 }
+
 
 @media (max-width: 478px) {
   /* Ensure the entire job listing stacks correctly */
@@ -535,6 +542,19 @@ body {
     color: #ff6600; /* Maintain link color */
     line-height: 1; /* Consistent spacing */
     margin: 0;
+  }
+
+
+    /* Testimonial */
+  .testi-row-headline h2{
+    font-size: 1.5rem;
+  }
+  .testi-row-cards {
+    flex-direction: column;
+    justify-self: center;
+  }
+  .phrase h4 {
+    font-size: 1.4rem;
   }
 }
 
