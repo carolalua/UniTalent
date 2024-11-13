@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/home_page.css">
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/grid_layout.css">
+  </head>
+  <body>
+
+    <!-- full page container -->
+    <div class="page-container">
+
+      <!-- header -->
+      <section class="hero-header-container">
+        <header>
+              <button class="left">
+                  <div class="logo-icon"><i class="fa-solid fa-briefcase"></i></div>
+                  <a href="#"> UniTalent</a>
+              </button>
+              <nav>
+                  <ul class="header">
+                      <li><a id="home" href="#">Home</a></li>
+                      <li><a href="#">Jobs</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                  </ul>
+              </nav>
+              <div class="right">
+                  <a href="#">Login</a>
+                  <button>Register</button>
+              </div>
+          </header>
+        <section class="hero-section">
+            <h1>Find Jobs That Fit Your Student Life</h1>
+            <p class="sub-title">Connecting Talent with Opportunity. Your Gateway to Career Success.</p>
+            <div class="search-bar">
+                <input class="job-title" type="text" placeholder="Job Title or Keywords...">
+                <select class="location" name="locations" id="locations">
+                    <option selected>Select Location</option>
+                    <option value="berlin">Berlin</option>
+                    <option value="frankfurt">Frankfurt</option>
+                    <option value="munich">Munich</option>
+                    <option value="furtwangen">Furtwangen</option>
+                </select>
+                <select name="category" id="category">
+                    <option selected>Select Category</option>
+                    <option value="administration">Administration</option>
+                    <option value="it">IT</option>
+                    <option value="financial">Financial</option>
+                </select>
+                <button class="button-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search Jobs
+                </button>    
+            </div>
+            <ul class="stats">
+                <li class="icon-text">
+                    <div class="iconb">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="details">
+                        <h5>25,850</h5>
+                        <p class="details-name">Jobs</p>
+                    </div>
+                </li>
+                <li class="icon-text">
+                    <div class="iconb">
+                        <i class="fa-regular fa-building"></i>
+                    </div>
+                    <div class="details">
+                        <h5>10,250</h5>
+                        <p class="details-name">Companies</p>
+                    </div>
+                </li>
+                <li class="icon-text">
+                    <div class="iconb">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+                    <div class="details">
+                        <h5>18,400</h5>
+                        <p class="details-name">Employers</p>
+                    </div>              
+                </li>
+            </ul>
+          </section>
+        </section>
+
+      <!-- Main Container for Content Sections -->
+      <div class="main-container">
+
+        <!-- Recent Jobs Section -->
+        <div class="recent-jobs-container">
+          <div class="section-title">
+            <h2 class="h2">Recent Student Jobs Available</h2>
+            <a href="#" class="view-all-link p3">View All</a>
+          </div>
+
+          <!-- Job Listings -->
+
+          <!-- Job 1 -->
+          <div class="job-listing">
+            <div class="job-listing-top">
+              <span class="posted-time p1">10 min ago</span>
+            </div>
+            <div class="job-listing-middle">
+              <div class="job-logo">
+                <img src="images/tiktok-png.png" alt="Company Logo">
+              </div>
+              <div class="job-title-company">
+                <h3 class="h3">Forward Security Director</h3>
+                <p class="p1">Bauch, Schuppe and Schulist Co</p>
+              </div>
+            </div>
+            <div class="job-listing-bottom">
+              <div class="job-detail-items">
+                <div class="job-detail-item p1"><i class="fas fa-briefcase"></i> Hotels & Tourism</div>
+                <div class="job-detail-item p1"><i class="fas fa-clock"></i> 40 hours per week</div>
+                <div class="job-detail-item p1"><i class="fas fa-map-marker-alt"></i> Berlin</div>
+              </div>
+              <div class="action-button">
+                <button class="p3">Job Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 2 -->
+          <div class="job-listing">
+            <div class="job-listing-top">
+              <span class="posted-time p1">30 min ago</span>
+            </div>
+            <div class="job-listing-middle">
+              <div class="job-logo">
+                <img src="images/Slack.png" alt="Company Logo">
+              </div>
+              <div class="job-title-company">
+                <h3 class="h3">Marketing Coordinator</h3>
+                <p class="p1">Acme Corp</p>
+              </div>
+            </div>
+            <div class="job-listing-bottom">
+              <div class="job-detail-items">
+                <div class="job-detail-item p1"><i class="fas fa-briefcase"></i> Marketing</div>
+                <div class="job-detail-item p1"><i class="fas fa-clock"></i> 20 hours per week</div>
+                <div class="job-detail-item p1"><i class="fas fa-map-marker-alt"></i> Hamburg</div>
+              </div>
+              <div class="action-button">
+                <button class="p3">Job Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 3 -->
+          <div class="job-listing">
+            <div class="job-listing-top">
+              <span class="posted-time p1">1 hour ago</span>
+            </div>
+            <div class="job-listing-middle">
+              <div class="job-logo">
+                <img src="images/mercedes-benz-logo.png" alt="Company Logo">
+              </div>
+              <div class="job-title-company">
+                <h3 class="h3">Software Development Intern</h3>
+                <p class="p1">Tech Solutions Ltd</p>
+              </div>
+            </div>
+            <div class="job-listing-bottom">
+              <div class="job-detail-items">
+                <div class="job-detail-item p1"><i class="fas fa-briefcase"></i> IT & Software</div>
+                <div class="job-detail-item p1"><i class="fas fa-clock"></i> 30 hours per week</div>
+                <div class="job-detail-item p1"><i class="fas fa-map-marker-alt"></i> Munich</div>
+              </div>
+              <div class="action-button">
+                <button class="p3">Job Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 4 -->
+          <div class="job-listing">
+            <div class="job-listing-top">
+              <span class="posted-time p1">2 hours ago</span>
+            </div>
+            <div class="job-listing-middle">
+              <div class="job-logo">
+                <img src="images/Microsoft_logo.svg.png" alt="Company Logo">
+              </div>
+              <div class="job-title-company">
+                <h3 class="h3">Data Analyst Assistant</h3>
+                <p class="p1">Insight Analytics</p>
+              </div>
+            </div>
+            <div class="job-listing-bottom">
+              <div class="job-detail-items">
+                <div class="job-detail-item p1"><i class="fas fa-briefcase"></i> Data Analysis</div>
+                <div class="job-detail-item p1"><i class="fas fa-clock"></i> 25 hours per week</div>
+                <div class="job-detail-item p1"><i class="fas fa-map-marker-alt"></i> Stuttgart</div>
+              </div>
+              <div class="action-button">
+                <button class="p3">Job Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 5 -->
+          <div class="job-listing">
+            <div class="job-listing-top">
+              <span class="posted-time p1">3 hours ago</span>
+            </div>
+            <div class="job-listing-middle">
+              <div class="job-logo">
+                <img src="images/Slack.png" alt="Company Logo">
+              </div>
+              <div class="job-title-company">
+                <h3 class="h3">Customer Support Representative</h3>
+                <p class="p1">Global Services Inc.</p>
+              </div>
+            </div>
+            <div class="job-listing-bottom">
+              <div class="job-detail-items">
+                <div class="job-detail-item p1"><i class="fas fa-briefcase"></i> Customer Service</div>
+                <div class="job-detail-item p1"><i class="fas fa-clock"></i> 15 hours per week</div>
+                <div class="job-detail-item p1"><i class="fas fa-map-marker-alt"></i> Frankfurt</div>
+              </div>
+              <div class="action-button">
+                <button class="p3">Job Details</button>
+              </div>
+            </div>
+          </div>
+
+          </div> 
+
+        <!-- Jobs by Category Section -->
+        <div class="category-full">
+        <div class="category-section">
+          <h2>Browse by Category</h2>
+          <div class="category-grid">
+            <div class="category-card">
+              <div class="category-icon">💻</div>
+              <h3 class="category-name">IT</h3>
+              <span class="job-count">1254 jobs</span>
+            </div>
+            <div class="category-card">
+              <div class="category-icon">📁</div>
+              <h3 class="category-name">Administration</h3>
+              <span class="job-count">816 jobs</span>
+            </div>
+            <div class="category-card">
+              <div class="category-icon">🛍️</div>
+              <h3 class="category-name">Commerce</h3>
+              <span class="job-count">2082 jobs</span>
+            </div>
+            <div class="category-card">
+              <div class="category-icon">🏗️</div>
+              <h3 class="category-name">Construction</h3>
+              <span class="job-count">1520 jobs</span>
+            </div>
+            <div class="category-card">
+              <div class="category-icon">🏨</div>
+              <h3 class="category-name">Hotels & Tourism</h3>
+              <span class="job-count">1022 jobs</span>
+            </div>
+            <div class="category-card">
+              <div class="category-icon">🎓</div>
+              <h3 class="category-name">Education</h3>
+              <span class="job-count">1496 jobs</span>
+            </div>
+            <div class="category-card">
+              <div class="category-icon">💰</div>
+              <h3 class="category-name">Financial</h3>
+              <span class="job-count">1529 jobs</span>
+            </div>
+            <div class="category-card">
+              <div class="category-icon">🚌</div>
+              <h3 class="category-name">Transport</h3>
+              <span class="job-count">1244 jobs</span>
+            </div>
+          </div>
+        </div>
+          </div>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial">
+          <div class="testi-content">
+            <div class="testi-row-headline">
+              <h2>Testimonials from our customers</h2>
+            </div>
+            <div class="testi-row-cards">
+              <div class="testi-card card1">
+                <div class="testi-card star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testi-card phrase">
+                  <h4>Amazing services</h4>
+                </div>
+                <div class="testi-card-text">
+                  This website made my internship search so much easier. I found a perfect opportunity that fits my schedule and aligns with my career goals. Highly recommend it for any...
+                </div>
+                <div class="testi-card-profile">
+                  <div class="testi-card personpic">
+                    <img src="images/testi_001.jpg">
+                  </div>
+                  <div class="testi-card-person">
+                    <div class="testi-card personname">
+                      Ezra Smith
+                    </div>
+                    <div class="testi-card personposition">
+                      IT Audit,<br>Internship
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testi-card card1">
+                <div class="testi-card star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testi-card phrase">
+                  <h4>Everything simple</h4>
+                </div>
+                <div class="testi-card-text">
+                  I was impressed by how user-friendly this site is! Within days, I secured a tutoring job that works with my classes. The support team was incredibly helpful throughout the...
+                </div>
+                <div class="testi-card-profile">
+                  <div class="testi-card personpic">
+                    <img src="images/testi_002.jpg">
+                  </div>
+                  <div class="testi-card-person">
+                    <div class="testi-card personname">
+                      Shweta Singh
+                    </div>
+                    <div class="testi-card personposition">
+                      Tutoring,<br>Part-time
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testi-card card1">
+                <div class="testi-card star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testi-card phrase">
+                  <h4>Awesome, thank you!</h4>
+                </div>
+                <div class="testi-card-text">
+                  This platform opened up so many job options for me, from remote gigs to on-campus roles. I not only found a great job, but also made valuable connection for...
+                </div>
+                <div class="testi-card-profile">
+                  <div class="testi-card personpic">
+                    <img src="images/testi_003.jpg">
+                  </div>
+                  <div class="testi-card-person">
+                    <div class="testi-card personname">
+                      Markus Müller
+                    </div>
+                    <div class="testi-card personposition">
+                      Online Marketing,<br>Working student
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          </section>
+
+        </div>
+      
+       <!-- footer -->
+      <footer>
+          <div class="footer-top">
+            <div class="footer-logo">
+              <div class="logo-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <div class="logo-text"><h5>UniTalent</a></h5></div>
+            </div>
+            <div class="logo-icon none"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="footer-icons">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-square-xing"></i></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer-btm">
+            <div class="footer-copyright">
+              © Copyright UniTalent 2024. Designed by Pixel Pirates
+            </div>
+            <div class="footer-aboutus p1">
+              <a href="aboutus">About us</a>
+              <a href="contactus">Contact us</a>
+            </div>
+            <div class="footer-policy p1">
+              <a href="policy">Privacy Policy</a>
+              <a href="terms">Terms & Conditions</a>
+            </div>
+          </div>
+        </footer>
+
+    </div>  <!-- end of full page container -->
+
+  </body>
+</html>
