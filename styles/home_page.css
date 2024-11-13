@@ -582,6 +582,11 @@ body {
   .category-full {
     padding: 20px 10px; /* Compact padding for mobile view */
   }
+  .category-card {
+    width: 100%;
+    max-width: 200px; /* Optional: Limit the max width to prevent stretching */
+    margin: 0 auto; /* Centers the cards */
+}
 
 
   
