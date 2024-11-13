@@ -386,3 +386,156 @@ h5 {
   border-radius: 50%;
   object-fit: cover;
 }
+
+/* Hnin Responsice styling - home page */
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+/* Tablet (≤ 991px) */
+@media (max-width: 991px) {
+  .page-container {
+    grid-template-columns: repeat(8, 1fr); /* Reduce to 8 columns */
+    padding: 12px; /* Reduce padding */
+  }
+
+  header,
+  main,
+  footer {
+    grid-column: 1 / -1; /* Span full width */
+  }
+
+  h1 {
+    font-size: 2rem; /* Scale down heading */
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 20px; /* Smaller buttons */
+  }
+}
+
+/* Tablet: ≤ 991px */
+@media (max-width: 991px) {
+  .job-listing {
+    padding: 12px; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 478px) {
+  /* Ensure the entire job listing stacks correctly */
+  .job-listing {
+    display: flex;
+    flex-direction: column; /* Stack all elements vertically */
+    align-items: flex-start; /* Align all elements to the left */
+    padding: 12px;
+    gap: 16px;
+    width: 100%; /* Ensure full width for the card */
+  }
+
+  /* Ensure the middle section aligns correctly */
+  .job-listing-middle {
+    display: flex;
+    flex-direction: column; /* Stack logo and job info vertically */
+    align-items: flex-start; /* Left-align all content */
+    gap: 8px;
+    width: 100%; /* Full width to align with parent */
+  }
+
+  .job-title-company h3,
+  .job-title-company p {
+    text-align: left; /* Ensure text alignment to the left */
+    margin: 0; /* Reset default margins */
+    width: 100%; /* Ensure proper alignment */
+  }
+
+  .job-title-company h3 {
+    font-size: 1.4rem; /* Larger for mobile */
+  }
+
+  .job-title-company p {
+    font-size: 1.1rem; /* Adjust font size */
+    color: #666;
+  }
+
+  /* Ensure job details section stacks and aligns correctly */
+  .job-listing-bottom {
+    display: flex;
+    flex-direction: column; /* Stack details and button vertically */
+    align-items: flex-start; /* Align everything to the left */
+    gap: 12px; /* Add space between details and button */
+    width: 100% !important; /* Force full width for the container */
+  }
+
+  /* Align individual job details to the left */
+  .job-detail-items {
+    display: flex;
+    flex-direction: column; /* Stack job details vertically */
+    gap: 8px; /* Add spacing between job details */
+    width: 100%; /* Ensure it spans full width */
+  }
+
+  .job-detail-item {
+    text-align: left; /* Ensure text alignment to the left */
+    font-size: 1rem; /* Ensure readability */
+    width: 100%; /* Spans full width for consistency */
+  }
+
+  /* Full-Width Button */
+  .action-button {
+    width: 100% !important; /* Force parent container to full width */
+  }
+
+  .action-button button {
+    display: block !important; /* Make button block-level */
+    width: 100% !important; /* Full width only on mobile */
+    max-width: 100%; /* Prevent constraints */
+    padding: 12px; /* Add touch-friendly padding */
+    font-size: 1.2rem; /* Adjust font size for readability */
+    background-color: #ff6600; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Maintain rounded corners */
+    text-align: center; /* Center-align text */
+    cursor: pointer;
+    box-sizing: border-box; /* Ensure padding doesn’t affect width */
+    margin: 0; /* Remove any unexpected margin */
+  }
+
+  .action-button button:hover {
+    background-color: #e65c00; /* Slightly darker hover effect */
+  }
+
+  .section-title {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Keep title on the left, link on the right */
+    align-items: flex-end; /* Align elements to the bottom */
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* Title styling for mobile */
+  .section-title h2 {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
+    line-height: 1; /* Consistent spacing */
+  }
+
+  /* "View All" link styling for mobile */
+  .view-all-link {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    text-decoration: none; /* Remove underline */
+    color: #ff6600; /* Maintain link color */
+    line-height: 1; /* Consistent spacing */
+    margin: 0;
+  }
+}
+
+/* End of Hnin Responsive part, home page */
