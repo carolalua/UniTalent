@@ -6,19 +6,22 @@
 
 .page-container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr); /* Define 12-column layout */
+  grid-template-rows: auto 1fr auto; /* Define rows: header, main, footer */
   gap: 16px; /* Space between grid items */
-  padding: 0; /* Remove padding if spacing is managed by grid */
+  padding: 0;
   width: 100%;
+  min-height: 100vh; /* Ensure the page takes the full viewport height */
 }
 
 .hero-header-container {
   background-image: url(../images/Hero.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 2.5rem;
+  grid-column: 1 / -1; /* Span full width */
+  grid-row: 1; /* Assign to the first row (header) */
   width: 100%;
-  grid-column: 1 / -1;
+  margin-bottom: 2.5rem;
 }
 
 .hero-section {
@@ -29,11 +32,13 @@
 }
 
 .main-container {
-  grid-column: 1 / -1; /* Make each section span the full width */
+  grid-column: 1 / -1; /* Span full width */
+  grid-row: 2; /* Assign to the second row (main content) */
   margin-bottom: 24px; /* Consistent spacing between sections */
 }
 
 footer {
-  grid-column: 1 / -1; /* Make each section span the full width */
-  margin-bottom: 0px; /* Consistent spacing between sections */
+  grid-column: 1 / -1; /* Span full width */
+  grid-row: 3; /* Assign to the third row (footer) */
+  margin-bottom: 0;
 }
