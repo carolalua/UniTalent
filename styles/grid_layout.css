@@ -45,6 +45,13 @@
   margin-bottom: 24px; /* Consistent spacing between sections */
 }
 
+.sub-grid-contactus {
+  display: grid;  /* Make this a grid */
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 10px;  /* Add some space between the columns */
+  height: 70vh;
+}
+
 footer {
   grid-column: 1 / -1; /* Span full width */
   grid-row: 3; /* Assign to the third row (footer) */
