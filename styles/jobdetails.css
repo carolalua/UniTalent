@@ -1,0 +1,17 @@
+#home {
+  font-weight: normal;
+}
+
+#jobs {
+  color: #f08504;
+}
+
+#jobdetails-description {
+  background-color: aquamarine;
+  grid-column: 1;
+}
+
+#jobdetails-overview {
+  background-color: blueviolet;
+}
+
