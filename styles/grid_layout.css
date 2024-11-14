@@ -52,6 +52,13 @@
   height: 70vh;
 }
 
+.sub-grid-jobdetails {
+  display: grid;
+  grid-template-columns: 2.8fr 1fr;
+  gap: 10px;
+  height: 70vh;
+}
+
 footer {
   grid-column: 1 / -1; /* Span full width */
   grid-row: 3; /* Assign to the third row (footer) */
