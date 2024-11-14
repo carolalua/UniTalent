@@ -55,6 +55,15 @@ h5 {
   margin-bottom: 8px;
 }
 
+.title-page {
+  font-size: 3.75rem; /* 60px */
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+  margin-top: 3.75rem;
+  text-align: center;
+  color: white;
+}
+
 /* Font Classes for Paragraphs */
 .p1 {
   font-size: 1rem; /* 16px */
