@@ -478,14 +478,7 @@ body {
 
   /* hnin end */
 
-
-    /* Category */
-  .category-grid {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns on medium screens */
-  }
-
-
-    /* Testimonial */
+  /* Testimonial */
   .testi-row-headline h2{
     font-size: 1.9rem;
   }
@@ -694,9 +687,6 @@ body {
     font-size: 1.4rem;
   }
 }
-
-/* End of Hnin Responsive part, home page */
-
 
 /* Only for Category section */ 
 @media (max-width: 478px) {
