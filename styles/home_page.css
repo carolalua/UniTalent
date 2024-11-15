@@ -681,26 +681,8 @@ body {
   }
 
   /* hnin end */
-
-
-   /* Category */
-  .category-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  .category-full {
-    padding: 20px 10px; /* Compact padding for mobile view */
-  }
-  .category-card {
-    width: 100%;
-    max-width: 200px; /* Optional: Limit the max width to prevent stretching */
-    margin: 0 auto; /* Centers the cards */
-}
-
-
   
-
-    /* Testimonial */
+  /* Testimonial */
   .testi-row-headline h2{
     font-size: 1.5rem;
   }
