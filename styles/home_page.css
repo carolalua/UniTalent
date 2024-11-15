@@ -717,10 +717,35 @@ body {
 
 
 /* Only for Category section */ 
-@media (max-width: 768px) {
+@media (max-width: 478px) {
   .category-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
-    gap: 15px; /* Reduced gap for tighter layout */
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      minmax(140px, 1fr)
+    ); /* 2 cards per row with minimum width */
+    gap: 16px; /* Adjust spacing between cards */
+    justify-content: center; /* Center the grid if there's extra space */
+  }
+
+  .category-card {
+    width: 100%; /* Ensure cards take up full width within their column */
+    text-align: center; /* Center-align content inside the cards */
+    padding: 16px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Ensure padding doesn't affect card width */
+  }
+
+  .category-name {
+    font-size: 16px; /* Adjust font size for category names */
+    margin-bottom: 6px; /* Reduce spacing for smaller screens */
+  }
+
+  .job-count {
+    font-size: 10px; /* Smaller font size for job counts */
+  }
+
+  .category-section h2 {
+    font-size: 1.5rem; /* Smaller font size for the title */
   }
 }
 
