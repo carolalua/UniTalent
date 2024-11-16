@@ -59,6 +59,48 @@
   height: 70vh;
 }
 
+/* jobs 2nd page Hnin */
+
+/* Sub-Grid for Jobs */
+.sub-grid-jobs {
+  display: grid;
+  grid-template-columns: 3fr 9fr; /* Sidebar (3/12) and Listings (9/12) */
+  grid-template-rows: auto auto; /* Rows for content and Top Company */
+  gap: 30px;
+  height: 70vh;
+  margin-top: 30px;
+}
+
+/* Job Sidebar */
+.job-sidebar {
+  grid-column: 1 / 2; /* Occupies the first column */
+  grid-row: 1; /* First row */
+  display: grid;
+  grid-template-rows: auto auto; /* Dynamic row height for filters and photo */
+  gap: 20px;
+}
+
+/* Job Listings */
+.job-listings {
+  grid-column: 2 / 3; /* Occupies the second column */
+  grid-row: 1; /* First row */
+  height: auto;
+}
+
+/* Top Company Section */
+.top-company-section {
+  grid-column: 1 / -1; /* Spans all columns */
+  grid-row: 2; /* Second row */
+}
+
+.top-company-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+  gap: 20px;
+}
+
+/* end of 2nd page */
+
 footer {
   grid-column: 1 / -1; /* Span full width */
   grid-row: 3; /* Assign to the third row (footer) */
