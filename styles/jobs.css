@@ -1,3 +1,11 @@
+#home {
+  font-weight: normal;
+}
+
+#jobs {
+  color: #f08504;
+}
+
 /* Job Sidebar */
 .job-sidebar {
     background-color: lightblue;
