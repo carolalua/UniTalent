@@ -101,6 +101,18 @@
 
 /* end of 2nd page */
 
+.sub-grid-aboutus {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.sub-grid-aboutus-process {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  height: 15vh;
+}
+
 footer {
   grid-column: 1 / -1; /* Span full width */
   grid-row: 3; /* Assign to the third row (footer) */
