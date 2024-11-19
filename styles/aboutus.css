@@ -12,32 +12,77 @@
 #about {
   color: var(--text-orange);
 }
-.sub-grid-aboutus {
-  margin: 50px;
-}
-.aboutus-headintro {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  margin-right: 100px;
-}
-.aboutus-textintro span {
+h3 {
+  text-align: center;
   font-weight: 700;
-  color: var(--text-orange);
+  margin-bottom: 20px;
 }
-.aboutus-hero-image {
-  place-items: center;
+
+/* Hero Section */
+.aboutus-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Text Section */
+.aboutus-intro {
+  display: flex; /* Align children horizontally */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  align-items: center; /* Align items at the top */
+  gap: 15px; /* Space between heading and paragraph */
+  width: 100%;
+  max-width: 1100px;
+}
+
+.aboutus-intro-heading {
+  flex: 0 0 40%; /* Allocate 30% of the width for heading */
+  max-width: 40%; /* Prevent exceeding allocated space */
+}
+
+.aboutus-intro-heading h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  align-self: baseline;
+}
+.aboutus-intro-text {
+  flex: 0 0 60%; /* Allocate 70% of the width for text */
+  max-width: 60%; /* Prevent exceeding allocated space */
+}
+.aboutus-intro-text p {
+  font-size: 0.9rem;
   margin: 0;
 }
-.aboutus-hero-image img{
-  width: 80%;
-  border-radius: 20px;
-  justify-content: center;
-  margin-top: -50px;
+
+.aboutus-intro-text p span {
+  font-weight: bold;
+  color: var(--text-orange);
 }
+
+/* Image Section */
+.aboutus-hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.aboutus-hero-image img {
+  width: 100%;
+  max-width: 950px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
 .howitworks-header {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
+  margin-bottom: -40px;
 }
 .howitwork-card {
   background-color: var(--background-fade);

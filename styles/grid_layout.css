@@ -104,21 +104,6 @@
 
 
 /* About Us */
-.aboutus-intro {
-  display: grid;
-  grid-column: 1 / -1;
-}
-.sub-grid-aboutus {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
-  gap: 30px;
-  margin-top: 30px;
-}
-.aboutus-hero-image {
-  display: grid;
-  grid-column: 1 / -1;
-}
 .howitworks-header {
   display: grid;
   grid-column: 1 / -1;
