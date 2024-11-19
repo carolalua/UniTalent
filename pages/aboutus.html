@@ -37,7 +37,7 @@
             <ul class="nav-links">
               <li><a href="#">Home</a></li>
               <li><a href="#">Jobs</a></li>
-              <li><a id="about" href="#">About Us</a></li>
+              <li><a id="home" href="#">About Us</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
           </nav>
@@ -51,29 +51,163 @@
 
 
       <!-- Main Container for Content Sections -->
-      <div class="main-container">
-        <div class="sub-grid-aboutus">
-          <section id="aboutus-image">
-          Hero image
-          </section>
-
-          <section id="aboutus-howitworks">
-            <div class="howitworks-text"><h3>How it works</h3></div>
-            <div class="sub-grid-aboutus-process">
-              <div class="process-icon">Process 1</div>
-              <div class="process-icon">Process 2</div>
-              <div class="process-icon">Process 3</div>
-              <div class="process-icon">Process 4</div>
+      <section class="main-container">
+        <div class="aboutus-intro">
+          <div class="sub-grid-aboutus">
+            <div class="aboutus-headintro">
+              <h3>Job that fits our student's life</h3>
             </div>
-          </section>
-        
+            <div class="aboutus-textintro">
+              <p>At <span>UniTalent!</span> Our platform is dedicated to helping students find the perfect job opportunities to kickstart their careers. Whether you’re looking for part-time work, internships, or entry-level positions, UniTalent connects you with employers who value your potential. Create your profile, explore tailored job listings, and apply effortlessly. Employers can post student-focused roles and discover talented individuals eager to grow. At UniTalent, we’re bridging the gap between education and professional success!</p>
+            </div>
+          </div>
+        </div>
+          
+        <div class="aboutus-hero-image">
+          <img src="/images/aboutus.jpg" alt="About us">
+        </div>
 
-          <section id="aboutus-faq">
-          Frequently Asked Questions
-          </section>
+        <div class="aboutus-howitworks">
+          <div class="howitworks-header">
+            <h3>How it works</h3>
+          </div>
+          <div class="howitworks-columns">
+            <div class="howitwork-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <div class="card-title">
+                Create Account
+              </div>
+              <div class="card-detail">
+                Create your account with us quickly using a simple information 
+              </div>
+            </div>
+
+            <div class="howitwork-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-file-contract"></i>
+              </div>
+              <div class="card-title">
+                Upload Resume
+              </div>
+              <div class="card-detail">
+                Upload your resume/CV, so that the companies can pre-check you quickly
+              </div>
+            </div>
+
+            <div class="howitwork-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <div class="card-title">
+                Find Jobs
+              </div>
+              <div class="card-detail">
+                Start searching your ideal jobs for over 25 thousand positions from our portal
+              </div>
+            </div>
+
+            <div class="howitwork-card">
+              <div class="card-icon">
+                <i class="fa-regular fa-circle-check"></i>
+              </div>
+              <div class="card-title">
+                Apply Job
+              </div>
+              <div class="card-detail">
+                Apply directly to companies without spending more time on the corporate website.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="aboutus-faq">
+          <h3>Frequently Asked Questions</h3>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span class="faq-number">01</span>
+                <span class="faq-askquestion">Can I upload a CV?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>
+                  Of course! To increase your successful rate, we do recommend to upload your CV along with your application.  This can help the recruiter getting you more information about you.
+                </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span class="faq-number">02</span>
+                <span>How long will the recruitment process take?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>The recruitment process typically takes 1-2 weeks depending on the role.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span class="faq-number">03</span>
+                <span>Do you recruit for Graduates, Ausbildung and Students</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>
+                  Yes, we specialize in connecting students, recent graduates, and individuals undergoing Ausbildung (vocational training) with exciting job opportunities. Whether you’re looking for internships, part-time work, or entry-level positions, UniTalent is here to support you in finding the right role that matches your skills and aspirations.
+                </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span class="faq-number">04</span>
+                <span>What does the recruitment and selection process involve?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>
+                  The recruitment and selection process typically involves the following steps:<br>
+                  <ol>
+                    <li>
+                      Job Search & Application: Browse available job listings on UniTalent and apply to positions that interest you.
+                    </li>
+                    <li>
+                      Screening: Employers review your application and profile to match their requirements.
+                    </li>
+                    <li>
+                      Interview: If shortlisted, you may be invited for an interview (virtual or in-person).
+                    </li>
+                    <li>
+                      Decision: Employers will notify you about their final decision, and successful candidates will receive further instructions on the next steps.
+                    </li>
+                  </ol>
+                  <p>
+                    We aim to ensure a smooth and transparent process for both job seekers and employers.
+                  </p>
+                </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span class="faq-number">05</span>
+                <span>Can I receive notification for any future jobs that may interest me?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>
+                  Yes, you can! By creating an account and setting up job alerts, you will receive notifications about new job opportunities that match your preferences. Simply select your areas of interest, and we’ll keep you updated via email or through your UniTalent dashboard whenever a relevant position is posted.
+                </p>
+            </div>
+          </div>
 
         </div>
-      </div>
+      </section>
+
 
 
 
@@ -109,6 +243,23 @@
       </footer>
 
     </div>
+    
+    <script>
+      function toggleFaq(currentFaq) {
+    // Get all FAQ items
+    const allFaqItems = document.querySelectorAll(".faq-item");
+
+    // Loop through and close any open FAQ items, except the one clicked
+    allFaqItems.forEach((faqItem) => {
+        if (faqItem !== currentFaq.parentElement) {
+            faqItem.classList.remove("open");
+        }
+    });
+
+    // Toggle the clicked FAQ item
+    currentFaq.parentElement.classList.toggle("open");
+    }
+    </script>
   </body>
   </html>
   

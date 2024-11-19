@@ -1,32 +1,152 @@
+:root {
+  --text-color: #6c757d;
+  --text-white: #ffffff;
+  --text-orange: #f08504;
+  --link-color: #4a76ee;
+  --background-color: #fbfbfb;
+  --background-fade: #fff2de;
+}
 #home {
   font-weight: normal;
 }
-
 #about {
-  color: #f08504;
+  color: var(--text-orange);
 }
-
-#aboutus-image{
-  background-color:burlywood;
-  height: 350px;
+.sub-grid-aboutus {
+  margin: 50px;
 }
-
-#aboutus-howitworks{
-  background-color:yellowgreen;
-  height: 40vh;
+.aboutus-headintro {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 100px;
 }
-
-.howitworks-text{
+.aboutus-textintro span {
+  font-weight: 700;
+  color: var(--text-orange);
+}
+.aboutus-hero-image {
+  place-items: center;
+  margin: 0;
+}
+.aboutus-hero-image img{
+  width: 80%;
+  border-radius: 20px;
+  justify-content: center;
+  margin-top: -50px;
+}
+.howitworks-header {
   text-align: center;
+  margin-top: 40px;
+}
+.howitwork-card {
+  background-color: var(--background-fade);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+}
+.card-icon {
+  margin: 20px 0 10px 0;
+  font-size: 2em;
+  color: var(--text-orange);
+}
+.card-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.card-detail {
+  text-align: center;
+  font-size: small;
 }
 
-.process-icon {
-  background-color: beige;
-  border: 1px solid black;
-  height: 150px;
+
+
+
+.aboutus-faq {
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-#aboutus-faq {
-  background-color: cadetblue;
-  height: 50vh;
+.aboutus-faq h3 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--text-orange);
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.faq-question span:nth-child(2) {
+  flex-grow: 1; /* Ensures the question text takes up the remaining space */
+  text-align: left; /* Aligns the question text to the left */
+  padding-left: 30px;
+}
+
+.faq-question:hover {
+  background-color: #f4f4f4;
+}
+
+.faq-number {
+  font-weight: bold;
+  color: #e67e22;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.faq-askquestion{
+  text-align: left;
+}
+
+.faq-icon {
+  font-weight: bold;
+  font-size: 20px;
+  color: #e67e22;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+  background-color: #fff7e6;
+  border-radius: 5px;
+}
+
+.faq-answer p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+.faq-answer  ol{
+  margin: 10px;
+}
+.faq-answer li{
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg); /* Changes "+" to "x" */
 }
