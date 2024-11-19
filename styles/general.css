@@ -290,68 +290,6 @@ footer a {
   display: none;
 }
 
-/* ///// TESTIMONIALS ////// */
-.testi-content {
-  display: block;
-  justify-content: space-between;
-  padding: 50px;
-  color: black;
-}
-
-.testi-row-headline {
-  font-size: 30px;
-  color: #000000;
-  text-align: center;
-}
-
-.testi-row-cards {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.card1 {
-  padding: 30px;
-  background-color: #fff2de;
-  border-radius: 5%;
-}
-.star i {
-  color: #ffb813;
-}
-.phrase {
-  font-size: 20px;
-  padding: 10px 0 15px 0;
-}
-
-.testi-card-text {
-  font-size: 14px;
-  font-style: italic;
-  padding-bottom: 15px;
-}
-
-.testi-card-profile {
-  display: flex;
-  justify-content: space-evenly;
-  justify-items: left;
-  gap: 10px;
-}
-.personpic img {
-  width: 75px;
-  border-radius: 50%;
-}
-.personname {
-  font-weight: bold;
-}
-.testi-card-person {
-}
-.personposition {
-  color: #555;
-  font-size: 12px;
-}
-
-
-
-
 /*  RESPONSIVE */
 @media (max-width: 478px) {
   /* hero */ 
