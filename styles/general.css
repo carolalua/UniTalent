@@ -292,7 +292,7 @@ footer a {
 
 /*  RESPONSIVE */
 @media (max-width: 478px) {
-  /* hero */ 
+  /* hero */
   header {
     margin-left: 10px;
   }
@@ -309,20 +309,28 @@ footer a {
     display: none;
     flex-direction: column;
     position: absolute;
-    left: 0;
-    width: 100%;
+    right: 0;
+    margin-right: 52px;
+    margin-top: -8px;
+    width: 35%;
     background-color: white;
     list-style: none;
-  }
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
   
   .nav-links li {
     margin-right: 20px;
+    padding: 7px 0 7px 0;
   }
   
   .nav-links a {
     color: #f08504;
     text-decoration: none;
     font-size: 14px;
+    margin-left: 15px;
+
   }
   
   .hamburger-icon {
