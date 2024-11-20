@@ -1,17 +1,48 @@
+:root {
+  --text-color: #6c757d;
+  --text-white: #ffffff;
+  --text-orange: #f08504;
+  --link-color: #4a76ee;
+  --background-color: #fbfbfb;
+  --background-fade: #fff2de;
+  --background-darkerfade: #ffdfb8;
+}
+
 #home {
   font-weight: normal;
 }
 
 #jobs {
-  color: #f08504;
+  color: var(--text-orange);
 }
 
-#jobdetails-description {
-  background-color: aquamarine;
+.jobdetails {
+  background-color: rgb(234, 252, 246);
   grid-column: 1;
+  padding: 30px;
 }
 
-#jobdetails-overview {
-  background-color: blueviolet;
+.joboverview {
+  background-color: rgb(239, 221, 255);
+  padding: 30px;
+}
+.sub-grid-jobdetails{
+  display: grid;
+}
+.jobdetails-header {
+  display: flex;
 }
 
+.postingtime {
+  background-color: var(--background-fade);
+  border-radius: 20px;
+  margin: 3px;
+  width: 110px;
+  text-align: center;
+  color: var(--text-orange);
+  font-size: 14px;
+}
+
+.company-logo img{
+  width: 50px;
+}
