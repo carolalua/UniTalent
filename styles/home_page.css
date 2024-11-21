@@ -283,6 +283,11 @@ h5 {
   cursor: pointer;
   font-size: 14px;
 }
+
+.action-button:hover {
+  opacity: 0.8;
+}
+
 /* End of Hnins Section */
 
 /* Vlad */
