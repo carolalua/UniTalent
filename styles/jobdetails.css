@@ -143,3 +143,46 @@ h4 {
   background-color: #cc7a16;
   cursor: pointer;
 }
+
+.joboverview-container{
+  background-color: var(--background-fade);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.joboverview-header{
+  font-weight: bold;
+  margin-bottom: 20px
+}
+
+.joboverview-listing {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.joboverview-logo{
+  color: var(--text-orange);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  padding-right: 20px;
+}
+
+
+.joboverview-question {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.joboverview-answer {
+  margin-top: 2px;
+  color: var(--text-color);
+  font-size: smaller;
+}
+
+.joboverview-map {
+  width: 100%;
+}
