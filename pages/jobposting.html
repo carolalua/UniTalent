@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/jobposting.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/grid_layout.css">
+  </head>
+  <body>
+
+    <!-- full page container -->
+    <div class="page-container">
+
+      <!-- header -->
+      <section class="hero-header-container-pages">
+        <header>
+            <button class="left">
+                <div class="logo-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <a href="#"> UniTalent</a>
+            </button>
+            <nav>
+                <ul class="header">
+                    <li><a id="home" href="../index.html">Home</a></li>
+                    <li><a id="jobs" href="./jobs.html">Jobs</a></li>
+                    <li><a id="about" href="./aboutus.html">About Us</a></li>
+                    <li><a id="contact" href="./contactus.html">Contact Us</a></li>
+                </ul>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="nav-links">
+                  <li><a id="home" href="../index.html">Home</a></li>
+                    <li><a href="./jobs.html">Jobs</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="right">
+                <a href="#">Login</a>
+                <button>Register</button>
+            </div>
+        </header>
+        <h1 class="title-page">Job Posting</h1>
+      </section>
+
+      <div class="main-container">
+        <section class="form-posting"> 
+          <form action="" class="actual-form">
+            <h3 id="sub-title-posting">Post a Job</h3>
+            <section class="form-group name-group">
+              <section>
+                  <label for="companyname">Company Name</label><br>
+                  <input type="text" id="companyname" name="companyname" placeholder="Company name" required>
+              </section>
+              <section>
+                <label for="jobtitle">Job Title</label><br>
+                <input type="text" id="jobtitle" name="jobtitle" placeholder="Job Title" required>
+              </section>
+            </section>
+            <section class="form-group">
+              <label for="jobdescription">Job Description</label><br>
+              <textarea id="jobdescription" name="jobdescription" rows="9" placeholder="Job Description" required></textarea>
+            </section>
+            <section class="form-group">
+              <label for="keyresponsibilities">Key responsibilities</label><br>
+              <textarea id="keyresponsibilities" name="keyresponsibilities" rows="9" placeholder="Key responsibilities" required></textarea>
+            </section>
+            <section class="form-group">
+              <label for="professionalskills">Professional skills</label><br>
+              <textarea id="professionalskills" name="professionalskills" rows="9" placeholder="Professional skills" required></textarea>
+            </section>
+            <section class="form-group name-group">
+              <section class="left-posting">
+                <section class="form-group">
+                  <label for="educationlevel">Education Level</label><br>
+                  <select name="educationlevel" id="educationlevel">
+                      <option selected>Select Education Level</option>
+                      <option value="bachelor">Bachelor's Degree</option>
+                      <option value="master">Master's Degree</option>
+                  </select>
+                </section>
+                <section id="language-section">
+                <section class="form-group">
+                  <label for="languagerequirement">Language requirement</label><br>
+                  <select name="languagerequirement[]" class="languagerequirement">
+                      <option selected>Select Language</option>
+                      <option value="english">English</option>
+                      <option value="german">German</option>
+                  </select>
+                </section>
+                <section class="form-group">
+                  <label for="proficiencylevel">Proficiency Level</label><br>
+                  <select name="proficiencylevel[]" class="proficiencylevel">
+                    <option selected>Select Proficiency Level</option>
+                    <option value="a1">A1</option>
+                    <option value="a2">A2</option>
+                    <option value="b1">B1</option>
+                    <option value="b2">B2</option>
+                    <option value="c1">C1</option>
+                    <option value="c2">C2</option>
+                  </select>
+                </section>
+                </section>
+                <button type="button" id="add-language">
+                  <i class="fa-solid fa-plus"></i> Add Language
+                </button>
+              </section>
+              <section class="right-posting">
+                <section class="form-group">
+                  <label for="experience">Experience in the field</label><br>
+                  <select name="experience" id="experience">
+                      <option selected>Select Experience in the field</option>
+                      <option value="noexperience">No experience</option>
+                      <option value="lessone">Less than 1 year</option>
+                      <option value="moreone">More than 1 year</option>
+                  </select>
+                </section>
+                <section class="form-group">
+                  <label for="experience">Semester for Internship / Working student position</label><br>
+                  <select name="experience" id="experience">
+                      <option selected>Select Semester</option>
+                      <option value="noexperience">1st Semester</option>
+                      <option value="lessone">2nd Semester</option>
+                      <option value="moreone">3rd Semester</option>
+                      <option value="noexperience">4th Semester</option>
+                      <option value="lessone">5th Semester</option>
+                      <option value="moreone">6th Semester</option>
+                      <option value="moreone">7th Semester</option>
+                      <option value="moreone">8th Semester</option>
+                  </select>
+                </section>
+                <section class="form-group">
+                  <label for="jobcategory">Job Category</label><br>
+                  <select name="jobcategory" id="jobcategory">
+                      <option selected>Select Category</option>
+                      <option value="administration">Administration</option>
+                      <option value="it">IT</option>
+                      <option value="financial">Financial</option>
+                  </select>
+                </section>
+                <section class="form-group">
+                  <label for="location">Location</label><br>
+                  <select name="location" id="location">
+                      <option selected>Select Location</option>
+                      <option value="onsite">On Site</option>
+                      <option value="remote">Remote</option>
+                      <option value="hybrid">Hybrid</option>
+                  </select>
+                </section>
+            </section>
+            </section>
+            <section id="postjob-group">
+              <button id="postjob-company">Post Job</button>
+            </section>
+          </form>
+        </section>
+      </div>
+      
+      <!-- footer -->
+      <footer>
+        <div class="footer-top">
+          <div class="footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="logo-text"><h5>UniTalent</a></h5></div>
+          </div>
+          <div class="logo-icon none"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-xing"></i></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-btm">
+          <div class="footer-copyright">
+            © Copyright UniTalent 2024. Designed by Pixel Pirates
+          </div>
+          <div class="footer-aboutus p1">
+            <a href="aboutus">About us</a>
+            <a href="contactus">Contact us</a>
+          </div>
+          <div class="footer-policy p1">
+            <a href="policy">Privacy Policy</a>
+            <a href="terms">Terms & Conditions</a>
+          </div>
+        </div>
+      </footer>
+    </div>  <!-- end of full page container -->
+    <script>
+      document.getElementById('add-language').addEventListener('click', function() {
+      // Get the section where we want to add new fields
+      const languageSection = document.getElementById('language-section');
+      
+      // Create a new div to hold the language fields and delete button
+      const languageGroup = document.createElement('div');
+      languageGroup.classList.add('language-group');
+      
+      // Create new language requirement field
+      const languageField = document.createElement('div');
+      languageField.classList.add('form-group');
+      languageField.innerHTML = `
+          <label for="languagerequirement">Language Requirement</label><br>
+          <select name="languagerequirement[]" class="languagerequirement">
+              <option selected>Select Language</option>
+              <option value="english">English</option>
+              <option value="german">German</option>
+          </select>
+      `;
+      
+      // Create new proficiency level field
+      const proficiencyField = document.createElement('div');
+      proficiencyField.classList.add('form-group');
+      proficiencyField.innerHTML = `
+          <label for="proficiencylevel">Proficiency Level</label><br>
+          <select name="proficiencylevel[]" class="proficiencylevel">
+              <option selected>Select Proficiency Level</option>
+              <option value="a1">A1</option>
+              <option value="a2">A2</option>
+              <option value="b1">B1</option>
+              <option value="b2">B2</option>
+              <option value="c1">C1</option>
+              <option value="c2">C2</option>
+          </select>
+      `;
+      
+      // Create the delete button
+      const deleteButton = document.createElement('button');
+      deleteButton.textContent = 'Delete Language';
+      deleteButton.classList.add('delete-language');
+      
+      // Add an event listener to the delete button to remove the group
+      deleteButton.addEventListener('click', function() {
+          languageSection.removeChild(languageGroup);
+      });
+      
+      // Append language and proficiency fields to the languageGroup div
+      languageGroup.appendChild(languageField);
+      languageGroup.appendChild(proficiencyField);
+      languageGroup.appendChild(deleteButton);
+      
+      // Append the whole languageGroup to the languageSection
+      languageSection.appendChild(languageGroup);
+      });
+
+    </script>
+  
+  </body>
+</html>

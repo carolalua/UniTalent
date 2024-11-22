@@ -1,0 +1,109 @@
+#home { 
+    font-weight: normal !important;
+}
+
+#sub-title-posting {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-posting {
+    background-color: #FDF5EC;
+    border-radius: 16px;
+    margin: 4.375rem;
+    padding: 3.75rem 5rem 3.75rem 5rem;
+}
+
+.form-group.name-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 40px;                      /* Space between columns */
+}
+  
+.form-group.name-group input {
+    width: 100%;                    /* Make inputs fill their grid cell */
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.job-description, .requirements {
+    border-radius: 20px;
+    background-color: #FDF5EC;
+    padding: 30px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+form input, form textarea, form select {
+    font-size: 1rem;
+    padding: 9px 16px 9px 16px;
+    color: #6C757D;
+}
+
+input:focus, textarea:focus {
+    outline: none;  /* Remove the default outline */
+    border: 2px solid #f08504; /* Optional: Add a custom border color */
+}
+
+#add-language, .delete-language {
+    border: none;
+    background-color: transparent;
+}
+
+#add-language:hover, .delete-language:hover {
+    color: #f08504;
+}
+
+.delete-language {
+    float: right;
+}
+
+#postjob-group {
+    display: flex;
+    justify-content: center;
+}
+
+#postjob-company {
+    font-size: 1rem;
+    background-color: #f08504;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    padding: 0.9375rem 1.875rem 0.9375rem 1.875rem;
+    margin-top: 40px;
+}
+
+#postjob-company:hover {
+    background-color: #cc7a16;
+}
+
+/* Tablet (≤ 991px) */
+@media (max-width: 991px) {
+    .form-group.name-group {
+        grid-template-columns: 1fr;
+    }
+    .form-posting {
+        margin: 2.375rem;
+        padding: 1.75rem 3rem 1.75rem 3rem;
+    }
+}
+
+@media (max-width: 478px) {
+    .form-posting {
+        margin: 1.375rem;
+        padding: 0.75rem 2rem 0.75rem 2rem;
+    }
+}
