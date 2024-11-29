@@ -1,0 +1,146 @@
+#home {
+  font-weight: normal;
+}
+
+.employer-link {
+  text-align: right; /* Align text to the right */
+  font-size: 0.9rem;
+  color: gray;
+  width: 100%; /* Ensure it spans the full width of the container */
+  max-width: 600px; /* Match the width of the register card */
+  margin: 50px auto 15px auto; /* Horizontally align with the register card and add spacing below */
+}
+
+/* Register Card */
+.register-card {
+  max-width: 600px;
+  width: 100%;     
+  background-color: #fef6ec;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-card h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* General Form Styles */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Vertical spacing between fields */
+}
+
+/* Form Row: Side-by-Side Layout for First and Last Name */
+.form-row {
+  display: flex;
+  gap: 15px; /* Space between First Name and Last Name */
+}
+
+.form-group {
+  flex: 1; /* Ensures equal width for both fields */
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+}
+
+label {
+  font-size: 0.9rem;
+  margin-bottom: 5px; /* Space below the label */
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Ensure inputs take full width of the form group */
+  box-sizing: border-box;
+}
+
+/* Register Button */
+.btn-register {
+  background-color: #f08504; /* Orange */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%; /* Full width of the form */
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn-register:hover {
+  background-color: #d97403; /* Darker orange */
+}
+
+
+.login-link {
+  font-size: 0.9rem;
+  color: gray;
+  max-width: 600px; /* Match the card's max-width */
+  width: 100%; /* Full width of the card */
+  margin: 15px auto 50px auto;
+  text-align: left; /* Align the text to the left */
+}
+
+.italic-text {
+  font-style: italic; /* Make only the "Login" text italic */
+}
+
+
+.login-link a {
+  color: #f08504; /* Highlight link in orange */
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+
+/* Telephone Field Wrapper */
+.telephone-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden; /* Prevent content from overflowing the border */
+  background-color: #fff;
+}
+
+
+/* Telephone Input Field */
+.telephone-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.telephone-field input[type="tel"] {
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  width: 100%;
+  outline: none;
+}
+
+
+.employer-link a {
+  color: grey;
+  text-decoration: none;
+}
+
+.employer-link a:hover {
+  text-decoration: underline;
+}

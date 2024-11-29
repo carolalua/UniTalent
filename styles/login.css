@@ -1,0 +1,148 @@
+
+#home {
+  font-weight: normal;
+}
+
+/* Login Card */
+.login-card {
+  max-width: 500px;
+  margin: 15px auto 15px auto;
+  background-color: #fef6ec;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-card h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Form Layout */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Vertical spacing between fields */
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Input Fields */
+input {
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Form Row: Adjust password field and Forgot Password link positioning */
+.form-row {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 5px; /* Space between password and forgot password */
+}
+
+/* Align "Are you an employer?" to the right */
+.employer-link {
+  text-align: right;
+  font-size: 0.9rem;
+  margin: 50px auto 0 auto;
+  color: gray;
+  max-width: 500px; /* Set max-width to match card */
+  width: 100%; /* Ensure it takes full width */
+}
+
+/* Adjust forgot password link to appear below password */
+.forgot-password-link {
+  text-align: right; /* Align the link to the right */
+  font-size: 0.9rem;
+  color: grey;
+  text-decoration: none;
+  margin-top: 0;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+/* Button Styling */
+.btn-login {
+  background-color: #f08504; /* Orange */
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%; /* Full width of the form */
+}
+
+.btn-login:hover {
+  background-color: #d27403; /* Darker orange */
+}
+
+/* Align "Don't have an account?" to the left */
+.register-link {
+  text-align: left;
+  font-size: 0.9rem;
+  margin: 15px auto 50px auto;
+  color: gray;
+  max-width: 500px; /* Set max-width to match card */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.register-link a {
+  color: #f08504;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.employer-link a {
+  color: grey;
+  text-decoration: none;
+}
+
+.employer-link a:hover {
+  text-decoration: underline;
+}
+
+/* for employer login form */
+.student-link {
+  text-align: right;
+  font-size: 0.9rem;
+  margin: 50px auto 0 auto;
+  color: gray;
+  max-width: 500px; /* Set max-width to match card */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.student-link a {
+  color: grey;
+  text-decoration: none;
+}
+
+.student-link a:hover {
+  text-decoration: underline;
+}
+
+
+
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/grid_layout.css">
+    <link rel="stylesheet" href="../styles/register_employer.css">
+  </head>
+  <body>
+
+    <!-- full page container -->
+    <div class="page-container">
+
+      <!-- header -->
+      <section class="hero-header-container-pages">
+        <header>
+            <button class="left">
+                <div class="logo-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <a href="#"> UniTalent</a>
+            </button>
+            <nav>
+                <ul class="header">
+                    <li><a id="home" href="../index.html">Home</a></li>
+                    <li><a id="jobs" href="#">Jobs</a></li>
+                    <li><a id="about" href="#">About Us</a></li>
+                    <li><a id="contact" href="#">Contact Us</a></li>
+                </ul>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="nav-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a id="home" href="#">Jobs</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </nav>
+            <div class="right">
+              <a href="#">Login</a>
+              <button>Register</button>
+            </div>
+          </header>
+        <h1 class="title-page">Register</h1>
+      </section>
+
+      <!-- Main Container for Content Sections -->
+      <div class="main-container">
+        <main class="register-container">
+          <p class="student-link">
+          <a href="register_student.html" target="_blank">Are you a student?</a>
+          </p>
+          <div class="register-card">
+            <h2>Register for Employer</h2>
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="company-name">Company Name</label>
+                  <input type="text" id="company-name" placeholder="Your Company Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-person">Contact Person</label>
+                  <input type="text" id="contact-person" placeholder="Your Company Person" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input type="text" id="city" placeholder="Your Company City" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Contact Email</label>
+                  <input type="email" id="contact-email" placeholder="Your Company Email" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="postal-code">Postal Code</label>
+                  <input type="text" id="postal-code" placeholder="Your Company Postal Code" required>
+                </div>
+                <div class="form-group">
+                  <label for="telephone">Telephone</label>
+                  <input type="tel" id="telephone-company" name="telephone" placeholder="Your Company Telephone" required>
+
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="street">Street</label>
+                  <input type="text" id="street" placeholder="Your Company Street" required>
+                </div>
+                <div class="form-group">
+                  <label for="logo">Logo</label>
+                  <input type="file" id="logo" accept=".jpg, .png" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="house-number">House Number</label>
+                  <input type="text" id="house-number" placeholder="Your Company Number" required>
+                </div>
+                <div class="form-group">
+                  <label for="vat-number">VAT - Identification Number</label>
+                  <input type="text" id="vat-number" placeholder="DE999999999" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" placeholder="Your Password" required>
+                </div>
+                <div class="form-group">
+                  <label for="website">Website</label>
+                  <input type="url" id="website" placeholder="Your Company URL">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group half-width">
+                  <label for="confirm-password">Confirm Password</label>
+                  <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <label>
+                  <input type="checkbox" id="terms" required> Accept Terms & Conditions
+                </label>
+              </div>
+              <button type="submit" class="register-button">Register</button>
+            </form>
+          </div>
+          <div class="login-link">
+          <span>Already have an account? <a href="login_employer.html">Login</a></span>
+          </div>
+
+        </main>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer-top">
+          <div class="footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="logo-text"><h5>UniTalent</a></h5></div>
+          </div>
+          <div class="logo-icon none"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-xing"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-btm">
+          <div class="footer-copyright">
+            © Copyright UniTalent 2024. Designed by Pixel Pirates
+          </div>
+          <div class="footer-aboutus p1">
+            <a href="aboutus">About us</a>
+            <a href="contactus">Contact us</a>
+          </div>
+          <div class="footer-policy p1">
+            <a href="policy">Privacy Policy</a>
+            <a href="terms">Terms & Conditions</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>  <!-- end of full page container -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

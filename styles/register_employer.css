@@ -1,0 +1,218 @@
+#home {
+  font-weight: normal;
+}
+
+/* Register Card */
+.register-card {
+  max-width: 1000px;
+  width: 100%;     
+  background-color: #fef6ec;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-card h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Form Layout */
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.half-width {
+  flex: 0.5; /* Half width for some fields */
+}
+
+label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* General styling for text inputs */
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="url"], input[type="file"] {
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Styling for checkbox input */
+input[type="checkbox"] {
+  width: auto; /* Make checkbox size appropriate */
+  margin-right: 10px; /* Space between checkbox and label */
+}
+
+
+/* Telephone Field Styling */
+.telephone-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  width: 100%;
+}
+
+.country-code {
+  width: 90px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-right: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.telephone-field input[type="tel"] {
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  width: 100%;
+  outline: none;
+}
+
+/* File Input */
+input[type="file"] {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Password Fields */
+.form-row {
+  display: flex;
+  gap: 20px; /* Space between password fields */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.half-width {
+  flex: 0.5;
+  margin-right: 20px;
+}
+
+
+/* Ensure the Register button spans the entire width */
+.register-button {
+  width: 100%;
+  background-color: #f08504;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-button:hover {
+  background-color: #d27403;
+}
+
+/* Adjust button size for responsiveness */
+.register-button {
+  width: 100%;
+  background-color: #f08504;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.register-button:hover {
+  background-color: #d27403;
+}
+
+.student-link {
+  text-align: right; /* Align text to the right */
+  font-size: 0.9rem;
+  color: gray;
+  width: 100%; /* Ensure it spans the full width of the container */
+  max-width: 1000px; /* Match the width of the register card */
+  margin: 50px auto 15px auto; /* Horizontally align with the register card and add spacing below */
+}
+
+.login-link {
+  margin-top: 15px; /* Add space between the card and the link */
+  margin-bottom: 50px;
+  font-size: 0.9rem;
+  color: gray;
+  max-width: 1000px; /* Match the card's max-width */
+  width: 100%; /* Full width of the card */
+  margin-left: auto; /* Center the link container */
+  margin-right: auto;
+  text-align: left; /* Align the text to the left */
+}
+
+.italic-text {
+  font-style: italic; /* Make only the "Login" text italic */
+}
+
+
+.login-link a {
+  color: #f08504; /* Highlight link in orange */
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.student-link {
+  text-align: right;
+  font-size: 0.9rem;
+  margin: 50px auto 15px auto;
+  color: gray;
+  max-width: 1000px; /* Set max-width to match card */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.student-link a {
+  color: grey;
+  text-decoration: none;
+}
+
+.student-link a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
