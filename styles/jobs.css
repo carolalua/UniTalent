@@ -1,69 +1,343 @@
-#home {
-  font-weight: normal;
-}
-
-#jobs {
-  color: #f08504;
-}
-
-/* Job Sidebar */
+/* Sidebar Container */
 .job-sidebar {
-    background-color: lightblue;
-    padding: 10px;
-  }
-  
-  .job-sidebar-filters {
-    background-color: rgb(229, 255, 127);
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .job-sidebar-photo {
-    background-color: salmon;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  /* Job Listings */
-  .job-listings {
-    background-color: blueviolet;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Top Company Section */
-  .top-company-section {
-    background-color: peachpuff;
-    padding: 20px;
-  }
-  
-  .top-company-header {
-    background-color: lightcoral;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 20px; /* Add spacing between header and grid */
-  }
-  
-  .top-company-card {
-    background-color: lightgreen;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px; /* temporary */
-  }
-  
-  .job-sidebar {
-    background-color: aquamarine;
-  }
-  
-  .job-listings {
-    background-color: violet;
-  }
-  
-  .top-company-section {
-    background-color: peachpuff;
-  }
-  
-  
-  
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: auto; /* Ensure it adapts to content without overflow */
+  max-height: none; /* Remove the height limit */
+}
+
+/* Filters Section */
+.job-sidebar-filters {
+  flex: 1; /* Let it take the available space */
+  background-color: #fff5e8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Filter Groups */
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group .p1 {
+  margin-bottom: 20px;
+}
+
+.filter-group input[type="text"] {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px; /* Set text size here */
+  color: #333; /* Optional: Text color */
+  margin-top: 5px; 
+  border-radius: 10px;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px; /* Set text size here */
+  margin-top: 5px; 
+  border-radius: 10px;
+
+  /* Correct downward arrow */
+  background: white
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'><path fill='gray' d='M0 0l5 6 5-6z'/></svg>")
+    no-repeat right 12px center;
+  appearance: none; /* Hides default browser styles for the select arrow */
+  background-size: 10px 6px; /* Adjust size of the arrow */
+}
+
+.filter-group ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.filter-group ul li {
+  margin-bottom: 8px;
+}
+
+.filter-group ul li input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Photo Section */
+.job-sidebar-photo {
+  background-color: #fff5e8;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-sidebar-photo img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.job-sidebar-photo h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.job-sidebar-photo p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Listings Header */
+.listings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.showing-results {
+  font-size: 14px;
+  color: #666;
+}
+
+.sort-by {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-by label {
+  font-size: 14px;
+  color: #333;
+}
+
+.sort-by select {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Job Cards Container */
+.job-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Styling for each job listing */
+.job-listing {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center job listing in the container */
+}
+
+/* Top Container: Posted Time */
+.job-listing-top {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.posted-time {
+  background-color: #fff3e0;
+  color: #ff6600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Middle Container: Job Info */
+.job-listing-middle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.job-logo img {
+  width: 40px;
+  height: 40px; 
+}
+
+.job-title-company h3 {
+  margin: 0;
+}
+
+.job-title-company p {
+  margin: 4px 0 0;
+  color: #666;
+}
+
+/* Bottom Container: Job Details and Button */
+.job-listing-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between items to push button to the right */
+  padding-top: 12px;
+}
+
+/* Container for job detail items (left-aligned group) */
+.job-detail-items {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Adjust spacing between job detail items */
+}
+
+.job-detail-item {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 14px;
+  gap: 4px;
+}
+
+.job-detail-item i {
+  color: #ff6600;
+}
+
+/* Job Details Button */
+.action-button button {
+  background-color: #ff6600;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action-button:hover {
+  opacity: 0.8;
+}
+
+/* Pagination Section */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.pagination-btn.next {
+  background-color: #333;
+}
+
+.pagination-btn:hover {
+  opacity: 0.8;
+}
+
+/* top company */
+
+/* Top Company Section */
+.top-company-section {
+  padding: 40px 20px;
+  background-color: #fff5e8;
+  text-align: center;
+}
+
+.top-company-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Top Company Grid */
+.top-company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Individual Company Card */
+.top-company-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.top-company-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.company-logo img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  border-radius: 20%;
+}
+
+.top-company-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.top-company-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.open-jobs {
+  display: inline-block;
+  background-color: #fff5e8;
+  color: #ff6600;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+footer {
+  background: black;
+}
+/* Ensure the page container takes the full viewport height */
+.job-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full height for the viewport */
+}
+
+/* Make the main container flexible to push the footer down */
+.job-page-container .main-container {
+  flex: 1; /* Push the footer to the bottom */
+}
+
+/* Remove any margin under the footer */
+.job-page-container footer {
+  margin: 0; /* Ensure no extra margin */
+}
+
+/* Remove unwanted bottom margin from the last child of main content */
+.job-page-container .main-container > *:last-child {
+  margin-bottom: 0; /* Override any extra bottom margin */
+}

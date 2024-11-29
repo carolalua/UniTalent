@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Details</title>
+    <title>Jobs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css"/>
     <link rel="stylesheet" href="../styles/general.css">
     <link rel="stylesheet" href="../styles/grid_layout.css">
     <link rel="stylesheet" href="../styles/jobdetails.css">
@@ -28,99 +28,394 @@
             <nav>
                 <ul class="header">
                     <li><a id="home" href="../index.html">Home</a></li>
-                    <li><a id="jobs" href="../pages/jobs.html" class="active">Jobs</a></li>
+                    <li><a id="jobs" href="#">Jobs</a></li>
                     <li><a id="about" href="#">About Us</a></li>
                     <li><a id="contact" href="#">Contact Us</a></li>
                 </ul>
                 <input type="checkbox" id="menu-toggle" class="menu-toggle">
                 <label for="menu-toggle" class="hamburger-icon">
                   <i class="fa-solid fa-bars"></i>
-                </label>
+                </label>            
                 <ul class="nav-links">
-                  <li><a href="#">Home</a></li>
-                  <li><a id="home" href="#">Jobs</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a id="home" href="#">Home</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
-              </nav>
+            </nav>
             <div class="right">
-              <a href="#">Login</a>
-              <button>Register</button>
+                <a href="#">Login</a>
+                <button>Register</button>
             </div>
-          </header>
+        </header>
         <h1 class="title-page">Jobs</h1>
       </section>
-
+    
         <!-- Main Container for Content Sections -->
-        <div class="main-container">
+      <div class="main-container">
           <!-- Sub Grid Jobs Container -->
           <div class="sub-grid-jobs">
             <!-- Job Sidebar -->
             <div id="job-sidebar" class="job-sidebar">
               <!-- Filters Section -->
               <div class="job-sidebar-filters">
-                Filters
+                <h3>Filters</h3>
+                <!-- Search by Job Title -->
+                <div class="filter-group">
+                  <p1>Search by Job Title</p1>
+                  <input type="text" placeholder="Job title or company" id="filter-input">
+                </div>
+
+                <!-- Education Level -->
+                <div class="filter-group">
+                  <p1>Education Level</p1>
+                  <select id="education-level">
+                    <option value="">Any</option>
+                    <option value="bachelor">Bachelor's Degree</option>
+                    <option value="master">Master's Degree</option>
+                    <option value="phd">PhD</option>
+                  </select>
+                </div>
+
+                <!-- Category Selection -->
+                <div class="filter-group">
+                  <p1>Category</p1>
+                  <select id="category">
+                    <option value="">Any</option>
+                    <option value="it">IT</option>
+                    <option value="administration">Administration</option>
+                    <option value="commerce">Commerce</option>
+                    <option value="construction">Construction</option>
+                    <option value="hotels-tourism">Hotels & Tourism</option>
+                    <option value="education">Education</option>
+                    <option value="financial">Financial</option>
+                    <option value="transport">Transport</option>
+                  </select>
+                </div>
+
+                <!-- Experience in the Field -->
+                <div class="filter-group">
+                  <p1>Experience in the Field</p1>
+                  <select id="experience-level">
+                    <option value="">Any</option>
+                    <option value="none">None</option>
+                    <option value="1-2-years">1-2 Years</option>
+                    <option value="3-5-years">3-5 Years</option>
+                    <option value="5-plus-years">5+ Years</option>
+                  </select>
+                </div>
+
+                <!-- Semester for Internship / Working Student -->
+                <div class="filter-group">
+                  <p1>Semester for Internship</p1>
+                  <select id="semester">
+                    <option value="">Any</option>
+                    <option value="1">1st Semester</option>
+                    <option value="2">2nd Semester</option>
+                    <option value="3">3rd Semester</option>
+                    <option value="4">5th Semester</option>
+                    <option value="4">6th Semester</option>
+                    <option value="4">Thesis Semester</option>
+                  </select>
+                </div>
+
+                <!-- Language Requirement -->
+                <div class="filter-group">
+                  <p1>Language Requirement</p1>
+                  <ul>
+                    <li><input type="checkbox" id="english"><label for="english"> English</label></li>
+                    <li><input type="checkbox" id="german"><label for="german"> German</label></li>
+                  </ul>
+                </div>
+
+                <!-- Proficiency Level -->
+                <div class="filter-group">
+                  <p1>Proficiency Level</p1>
+                  <ul>
+                    <li>
+                      <input type="radio" id="any" name="proficiency-level" value="any" checked>
+                      <label for="any">Any</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="beginner" name="proficiency-level" value="beginner">
+                      <label for="beginner">Beginner</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="intermediate" name="proficiency-level" value="intermediate">
+                      <label for="intermediate">Intermediate</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="advanced" name="proficiency-level" value="advanced">
+                      <label for="advanced">Advanced</label>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="filter-group">
+                  <p1>Location</p1>
+                  <ul>
+
+                    <li>
+                      <input type="radio" id="location-on-site" name="location" value="on-site">
+                      <label for="location-on-site">On-Site</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="location-remote" name="location" value="remote">
+                      <label for="location-remote">Remote</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="location-hybrid" name="location" value="hybrid">
+                      <label for="location-hybrid">Hybrid</label>
+                    </li>
+                  </ul>
+                </div>
+
               </div>
+
               <!-- Photo Section -->
               <div class="job-sidebar-photo">
-                We are hiring Photo
+                <h4>We Are Hiring</h4>
+                <img src="../images/We are Hiring.png" alt="We Are Hiring Photo">
+                <p>Apply Today!</p>
               </div>
             </div>
-            <!-- End of Job Sidebar -->
 
             <!-- Job Listings -->
             <div id="job-listings" class="job-listings">
-              Jobs Listings
-            </div>
-
-            <!-- Top Company Section -->
-            <div id="top-company" class="top-company-section">
-              <!-- Header for Top Company -->
-              <div class="top-company-header">
-                Top Company
+              <!-- Showing Results and Sort By -->
+              <div class="listings-header">
+                <p class="showing-results">Showing <span id="results-count">1-5</span> of <span id="total-results">10</span> results</p>
+                <div class="sort-by">
+                  <label for="sort-options">Sort by:</label>
+                  <select id="sort-options">
+                    <option value="latest">Latest</option>
+                    <option value="oldest">Oldest</option>
+                    <option value="relevance">Relevance</option>
+                  </select>
+                </div>
               </div>
 
-              <!-- 4 Columns for Companies -->
-              <div class="top-company-grid">
-                <div class="top-company-card">Company 1</div>
-                <div class="top-company-card">Company 2</div>
-                <div class="top-company-card">Company 3</div>
-                <div class="top-company-card">Company 4</div>
+              <div class="job-listing">
+                <div class="job-listing-top">
+                  <span class="posted-time p1">10 min ago</span>
+                </div>
+                <div class="job-listing-middle">
+                  <div class="job-logo">
+                    <img src="../images/tiktok-png.png" alt="Company Logo">
+                  </div>
+                  <div class="job-title-company">
+                    <h3 class="h3">Forward Security Director</h3>
+                    <p class="p1">Bauch, Schuppe and Schulist Co</p>
+                  </div>
+                </div>
+                <div class="job-listing-bottom">
+                  <div class="job-detail-items">
+                    <div class="job-detail-item p1"><i class="fal fa-briefcase"></i> Hotels & Tourism</div>
+                    <div class="job-detail-item p1"><i class="fal fa-clock"></i> 40 hours per week</div>
+                    <div class="job-detail-item p1"><i class="fal fa-map-marker-alt"></i> Berlin</div>
+                  </div>
+                  <div class="action-button">
+                    <button class="p3">Job Details</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Job 2 -->
+              <div class="job-listing">
+                <div class="job-listing-top">
+                  <span class="posted-time p1">30 min ago</span>
+                </div>
+                <div class="job-listing-middle">
+                  <div class="job-logo">
+                    <img src="../images/Slack.png" alt="Company Logo">
+                  </div>
+                  <div class="job-title-company">
+                    <h3 class="h3">Marketing Coordinator</h3>
+                    <p class="p1">Acme Corp</p>
+                  </div>
+                </div>
+                <div class="job-listing-bottom">
+                  <div class="job-detail-items">
+                    <div class="job-detail-item p1"><i class="fal fa-briefcase"></i> Marketing</div>
+                    <div class="job-detail-item p1"><i class="fal fa-clock"></i> 20 hours per week</div>
+                    <div class="job-detail-item p1"><i class="fal fa-map-marker-alt"></i> Hamburg</div>
+                  </div>
+                  <div class="action-button">
+                    <button class="p3">Job Details</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Job 3 -->
+              <div class="job-listing">
+                <div class="job-listing-top">
+                  <span class="posted-time p1">1 hour ago</span>
+                </div>
+                <div class="job-listing-middle">
+                  <div class="job-logo">
+                    <img src="../images/mercedes-benz-logo.png" alt="Company Logo">
+                  </div>
+                  <div class="job-title-company">
+                    <h3 class="h3">Software Development Intern</h3>
+                    <p class="p1">Tech Solutions Ltd</p>
+                  </div>
+                </div>
+                <div class="job-listing-bottom">
+                  <div class="job-detail-items">
+                    <div class="job-detail-item p1"><i class="fal fa-briefcase"></i> IT & Software</div>
+                    <div class="job-detail-item p1"><i class="fal fa-clock"></i> 30 hours per week</div>
+                    <div class="job-detail-item p1"><i class="fal fa-map-marker-alt"></i> Munich</div>
+                  </div>
+                  <div class="action-button">
+                    <button class="p3">Job Details</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Job 4 -->
+              <div class="job-listing">
+                <div class="job-listing-top">
+                  <span class="posted-time p1">2 hours ago</span>
+                </div>
+                <div class="job-listing-middle">
+                  <div class="job-logo">
+                    <img src="../images/Microsoft_logo.svg.png" alt="Company Logo">
+                  </div>
+                  <div class="job-title-company">
+                    <h3 class="h3">Data Analyst Assistant</h3>
+                    <p class="p1">Insight Analytics</p>
+                  </div>
+                </div>
+                <div class="job-listing-bottom">
+                  <div class="job-detail-items">
+                    <div class="job-detail-item p1"><i class="fal fa-briefcase"></i> Data Analysis</div>
+                    <div class="job-detail-item p1"><i class="fal fa-clock"></i> 25 hours per week</div>
+                    <div class="job-detail-item p1"><i class="fal fa-map-marker-alt"></i> Stuttgart</div>
+                  </div>
+                  <div class="action-button">
+                    <button class="p3">Job Details</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Job 5 -->
+              <div class="job-listing">
+                <div class="job-listing-top">
+                  <span class="posted-time p1">3 hours ago</span>
+                </div>
+                <div class="job-listing-middle">
+                  <div class="job-logo">
+                    <img src="../images/bmw_logo_PNG19707.png" alt="Company Logo">
+                  </div>
+                  <div class="job-title-company">
+                    <h3 class="h3">Customer Support Representative</h3>
+                    <p class="p1">Global Services Inc.</p>
+                  </div>
+                </div>
+                <div class="job-listing-bottom">
+                  <div class="job-detail-items">
+                    <div class="job-detail-item p1"><i class="fal fa-briefcase"></i> Customer Service</div>
+                    <div class="job-detail-item p1"><i class="fal fa-clock"></i> 15 hours per week</div>
+                    <div class="job-detail-item p1"><i class="fal fa-map-marker-alt"></i> Frankfurt</div>
+                  </div>
+                  <div class="action-button">
+                    <button class="p3">Job Details</button>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Pagination Section -->
+              <div class="pagination">
+                <button class="pagination-btn">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn next">Next ></button>
               </div>
             </div>
-            <!-- End of Top Company Section -->
+
+              <!-- Top Company Section -->
+          <div id="top-company" class="top-company-section">
+            <!-- Header for Top Company -->
+            <div class="top-company-header">
+              <h2>Top Company</h2>
+            </div>
+
+            <!-- Grid for Companies -->
+            <div class="top-company-grid">
+              <!-- Company 1 -->
+              <div class="top-company-card">
+                <div class="company-logo">
+                  <img src="../images/Instragram_logo.png" alt="Instagram Logo">
+                </div>
+                <h3>Instagram</h3>
+                <p>Elit velit mauris aliquam est diam. Leo sagittis consectetur diam morbi erat</p>
+                <span class="open-jobs">8 open jobs</span>
+              </div>
+
+              <!-- Company 2 -->
+              <div class="top-company-card">
+                <div class="company-logo">
+                  <img src="../images/Tesla_logo.png" alt="Tesla Logo">
+                </div>
+                <h3>Tesla</h3>
+                <p>At pellentesque amet odio cras imperdiet nisl. Ac magna aliquet massa leo</p>
+                <span class="open-jobs">18 open jobs</span>
+              </div>
+
+              <!-- Company 3 -->
+              <div class="top-company-card">
+                <div class="company-logo">
+                  <img src="../images/Facebook_logo.png" alt="Facebook Logo">
+                </div>
+                <h3>Facebook</h3>
+                <p>Odio aliquet tellus tellus maecenas. Faucibus in viverra venenatis phasellus</p>
+                <span class="open-jobs">12 open jobs</span>
+              </div>
+
+              <!-- Company 4 -->
+              <div class="top-company-card">
+                <div class="company-logo">
+                  <img src="../images/Apple_logo.png" alt="Apple Logo">
+                </div>
+                <h3>Apple</h3>
+                <p>Et odio sem tellus ultrices posuere consequat. Tristique nascetur sapien</p>
+                <span class="open-jobs">9 open jobs</span>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- footer -->
-        <footer>
-          <div class="footer-top">
-            <div class="footer-logo">
-              <div class="logo-icon"><i class="fa-solid fa-briefcase"></i></div>
-              <div class="logo-text"><h5>UniTalent</a></h5></div>
-            </div>
-            <div class="logo-icon none"><i class="fa-solid fa-briefcase"></i></div>
-            <div class="footer-icons">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-square-xing"></i></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
+      <!-- footer -->
+      <footer>
+        <div class="footer-top">
+          <div class="footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="logo-text"><h5>UniTalent</a></h5></div>
           </div>
-          <div class="footer-btm">
-            <div class="footer-copyright">
-              © Copyright UniTalent 2024. Designed by Pixel Pirates
-            </div>
-            <div class="footer-aboutus p1">
-              <a href="aboutus">About us</a>
-              <a href="contactus">Contact us</a>
-            </div>
-            <div class="footer-policy p1">
-              <a href="policy">Privacy Policy</a>
-              <a href="terms">Terms & Conditions</a>
-            </div>
+          <div class="logo-icon none"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-xing"></i></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           </div>
-        </footer>
+        </div>
+        <div class="footer-btm">
+          <div class="footer-copyright">
+            © Copyright UniTalent 2024. Designed by Pixel Pirates
+          </div>
+          <div class="footer-aboutus p1">
+            <a href="aboutus">About us</a>
+            <a href="contactus">Contact us</a>
+          </div>
+          <div class="footer-policy p1">
+            <a href="policy">Privacy Policy</a>
+            <a href="terms">Terms & Conditions</a>
+          </div>
+        </div>
+      </footer>
 
     </div>  <!-- end of full page container -->
 
