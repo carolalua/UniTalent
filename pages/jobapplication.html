@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css"/>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/grid_layout.css">
+    <link rel="stylesheet" href="../styles/jobapplication.css">
+  </head>
+  <body>
+
+    <!-- full page container -->
+    <div class="page-container">
+
+      <!-- header -->
+      <section class="hero-header-container-pages">
+        <header>
+            <button class="left">
+                <div class="logo-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <a href="#"> UniTalent</a>
+            </button>
+            <nav>
+                <ul class="header">
+                    <li><a id="home" href="../index.html">Home</a></li>
+                    <li><a id="jobs" href="../pages/jobs.html">Jobs</a></li>
+                    <li><a id="about" href="../pages/aboutus.html">About Us</a></li>
+                    <li><a id="contact" href="../pages/contactus.html">Contact Us</a></li>
+                </ul>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </label>            
+                <ul class="nav-links">
+                  <li><a id="home" href="#">Home</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="right">
+                <a href="#">Login</a>
+                <button>Register</button>
+            </div>
+        </header>
+        <h1 class="title-page">Job Application</h1>
+      </section>
+    
+        <!-- Main Container for Content Sections -->
+      <div class="main-container">
+        <div class="job-application-container">
+         <div class="job-header">
+          <div class="logo-container">
+            <img src="../images/DB.png" alt="Deutsche Bank Logo">
+          </div>
+          <h2>Deutsche Bank AG</h2>
+        </div>
+
+
+          <div class="application-form">
+            <h3>Submit Your Application</h3>
+            <p>Fill out the details below to apply for this job at Deutsche Bank AG.</p>
+
+            <form action="/submit-application" method="POST" enctype="multipart/form-data">
+              <!-- Personal Details -->
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+              <!-- Job-Specific Details -->
+              <label for="current-job-title">Current or Previous Job Title</label>
+              <input type="text" id="current-job-title" name="current-job-title" placeholder="What's your current or previous job title?">
+
+              <!-- Additional Links -->
+              <label for="linkedin">LinkedIn URL</label>
+              <input type="url" id="linkedin" name="linkedin" placeholder="Link to your LinkedIn profile">
+
+              <label for="portfolio">Portfolio URL</label>
+              <input type="url" id="portfolio" name="portfolio" placeholder="Link to your portfolio (if applicable)">
+
+              <!-- Additional Information -->
+              <label for="cover-letter">Additional Information (Cover Letter)</label>
+              <textarea id="cover-letter" name="cover-letter" placeholder="Include a cover letter or anything else you'd like to share" rows="5" maxlength="500"></textarea>
+              <span class="character-counter">0 / 500</span>
+
+              <!-- Resume Upload -->
+              <div class="file-upload-container">
+                <label for="resume-upload" class="file-upload-label">
+                  <i class="fal fa-paperclip"></i> Attach Resume/CV
+                </label>
+                <input type="file" id="resume-upload" name="resume" accept=".pdf,.doc,.docx" required>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="submit-button">Submit Application</button>
+            </form>
+
+            <p class="disclaimer">
+              By submitting your application, you agree to our <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a>.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer-top">
+          <div class="footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="logo-text"><h5>UniTalent</a></h5></div>
+          </div>
+          <div class="logo-icon none"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-xing"></i></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-btm">
+          <div class="footer-copyright">
+            © Copyright UniTalent 2024. Designed by Pixel Pirates
+          </div>
+          <div class="footer-aboutus p1">
+            <a href="aboutus">About us</a>
+            <a href="contactus">Contact us</a>
+          </div>
+          <div class="footer-policy p1">
+            <a href="policy">Privacy Policy</a>
+            <a href="terms">Terms & Conditions</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>  <!-- end of full page container -->
+
+  </body>
+</html>
