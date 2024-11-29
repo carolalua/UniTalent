@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
@@ -27,9 +27,9 @@
             <nav>
                 <ul class="header">
                     <li><a id="home" href="../index.html">Home</a></li>
-                    <li><a id="jobs" href="#">Jobs</a></li>
-                    <li><a id="about" href="#">About Us</a></li>
-                    <li><a id="contact" href="#">Contact Us</a></li>
+                    <li><a id="jobs" href="../pages/jobs.html">Jobs</a></li>
+                    <li><a id="about" href="../pages/aboutus.html">About Us</a></li>
+                    <li><a id="contact" href="../pages/contactus.html">Contact Us</a></li>
                 </ul>
                 <input type="checkbox" id="menu-toggle" class="menu-toggle">
                 <label for="menu-toggle" class="hamburger-icon">
@@ -43,8 +43,20 @@
                 </ul>
               </nav>
             <div class="right">
+            <div class="dropdown">
               <a href="#">Login</a>
+              <div id="firstdropdown" class="dropdown-content">
+                <a href="../pages/login_student.html">For Student</a>
+                <a href="../pages/login_employer.html">For Company</a>
+              </div>
+            </div>
+            <div class="dropdown">
               <button>Register</button>
+              <div class="dropdown-content">
+                <a href="../pages/register_student.html">For Student</a>
+                <a href="../pages/register_employer.html">For Company</a>
+              </div>
+            </div>
             </div>
           </header>
         <h1 class="title-page">Login</h1>
@@ -54,7 +66,7 @@
       <div class="main-container">
         <main class="login-container">
         <p class="student-link">
-        <a href="login_student.html" target="_blank">Are you a student?</a>
+        <a href="login_student.html">Are you a student?</a>
         </p>
         <div class="login-card">
           <h2 class="login-title">Login for Employer</h2>
