@@ -437,13 +437,11 @@ h5 {
   font-size: 20px;
   padding: 10px 0 15px 0;
 }
-
 .testi-card-text {
   font-size: 14px;
   font-style: italic;
   padding-bottom: 15px;
 }
-
 .testi-card-profile {
   display: flex;
   justify-content: space-evenly;
@@ -456,8 +454,6 @@ h5 {
 }
 .personname {
   font-weight: bold;
-}
-.testi-card-person {
 }
 .personposition {
   color: #555;
@@ -487,7 +483,7 @@ body {
   .location,
   #category {
       width: 200px;
-      text-overflow: ellipsis; 
+      text-overflow: ellipsis;
   }
 
   .job-title {
@@ -753,7 +749,7 @@ body {
   }
 }
 
-/* Only for Category section */ 
+/* Only for Category section */
 @media (max-width: 478px) {
   .category-grid {
     display: grid;
