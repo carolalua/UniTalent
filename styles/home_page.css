@@ -162,7 +162,7 @@ h5 {
   grid-column: 1 / -1;
 }
 
-/* Styles for .section-title */ 
+/* Styles for .section-title */
 .section-title {
   display: flex;
   justify-content: space-between; /* Align title on the left, link on the right */
@@ -840,4 +840,3 @@ body {
     font-size: 14;
   }
 }
-
