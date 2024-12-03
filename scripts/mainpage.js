@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const renderTestimonials = () => {
     testimonials.forEach((testimonial) => {
       const testimonialCard = document.createElement("div");
-      testimonialCard.classList.add("testi-card", "card1");
+      testimonialCard.classList.add("testi-card", "card");
 
       testimonialCard.innerHTML = `
         <div class="testi-card star">
