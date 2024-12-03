@@ -43,14 +43,21 @@
             </ul>
           </nav>
           <div class="right">
-            <div class="dropdown">
+            <div style="display: none;" class="dropdown" id="user-greeting">
+              <a href="#" id="greeting">Hey User!</a>
+              <div class="dropdown-content">
+                <a href="#">My Account</a>
+                <a href="./pages/login_student.html" id="logout-link">Logout</a>
+              </div>
+            </div>
+            <div class="dropdown" id="dropdown-first">
               <a href="#">Login</a>
               <div id="firstdropdown" class="dropdown-content">
                 <a href="./pages/login_student.html">For Student</a>
                 <a href="./pages/login_employer.html">For Company</a>
               </div>
             </div>
-            <div class="dropdown">
+            <div class="dropdown" id="dropdown-second">
               <button>Register</button>
               <div class="dropdown-content">
                 <a href="./pages/register_student.html">For Student</a>
