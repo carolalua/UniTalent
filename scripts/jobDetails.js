@@ -66,7 +66,18 @@ function populateJobDetails(job) {
     document.querySelector("#degree .joboverview-answer").textContent = job.overview.degree;
     document.querySelector("#gender .joboverview-answer").textContent = job.overview.gender;
     document.querySelector("#location .joboverview-answer").textContent = job.overview.location;
+    
+    //Map
+    const mapIframe = document.querySelector("#map iframe");
+    if (job.mapUrl) {
+      mapIframe.src = job.mapUrl;
+    } else {
+      console.error("Map URL is missing in the job object!");
+      mapIframe.src = ""; // Clear the iframe if no URL is available
+    }
+    console.log(job.mapUrl);
 }
+
 
 // Example: Populate details for job with ID 1
 document.addEventListener("DOMContentLoaded", () => {
