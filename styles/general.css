@@ -110,6 +110,7 @@ header {
   margin-left: 50px;
   justify-content: space-between;
   display: flex;
+
 }
 
 .logo-icon {
@@ -149,6 +150,7 @@ header {
   font-size: 1rem;
   display: flex;
   align-items: center;
+  list-style: none;
 }
 
 .nav-links, .menu-toggle, .hamburger-icon {
