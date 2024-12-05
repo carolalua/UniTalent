@@ -188,15 +188,23 @@ h4 {
 }
 
 
-/* Remove the default bullet points for the list */
-.requirements-listing ul {
-  list-style-type: none;
-  margin-top: 10px;
+ul {
+  list-style: none;
+  padding: 25px;
+  margin: 0;
 }
-.requirements-listing li {
-  margin-bottom: 10px;
+ul li {
+  position: relative;
+  padding-left: 25px; /* Add space for the icon */
 }
-.requirements-listing i {
-  color: var(--text-orange);
-  margin-right: 8px;
+
+ul li::before {
+  content: "\f00c"; /* Font Awesome icon */
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 300; /* Light weight for fa-light */
+  position: absolute;
+  left: 0; /* Position the icon */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the icon */
+  color: var(--text-orange); /* Icon color (adjust as needed) */
 }

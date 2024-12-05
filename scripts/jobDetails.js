@@ -1,44 +1,76 @@
-// Get the job ID from URL parameters (e.g., ?id=1)
-const urlParams = new URLSearchParams(window.location.search);
-const jobId = parseInt(urlParams.get("id"));
-
-// Find the job in the database
-const job = jobsDatabase.find((job) => job.id === jobId);
+// Function to get a job by its ID
+function getJobById(id) {
+    return jobDatabase.find(job => job.id === id);
+}
 
 // Populate the page with job details
-if (job) {
-  document.querySelector(".postingtime").innerText = job.postingTime;
-  document.querySelector(".company-logo img").src = job.companyLogo;
-  document.querySelector(".company-name h3").innerText = job.companyName;
+function populateJobDetails(job) {
+    if (!job) {
+        console.error("Job not found!");
+        return;
+    }
 
-  document.querySelector("#category-text").innerText = job.category;
-  document.querySelector("#jobtype-text").innerText = job.jobType;
-  document.querySelector("#location-text").innerText = job.location;
+    // Posting time
+    document.querySelector(".postingtime").textContent = job.postingTime;
 
-  document.querySelector(".description-text").innerHTML = job.description;
+    // Company details
+    document.querySelector(".company-logo img").src = job.company.logo;
+    document.querySelector(".company-name h3").textContent = job.company.name;
 
-  document.querySelector(".reponsibilites-listing").innerHTML = job.responsibilities;
+    // Summary details
+    document.querySelector("#category-text").textContent = job.summary.category;
+    document.querySelector("#jobtype-text").textContent = job.summary.jobType;
+    document.querySelector("#location-text").textContent = job.summary.location;
 
-  // Updated class name to match HTML structure
-  document.querySelector(".requirements-texts").innerHTML = job.requirements; // Fixed class name here
-  document.querySelector(".requirements-listing ul").innerHTML = job.requirementsList
-    .map((req) => `<li>${req}</li>`)
-    .join("");
+    // Description
+    document.querySelector(".jobdetails-description .description-text").innerHTML = `
+        <p>${job.description.details}</p>
+    `;
 
-  document.querySelector(".tags-row").innerHTML = job.tags
-    .map((tag) => `<div class="tag-box">${tag}</div>`)
-    .join("");
+    // Responsibilities
+    document.querySelector(".jobdetails-responsibilities .reponsibilites-listing").textContent =
+        job.responsibilities.details;
 
-  document.querySelector("#jobtitle .joboverview-answer").innerText = job.jobTitle;
-  document.querySelector("#jobtype .joboverview-answer").innerText = job.jobType;
-  document.querySelector("#category .joboverview-answer").innerText = job.category;
-  document.querySelector("#experience .joboverview-answer").innerText = job.experience;
-  document.querySelector("#degree .joboverview-answer").innerText = job.degree;
-  document.querySelector("#gender .joboverview-answer").innerText = job.gender;
-  document.querySelector("#location .joboverview-answer").innerText = job.location;
+    // Requirements
+    const detailsContainer = document.querySelector("#requirements-details"); // For paragraph
+    const listContainer = document.querySelector("#requirements-list"); // For list items
 
-  document.querySelector("#map iframe").src = job.mapUrl;
-} else {
-  // If job not found, display a message or redirect
-  document.querySelector(".main-container").innerHTML = "<p>Job not found.</p>";
+    // Populate the paragraph
+    detailsContainer.textContent = job.requirements.details;
+
+    // Clear existing list items (if any) to avoid duplicates
+    listContainer.innerHTML = "";
+
+    // Populate the list
+    job.requirements.list.forEach(req => {
+        const listItem = document.createElement("li");
+        listItem.textContent = req;
+        listContainer.appendChild(listItem);
+    });
+
+    // Tags
+    const tagsContainer = document.querySelector(".jobdetails-tags .tags-row");
+    tagsContainer.innerHTML = "";
+    job.tags.forEach(tag => {
+        const tagBox = document.createElement("div");
+        tagBox.className = "tag-box";
+        tagBox.textContent = tag;
+        tagsContainer.appendChild(tagBox);
+    });
+
+    // Job Overview
+    document.querySelector("#jobtitle .joboverview-answer").textContent = job.overview.jobTitle;
+    document.querySelector("#jobtype .joboverview-answer").textContent = job.overview.jobType;
+    document.querySelector("#category .joboverview-answer").textContent = job.overview.category;
+    document.querySelector("#experience .joboverview-answer").textContent = job.overview.experience;
+    document.querySelector("#degree .joboverview-answer").textContent = job.overview.degree;
+    document.querySelector("#gender .joboverview-answer").textContent = job.overview.gender;
+    document.querySelector("#location .joboverview-answer").textContent = job.overview.location;
 }
+
+// Example: Populate details for job with ID 1
+document.addEventListener("DOMContentLoaded", () => {
+    const jobId = 1; // This can be dynamically set
+    const job = getJobById(jobId);
+    populateJobDetails(job);
+});
