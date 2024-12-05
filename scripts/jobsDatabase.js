@@ -176,5 +176,116 @@ const jobDatabase = [
       location: "Waldkirch",
       mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.104216248861!2d7.9494439!3d48.0889312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47911fcbe5168d7b%3A0xb85b8eeab595e5e3!2sSICK%20AG!5e0!3m2!1sen!2sde!4v1733427867597!5m2!1sen!2sde",
       },
+  },
+  {
+    id: 4,
+    postingTime: "1 hour ago",
+    company: {
+      name: "HUGO BOSS AG",
+      logo: "../images/Hugo_Boss.png",
+      },
+    summary: {
+      category: "IT",
+      jobType: "Internship",
+      location: "Metzingen",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>Our vision is to establish HUGO BOSS as the leading premium tech-driven fashion platform worldwide and to be one of the top 100 global brands. At HUGO BOSS, we work as a team to apply our knowledge, skills and experience together and create a diversity of ideas and solutions. What unites us? We love fashion, we change fashion!</p>
+      <p>At HUGO BOSS, you have the opportunity to contribute your personality, ideas and creativity — because only when we break new ground together can we create something unique. Become part of our team of more than 19.000 employees worldwide and shape your future at HUGO BOSS!</p>
+      <p>We are looking for an intern (m/f/d) for our global S/4 program consisting of several sub-projects from February 2025 for a period of 6 months. For efficient and targeted management of IT projects, global IT project management plays a central operational and strategic role within IT. It provides tools, methods, and processes to steer IT projects.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What you can expect:`,
+      list:[
+        "Support the IT program/project management in international and cross-functional projects with operational project management tasks.",
+        "Establish standards and methodologies in complex projects.",
+        "Participate in the creation and execution of analyses, presentations, and workshops.",
+        "The opportunity to make a noticeable contribution to the success of the project through your commitment and to participate in real problem-solving.",
+        "Comprehensive insights into the entire value chain of HUGO BOSS AG.",
+        "The chance to work in a team and develop in a communicative environment with initiative.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "You are pursuing a degree in business informatics, computer science, business administration, or a comparable field of study or have already successfully completed your studies.",
+        "Interest in project management, process management, and change management with initial experience (e.g., seminars, modules, or practical experience).",
+        "Sense of responsibility, organizational talent, and goal-oriented working style.",
+        "Good skills in problem and cause analysis and a solution-oriented approach.",
+        "Very good German language skills in spoken and written form as well as good English skills.",
+        ],
+      },
+    tags: ["Full time", "IT", "Metzingen", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Internship IT Project Management - Focus PMO (m/f/d)",
+      jobType: "Internship",
+      category: "IT",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Metzingen",
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5282.494726152205!2d9.2694031!3d48.5476538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799ecfd8112dec5%3A0xaf7f8f902f9bea2b!2sHUGO%20BOSS%20Headquarters!5e0!3m2!1sen!2sde!4v1733428643607!5m2!1sen!2sde",
+      },
+  },
+  {
+    id: 5,
+    postingTime: "4 hour ago",
+    company: {
+      name: "PORSCHE",
+      logo: "../images/Porsche.png",
+      },
+    summary: {
+      category: "IT",
+      jobType: "Working Student",
+      location: "Ludwigsburg",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>As working student (F/M/D) you will work as an integral part of an international and agile product team, which is responsible for the development of one of the core elements of Porsche's international web presence.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `Within the cross-functional team, which consists of UX designers, developers and content specialists, you will in close collaboration with your product owner:`,
+      list:[
+        "Drive the product vision",
+        "Derive new features from data and stakeholder requirements",
+        "Analyse product & feature-performance and derive optimization potential",
+        "Maintain and prioritize the product backlog",
+        "Optimize processes in and around the product team",
+        "Prepare management presentations",
+        "Prepare and follow up workshops including the translation of the findings into concrete to-do's",
+        "Act as a respected team member in a scaled agile system.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Are you enthusiastic, curious and think outside the box? Just because you've never done something it doesn’t mean you give up, but gets you excited to learn something new and broaden your horizon? Then you’re the right fit if you furthermore bring along the following:`,
+      list:[
+        "Matriculation at a college or university (basic studies completed)",
+        "First practical experience in the corporate environment beneficial",
+        "High degree of independence, proactivity, and flexibility",
+        "Excellent analytical and conceptual skills combined with a quick grasp of complex issues",
+        "Professional use of MS Office, especially PowerPoint and Excel",
+        "Proficient in English & German",
+        ],
+      },
+    tags: ["Full time", "IT", "Ludwigsburg", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Werkstudent/in | Working Student (F/M/D) Product Owner",
+      jobType: "Working Student",
+      category: "IT",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Ludwigsburg",
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.8721996638264!2d9.150257199999999!3d48.9178271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799da80ce5ea025%3A0x282d45223872c4ac!2sPorsche%20Pforte%20Werk%207!5e0!3m2!1sen!2sde!4v1733429318349!5m2!1sen!2sde",
+      },
   }
 ];
