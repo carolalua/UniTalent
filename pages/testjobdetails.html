@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details</title>
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-4605c815f1874757bc9ac33aa114fb0f.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-light.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/grid_layout.css">
+    <link rel="stylesheet" href="../styles/jobdetails.css">
+
+
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="sub-grid-jobdetails"> <!--Set grid 2 column for page-->
+        <!-- Left grid -->
+        <div class="jobdetails">
+          <!-- Job Header -->
+          <div class="jobdetails-header">
+            <div class="postingtime"></div>
+            <div class="company-info">
+              <div class="company-container">
+                <div class="company-logo">
+                  <img src="" alt="Company Logo">
+                </div>
+                <div class="company-name">
+                  <h3></h3>
+                </div>
+              </div>
+              <div class="summary-icons">
+                <div class="header-sum-icon" id="category-icon">
+                  <i class="fa-light fa-briefcase"></i>
+                </div>
+                <div class="header-sum-icon-text" id="category-text"></div>
+  
+                <div class="header-sum-icon" id="jobtype-icon">
+                  <i class="fa-sharp fa-light fa-clock"></i>
+                </div>
+                <div class="header-sum-icon-text" id="jobtype-text"></div>
+  
+                <div class="header-sum-icon" id="location-icon">
+                  <i class="fa-light fa-location-dot"></i>
+                </div>
+                <div class="header-sum-icon-text" id="location-text"></div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Job Description -->
+          <div class="jobdetails-description">
+            <div class="description-header">
+              <h4>Job Description</h4>
+            </div>
+            <div class="description-text"></div>
+          </div>
+  
+          <!-- Responsibilities -->
+          <div class="jobdetails-responsibilities">
+            <div class="responsibilities-header">
+              <h4>Key Responsibilities</h4>
+            </div>
+            <div class="reponsibilites-listing"></div>
+          </div>
+  
+          <!-- Requirements -->
+          <div class="jobdetails-requirements">
+            <div class="requirements-header">
+              <h4>Professional Requirements</h4>
+            </div>
+            <div class="requirements-listing">
+              <ul></ul>
+            </div>
+          </div>
+  
+          <!-- Tags -->
+          <div class="jobdetails-tags">
+            <div class="tags-header">
+              <h4>Tags: </h4>
+            </div>
+            <div class="tags-row"></div>
+          </div>
+        </div>
+  
+        <!-- Right grid -->
+        <div class="joboverview">
+          <div class="apply-button">Apply Job</div>
+          <div class="joboverview-container">
+            <div class="joboverview-header">Job Overview</div>
+  
+            <div class="joboverview-listing" id="jobtitle">
+              <div class="joboverview-logo">
+                <i class="fa-light fa-user"></i>
+              </div>
+              <div>
+                <div class="joboverview-question">Job Title</div>
+                <div class="joboverview-answer"></div>
+              </div>
+            </div>
+  
+            <div class="joboverview-listing" id="jobtype">
+              <div class="joboverview-logo">
+                <i class="fa-light fa-clock"></i>
+              </div>
+              <div>
+                <div class="joboverview-question">Job Type</div>
+                <div class="joboverview-answer"></div>
+              </div>
+            </div>
+  
+            <div class="joboverview-listing" id="category">
+              <div class="joboverview-logo">
+                <i class="fa-sharp fa-light fa-briefcase"></i>
+              </div>
+              <div>
+                <div class="joboverview-question">Category</div>
+                <div class="joboverview-answer"></div>
+              </div>
+            </div>
+  
+            <div class="joboverview-listing" id="experience">
+              <div class="joboverview-logo">
+                <i class="fa-sharp fa-light fa-award"></i>
+              </div>
+              <div>
+                <div class="joboverview-question">Experience</div>
+                <div class="joboverview-answer"></div>
+              </div>
+            </div>
+  
+            <div class="joboverview-listing" id="degree">
+              <div class="joboverview-logo">
+                <i class="fa-sharp fa-light fa-graduation-cap"></i>
+              </div>
+              <div>
+                <div class="joboverview-question">Degree</div>
+                <div class="joboverview-answer"></div>
+              </div>
+            </div>
+  
+            <div class="joboverview-listing" id="gender">
+              <div class="joboverview-logo">
+                <i class="fa-light fa-transgender"></i>
+              </div>
+              <div>
+                <div class="joboverview-question">Gender</div>
+                <div class="joboverview-answer"></div>
+              </div>
+            </div>
+  
+            <div class="joboverview-listing" id="location">
+              <div class="joboverview-logo">
+                <i class="fa-light fa-location-dot"></i>
+              </div>
+              <div>
+                <div class="joboverview-question">Location</div>
+                <div class="joboverview-answer"></div>
+              </div>
+            </div>
+  
+            <div class="joboverview-map" id="map">
+              <iframe
+                src=""
+                width="100%"
+                height="250"
+                style="border:1px solid grey; border-radius: 20px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Include the job database and job details script -->
+    <script src="/scripts/jobsDatabase.js"></script>
+    <script src="/scripts/jobDetails.js"></script>
+</body>
+
+
+</html>

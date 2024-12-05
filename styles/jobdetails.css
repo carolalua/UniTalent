@@ -186,3 +186,17 @@ h4 {
 .joboverview-map {
   width: 100%;
 }
+
+
+/* Remove the default bullet points for the list */
+.requirements-listing ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+.requirements-listing li {
+  margin-bottom: 10px;
+}
+.requirements-listing i {
+  color: var(--text-orange);
+  margin-right: 8px;
+}
