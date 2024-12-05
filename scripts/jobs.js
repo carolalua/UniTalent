@@ -32,13 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
       `;
       jobListing.appendChild(jobListingMiddle);
 
-
-      // Function to navigate to job details page
-      function showJobDetails(job) {
-        // Redirect to job display page with the job ID as a query parameter
-        window.location.href = `./pages/jobdisplay.html?id=${job.id}`;
-      }
-
       // Job listing bottom (details and button)
       const jobListingBottom = document.createElement("div");
       jobListingBottom.className = "job-listing-bottom";
@@ -53,9 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
       `;
       jobListingBottom.appendChild(jobDetailItems);
 
-
-
-
       // Action button
       const actionButton = document.createElement("div");
       actionButton.className = "action-button";
@@ -63,8 +53,9 @@ document.addEventListener("DOMContentLoaded", function() {
       detailsButton.className = "p3";
       detailsButton.textContent = "Job Details";
       detailsButton.addEventListener("click", () => {
-          // Redirect to the job details page with the job ID
-          window.location.href = `./jobdisplay.html?id=${job.id}`;
+          // Open the job details page in a new tab with the job ID and encoded title
+          const jobTitleEncoded = encodeURIComponent(job.overview.jobTitle);
+          window.open(`./jobdisplay.html?id=${job.id}&title=${jobTitleEncoded}`, '_blank');
       });
       actionButton.appendChild(detailsButton);
       jobListingBottom.appendChild(actionButton);
@@ -75,8 +66,3 @@ document.addEventListener("DOMContentLoaded", function() {
       jobListingsContainer.appendChild(jobListing);
   });
 });
-
-// Function to show job details (example: show an alert or redirect to a detailed page)
-function showJobDetails(job) {
-  alert(`Job Title: ${job.overview.jobTitle}\nCompany: ${job.company.name}\nLocation: ${job.summary.location}`);
-}

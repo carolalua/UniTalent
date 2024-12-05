@@ -14,6 +14,20 @@
     <link rel="stylesheet" href="../styles/general.css">
     <link rel="stylesheet" href="../styles/grid_layout.css">
     <link rel="stylesheet" href="../styles/jobdetails.css">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          // Parse query parameters from URL
+          const params = new URLSearchParams(window.location.search);
+  
+          // Get the job title from the query string
+          const jobTitle = params.get("title");
+  
+          // Set the page title dynamically
+          if (jobTitle) {
+              document.title = `UniTalent: ${decodeURIComponent(jobTitle)}`;
+          }
+      });
+  </script>
   </head>
   <body>
     <!-- full page container -->
@@ -255,6 +269,7 @@
       <!-- Include the job database and job details script -->
       <script src="../scripts/jobsDatabase.js"></script>
       <script src="../scripts/jobDetails.js"></script>
+      
 
     </div>
 </body>
