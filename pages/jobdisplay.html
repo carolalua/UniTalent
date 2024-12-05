@@ -16,18 +16,30 @@
     <link rel="stylesheet" href="../styles/jobdetails.css">
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-          // Parse query parameters from URL
+          // Parse the query parameters from the URL
           const params = new URLSearchParams(window.location.search);
+          const jobId = params.get("id");
   
-          // Get the job title from the query string
-          const jobTitle = params.get("title");
+          // Ensure the jobDatabase is loaded
+          if (jobId) {
+              // Find the job in the database by its ID
+              const job = jobDatabase.find(job => job.id === parseInt(jobId, 10));
   
-          // Set the page title dynamically
-          if (jobTitle) {
-              document.title = `UniTalent: ${decodeURIComponent(jobTitle)}`;
+              // If the job is found, set the page title
+              if (job) {
+                  document.title = `UniTalent: ${job.overview.jobTitle}`;
+              } else {
+                  // Handle the case where the job is not found
+                  document.title = "UniTalent: Job Not Found";
+                  console.error("Job not found for ID:", jobId);
+              }
+          } else {
+              // Handle the case where no ID is provided
+              document.title = "UniTalent: Invalid Job";
+              console.error("No job ID provided in the URL.");
           }
       });
-  </script>
+    </script>
   </head>
   <body>
     <!-- full page container -->

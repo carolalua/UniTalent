@@ -53,9 +53,8 @@ document.addEventListener("DOMContentLoaded", function() {
       detailsButton.className = "p3";
       detailsButton.textContent = "Job Details";
       detailsButton.addEventListener("click", () => {
-          // Open the job details page in a new tab with the job ID and encoded title
-          const jobTitleEncoded = encodeURIComponent(job.overview.jobTitle);
-          window.open(`./jobdisplay.html?id=${job.id}&title=${jobTitleEncoded}`, '_blank');
+          // Open the job details page in a new tab with only the job ID in the URL
+          window.open(`./jobdisplay.html?id=${job.id}`, '_blank');
       });
       actionButton.appendChild(detailsButton);
       jobListingBottom.appendChild(actionButton);
