@@ -31,7 +31,7 @@ document.getElementById('register-company').addEventListener('submit', function(
         telephoneCompany, street, logo, houseNumber, vatNumber, website, password};
     companies.push(newCompany);
 
-    localStorage.setItem('users', JSON.stringify(users));
+    localStorage.setItem('companies', JSON.stringify(companies));
 
     window.location.href = './login_employer.html';
 });

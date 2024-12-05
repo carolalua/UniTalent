@@ -5,10 +5,10 @@ document.getElementById('login-company').addEventListener('submit', function(e) 
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    const user = users.find(user => user.email === email && user.password === password);
+    const company = companies.find(company => company.contactEmail === email && company.password === password);
 
-    if (user) {
-        localStorage.setItem('loggedInUser', user.email);
+    if (company) {
+        localStorage.setItem('loggedInUser', company.contactPerson);
         localStorage.setItem('userType', 'company');
         window.location.href = '../index.html';
     } else {

@@ -70,20 +70,20 @@
           </p>
           <div class="register-card">
             <h2 class="register-title">Register for Students</h2>
-              <form class="register-form">
+              <form id="register-student" class="register-form">
                 <div class="form-row">
                   <div class="form-group">
                     <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" placeholder="Your name">
+                    <input type="text" id="first-name" placeholder="Your name" required>
                   </div>
                   <div class="form-group">
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" placeholder="Your last name">
+                    <input type="text" id="last-name" placeholder="Your last name" required>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="email">Email Address</label>
-                  <input type="email" id="email" placeholder="Your E-mail address">
+                  <input type="email" id="email" placeholder="Your E-mail address" required>
                 </div>
                 <div class="form-group">
                     <label for="phone">Telephone</label>
@@ -91,11 +91,11 @@
                 </div>
                 <div class="form-group">
                   <label for="password">Password</label>
-                  <input type="password" id="password" placeholder="Your Password">
+                  <input type="password" id="password" placeholder="Your Password" required>
                 </div>
                 <div class="form-group">
                   <label for="confirm-password">Confirm Password</label>
-                  <input type="password" id="confirm-password" placeholder="Confirm your password">
+                  <input type="password" id="confirm-password" placeholder="Confirm your password" required>
                 </div>
                 <button type="submit" class="btn-register">Register</button>
               </form>          
@@ -141,6 +141,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/intlTelInput.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
-    <script src="../scripts/script.js"></script>
+    <script src="../scripts/register_student.js"></script>
   </body>
 </html>
