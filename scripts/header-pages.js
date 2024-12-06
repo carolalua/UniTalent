@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (event.target && event.target.id === 'logout-link') {
           localStorage.removeItem('userType');
           localStorage.removeItem('loggedInUser');
+          localStorage.removeItem('userEmail');
       }
     });
 });

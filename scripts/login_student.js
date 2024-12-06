@@ -10,6 +10,7 @@ document.getElementById('login-student').addEventListener('submit', function(e) 
     if (user) {
         localStorage.setItem('loggedInUser', user.firstName);
         localStorage.setItem('userType', 'student');
+        localStorage.setItem('userEmail', user.email);
         window.location.href = '../index.html';
     } else {
         alert('Invalid username or password');
