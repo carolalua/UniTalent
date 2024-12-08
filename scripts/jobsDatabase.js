@@ -287,5 +287,273 @@ const jobDatabase = [
       location: "Ludwigsburg",
       mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.8721996638264!2d9.150257199999999!3d48.9178271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799da80ce5ea025%3A0x282d45223872c4ac!2sPorsche%20Pforte%20Werk%207!5e0!3m2!1sen!2sde!4v1733429318349!5m2!1sen!2sde",
       },
-  }
+  },
+  {
+    id: 6,
+    postingTime: "2 hours ago",
+    company: {
+      name: "Inkitt",
+      logo: "../images/Hugo_Boss.png",
+      },
+    summary: {
+      category: "Administration",
+      jobType: "Internship",
+      location: "Berlin",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>Inkitt is building the Disney of the 21st Century, standing at the forefront of technology and entertainment. Leveraging AI and predictive algorithms, Inkitt discovers unknown stories and turns them into blockbuster hits, producing a new $1M ebook every 4 weeks and selling directly to consumers through its Galatea app.</p>
+      <p>Inkitt has become the 11th most bestseller-generating publisher in the world, boasting a 40x higher hit-rate than traditional publishers. Recently raising a Series C and backed by some of the top VC’s such as: Khosla, Kleiner Perkins, and NEA Ventures, our recent expansion into GalateaTV is only the beginning of our journey to becoming the next-gen entertainment powerhouse.</p>
+      <p>We are now looking for an Office Assistant (m/f/d) on a mini-job basis (10 hours/week) or as a working student (15 hours/week).</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "Organize office supplies and maintain stock levels to keep the office well-equipped.",
+        "Oversee office meal management, including coordinating daily meal orders and ensuring efficient meal setup for a positive office experience.",
+        "Coordinate snacks, drinks orders, and assist with meal provider logistics to support a positive office environment.",
+        "Assist with budget forecasting, budget management, and manage invoice processing for efficient financial operations.",
+        "Assist in organizing larger office events and managing vendor relationships to ensure seamless event experiences.",
+        "Provide general administrative support, including document preparation, managing incoming requests, and vendor communications.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "Excellent organizational skills and a keen attention to detail.",
+        "Strong ability to work independently, with a proactive approach to solving office-related challenges.",
+        "Outstanding communication skills, both written and verbal, in English.",
+        "Quick comprehension, an independent working style, and a goal-oriented mindset.",
+        "Self-driven and proactive, with a strong ability to bring solutions rather than problems.",
+        ],
+      },
+    tags: ["Part-Time", "Administration", "Berlin", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Office Assistant - Working Student / Mini Job (m/f/d)",
+      jobType: "Internship",
+      category: "Administration",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Berlin",
+      mapUrl: "https://www.google.com/maps/place/Inkitt+GmbH/@52.5289433,13.4131782,17z/data=!3m2!4b1!5s0x47a84e1cf23aae2d:0xd19b3cb427e149cf!4m6!3m5!1s0x47a8504aac6e564f:0xe1b0e245b7d2e423!8m2!3d52.5289401!4d13.4157531!16s%2Fg%2F11crzx_llb?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 7,
+    postingTime: "1 hour ago",
+    company: {
+      name: "Obton",
+      logo: "../images/Hugo_Boss.png",
+      },
+    summary: {
+      category: "Administration",
+      jobType: "Internship",
+      location: "Hamburg",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>Are you pursuing your Bachelor’s or Master’s degree and eager to make an impact in the renewable energy sector? Do you thrive in a dynamic, international environment and enjoy taking on new challenges?</p>
+      <p>If so, join Obton Germany as a Student Assistant (Werkstudent) and help shape the future of renewable energy.</p>
+      <p>As a Student Assistant at our Hamburg office, you will work closely with our Asset Management team to support a portfolio of German PV and BESS projects. This role offers a unique opportunity to develop hands-on experience in renewable energy asset management while contributing to critical operational processes.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "Organizing and maintaining document management systems.",
+        "Handling internal workflows and ensuring compliance with standard procedures.",
+        "Updating and managing data in Obton’s internal management system.",
+        "Overseeing practical office tasks, such as managing office supplies and logistics.",
+        "Handling incoming and outgoing mail (including group email addresses).",
+        "Supporting colleagues with ad-hoc administrative and operational tasks.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "Have a “can-do” attitude and a strong sense of ownership.",
+        "Eager to learn and understand complex systems.",
+        "Excellent communication skills and enjoy collaborating in an international context.",
+        "Comfortable balancing routine tasks with independent initiatives.",
+        "Continuously seek ways to improve processes and challenge the status quo.",
+        ],
+      },
+    tags: ["Part-Time", "Administration", "Hamburg", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Student Assistant",
+      jobType: "Internship",
+      category: "Administration",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Hamburg",
+      mapUrl: "https://www.google.com/maps/place/Obton/@51.5007501,7.1053877,17z/data=!3m1!4b1!4m6!3m5!1s0x47b8e719c47a4d59:0x2c9c860d7c928e14!8m2!3d51.5007468!4d7.1079626!16s%2Fg%2F11vx6qhzff?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 8,
+    postingTime: "40 minutes ago",
+    company: {
+      name: "Boston Consulting Group",
+      logo: "../images/Hugo_Boss.png",
+      },
+    summary: {
+      category: "Administration",
+      jobType: "Internship",
+      location: "Düsseldorf",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>Our strategy? To be anything but typical strategy consultants! Our unconventional nature is embedded deep in our DNA. Sixty years ago, BCG shook up the world of strategy consulting. Now, it has grown to become one of the world leaders in the field. How do we manage to stay ahead of the pack? The answer is simple: by reinventing ourselves every day and providing a home with diverse career opportunities to the best talent and most creative minds all over the world.</p>
+      <p>And by giving you the chance to make an impact in business and society. BCG stands for authenticity, exceptional work, and strong integrity. Once you’ve become part of the Group, we’ll help you find your path, unleash your potential, effect change, and advance the world.</p>
+      <p>As a Working Student on our Copy Center & Internal Services Team, you will be an important point of contact for our employees, actively helping to ensure that day-to-day office life runs smoothly. Service-oriented and reliable, you will handle printing and copy requests, duplicate and bind presentations, and ensure that our offices are stocked with the supplies they need. You’ll also capably maintain databases and Excel lists and carry out minor research independently. Finally, you’ll support any office maintenance activities that arise in day-to-day operations.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "You’ll be part of a small team, but work with many people and have numerous connections to different departments in the Düsseldorf office.",
+        "As an important point of contact at BCG, you are always reliable and polite.",
+        "You have good organizational skills and attention to detail, and you enjoy working in a service role.",
+        "You are highly flexible and think independently.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "You are studying for a bachelor's or master's degree (with at least two years of study remaining at your start date and no mandatory internships planned).",
+        "You communicate competently and professionally in German and English and work proficiently with the MS Office programs.",
+        "You’re known for your organizational talent and conscientious work style.",
+        ],
+      },
+    tags: ["Part-Time", "Administration", "Hamburg", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Working Student—Copy Center & Internal Services Team",
+      jobType: "Internship",
+      category: "Administration",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Düsseldorf",
+      mapUrl: "https://www.google.com/maps/place/Boston+Consulting+Group/@51.2266049,6.7771161,17z/data=!3m1!4b1!4m6!3m5!1s0x4171beb8c2314c81:0x25546bd43be74743!8m2!3d51.2266016!4d6.779691!16s%2Fg%2F11b729n_2g?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 9,
+    postingTime: "59 minutes ago",
+    company: {
+      name: "Canon Production Printing",
+      logo: "../images/Hugo_Boss.png",
+      },
+    summary: {
+      category: "Administration",
+      jobType: "Internship",
+      location: "Germany",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>For our teams within Research and Development we are looking for working students (m/f/d) to support us with immediate effect.</p>
+      <p>To be successful in this task, you will be coached by our experienced engineering team.</p>
+      <p>As a Student Assistant you will have a challenging, interesting and responsible task at a future-oriented and international workplace.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "You will support your team in the area of testing/developing new high-performance printing systems.",
+        "After being trained by your mentor, you will understand the development/test objectives, plan tests/trials and carry them out",
+        "Independently apply test/measurement methods, evaluate (measurement) results and interpret them",
+        "Supervision of smaller projects may also be part of your tasks",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "You are studying chemistry, electrical engineering, computer science, mechatronics, mechanical engineering, physical engineering, physics or a comparable, technical degree program",
+        "You are committed, show initiative, innovative thinking and possess analytical skills.",
+        "You are a team player with strong communication skills.",
+        "Independent and careful work is a matter of course for you.",
+        "Your good written and spoken English skills complete your profile.",
+        ],
+      },
+    tags: ["Part-Time", "Administration", "Germany", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Working Student (m/f/d) as Development Assistant",
+      jobType: "Internship",
+      category: "Administration",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Germany",
+      mapUrl: "https://www.google.com/maps/place/Canon+Production+Printing/@48.1684715,11.7980289,17z/data=!3m1!5s0x479e0914c157b6af:0xda06b47ae7fc2788!4m14!1m7!3m6!1s0x410903da2f6f2cc3:0x897e93a5a10ff51a!2sCanon+Germany+GmbH!8m2!3d48.168468!4d11.8006038!16s%2Fg%2F1ptw82jjb!3m5!1s0x479e0914ea4cd74f:0x43724ed9b2284089!8m2!3d48.1680775!4d11.8012503!16s%2Fg%2F1tfd1cyv?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 10,
+    postingTime: "35 minutes ago",
+    company: {
+      name: "MBition GmbH",
+      logo: "../images/Hugo_Boss.png",
+      },
+    summary: {
+      category: "Administration",
+      jobType: "Internship",
+      location: "Berlin",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>A chance to work on a new generation of Infotainment Systems, which will power millions of cars.</p>
+      <p>An international, interdisciplinary software hub, which is part of Mercedes Benz AG.</p>
+      <p>Agile working methods and open feedback culture.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "As a Working Student for Mercedes-Benz Voice Assistant NLU Analysis, you will be part of a cross-functional support team that provides internal customer-facing development teams with empirical insights about the interactions between the MBUX Voice Assistant in Mercedes-Benz cars and its users.",
+        "You will be embedded in a team with backgrounds mainly in the areas of Data Analytics, Data Engineering and Test Automation and will interact with people in other teams working on Voice Interaction Design and Product Management.",
+        "Your main focus areas will be the analysis and annotation of natural language corpora as well as the co-creation and co-refinement of annotation schemas.",
+        "Occasionally, we might also need your assistance in interactively testing the actual system or assisting with user research.",
+        "By working on these topics, you gain practical experiences in topics you’re learning in your studies and have real impact on the user experience in Mercedes-Benz cars.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "Currently enrolled in a Bachelor’s or Master’s program in Computational Linguistics, Corpus Linguistics, or a comparable qualification.",
+        "It is mandatory to be enrolled in a university for the whole employment time.",
+        "Excellent communication skills and enjoy collaborating in an international context.",
+        "Near-native language proficiency in German and English",
+        "Experience with conversational systems/voice technology and experience in annotating natural language corpora.",
+        ],
+      },
+    tags: ["Part-Time", "Administration", "Berlin", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Working Student – Mercedes-Benz Voice Assistant NLU Analysis (all genders)",
+      jobType: "Internship",
+      category: "Administration",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Berlin",
+      mapUrl: "https://www.google.com/maps/place/MBition+GmbH/@52.5199464,13.3169431,17z/data=!3m2!4b1!5s0x47a85119e191863f:0x319329b0b39086c5!4m6!3m5!1s0x47a851d0e1d06b77:0xb539082293932cdc!8m2!3d52.5199432!4d13.319518!16s%2Fg%2F11fzf4hxzl?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
 ];
