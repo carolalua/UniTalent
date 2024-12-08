@@ -561,7 +561,7 @@ const jobDatabase = [
     postingTime: "5 hours ago",
     company: {
       name: "VeeCollective GmbH",
-      logo: "../images/MBition.png",
+      logo: "../images/VeeCollective.png",
       },
     summary: {
       category: "Commerce",
@@ -614,7 +614,7 @@ const jobDatabase = [
     postingTime: "2 hours ago",
     company: {
       name: "LionsHome GmbH",
-      logo: "../images/MBition.png",
+      logo: "../images/Lionshome.png",
       },
     summary: {
       category: "Commerce",
@@ -667,7 +667,7 @@ const jobDatabase = [
     postingTime: "3 hours ago",
     company: {
       name: "Hive Technologies GmbH",
-      logo: "../images/MBition.png",
+      logo: "../images/Hive.png",
       },
     summary: {
       category: "Commerce",
@@ -720,7 +720,7 @@ const jobDatabase = [
     postingTime: "2 hours ago",
     company: {
       name: "home24 SE",
-      logo: "../images/MBition.png",
+      logo: "../images/Home24.png",
       },
     summary: {
       category: "Commerce",
@@ -773,7 +773,7 @@ const jobDatabase = [
     postingTime: "1 hour ago",
     company: {
       name: "Amazon Deutschland Services GmbH",
-      logo: "../images/MBition.png",
+      logo: "../images/Amazon.png",
       },
     summary: {
       category: "Commerce",
