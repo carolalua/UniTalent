@@ -293,7 +293,7 @@ const jobDatabase = [
     postingTime: "2 hours ago",
     company: {
       name: "Inkitt",
-      logo: "../images/Hugo_Boss.png",
+      logo: "../images/Inkitt.png",
       },
     summary: {
       category: "Administration",
@@ -348,7 +348,7 @@ const jobDatabase = [
     postingTime: "1 hour ago",
     company: {
       name: "Obton",
-      logo: "../images/Hugo_Boss.png",
+      logo: "../images/Obton.png",
       },
     summary: {
       category: "Administration",
@@ -403,7 +403,7 @@ const jobDatabase = [
     postingTime: "40 minutes ago",
     company: {
       name: "Boston Consulting Group",
-      logo: "../images/Hugo_Boss.png",
+      logo: "../images/BCG.png",
       },
     summary: {
       category: "Administration",
@@ -454,7 +454,7 @@ const jobDatabase = [
     postingTime: "59 minutes ago",
     company: {
       name: "Canon Production Printing",
-      logo: "../images/Hugo_Boss.png",
+      logo: "../images/Canon.png",
       },
     summary: {
       category: "Administration",
@@ -507,7 +507,7 @@ const jobDatabase = [
     postingTime: "35 minutes ago",
     company: {
       name: "MBition GmbH",
-      logo: "../images/Hugo_Boss.png",
+      logo: "../images/MBition.png",
       },
     summary: {
       category: "Administration",
