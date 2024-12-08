@@ -556,4 +556,266 @@ const jobDatabase = [
       mapUrl: "https://www.google.com/maps/place/MBition+GmbH/@52.5199464,13.3169431,17z/data=!3m2!4b1!5s0x47a85119e191863f:0x319329b0b39086c5!4m6!3m5!1s0x47a851d0e1d06b77:0xb539082293932cdc!8m2!3d52.5199432!4d13.319518!16s%2Fg%2F11fzf4hxzl?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
       },
   },
+  {
+    id: 11,
+    postingTime: "5 hours ago",
+    company: {
+      name: "VeeCollective GmbH",
+      logo: "../images/MBition.png",
+      },
+    summary: {
+      category: "Commerce",
+      jobType: "Internship",
+      location: "Berlin",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>This is a mandatory internship and only intended for students.</p>
+      <p>Applications from people who are currently not studying and/or not looking for a compulsory internship will not be considered.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "With a focus on marketing, you will extensively support the team in areas such as sales, e-commerce, and office management",
+        "Assist in developing and implementing marketing concepts across all our channels.",
+        "Assist in identifying and collaborating with influencers to create content and promote brand visibility and contribute to the team by effectively supporting order management.",
+        "Support the Store Manager in ensuring smooth operations for our sales activities in the store.",
+        "Support our content creator with content production and conduct market analysis and report on trends.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "Currently studying or recently completed studies in marketing, fashion management, or a related field.",
+        "Available for at least 4-6 months (longer internships are accepted) as part of a mandatory internship.",
+        "Strong passion for fashion and lifestyle topics, with an awareness and sense of international trends and brands.",
+        "Organizational talent with an independent and structured way of working",
+        "Excellent communication skills, both verbal and written in English, German is also preferred.",
+        ],
+      },
+    tags: ["Part-Time", "Commerce", "Berlin", "Corporate", "Location"],
+    overview: {
+      jobTitle: "MARKETING INTERNSHIP",
+      jobType: "Internship",
+      category: "Commerce",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Berlin",
+      mapUrl: "https://www.google.com/maps/place/VEE+COLLECTIVE/@52.527633,13.3969518,17z/data=!3m1!4b1!4m6!3m5!1s0x47a8514de91280ff:0xc589daf04225305a!8m2!3d52.5276298!4d13.3995267!16s%2Fg%2F11rglrb2sb?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 12,
+    postingTime: "2 hours ago",
+    company: {
+      name: "LionsHome GmbH",
+      logo: "../images/MBition.png",
+      },
+    summary: {
+      category: "Commerce",
+      jobType: "Internship",
+      location: "Berlin",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>We are looking for a full-time intern (40h/week) for our business development in the UK market who is an ENGLISH NATIVE SPEAKER and would be available for at least 3 months.</p>
+      <p>You would work in our beautiful startup loft in Mitte at Hackescher Markt in the heart of Berlin.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "You will be responsible for the sales in the UK market in close coordination with the management.",
+        "You will be responsible for cold-calling potential partners to pitch a collaboration that best fits their needs.",
+        "You will be responsible for managing relationships with current customers.",
+        "Independent research for suitable cooperation partners.",
+        "You will learn and work with important key tools in online marketing.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "Native level of English.",
+        "You are an enrolled student at any university (mandatory requirement).",
+        "You can work in a structured and result-oriented way.",
+        "You are an excellent communicator, both verbal and written.",
+        "You are willing to work in an International work environment and you are willing to learn the e-commerce world.",
+        ],
+      },
+    tags: ["Part-Time", "Commerce", "Berlin", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Internship Business Development & Sales UK Native English speaker",
+      jobType: "Internship",
+      category: "Commerce",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Berlin",
+      mapUrl: "https://www.google.com/maps/place/LionsHome+GmbH/@52.5255704,13.3991155,17z/data=!3m2!4b1!5s0x47a851e13433da01:0xed553a63a2048568!4m6!3m5!1s0x47a851e134366839:0xae01b8852983149b!8m2!3d52.5255672!4d13.4016904!16s%2Fg%2F11f__jk7s7?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 13,
+    postingTime: "3 hours ago",
+    company: {
+      name: "Hive Technologies GmbH",
+      logo: "../images/MBition.png",
+      },
+    summary: {
+      category: "Commerce",
+      jobType: "Internship",
+      location: "Berlin",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>Ever wonder what happens behind the scenes after you click ‘Buy Now’?</p>
+      <p>As an Operations Intern at Hive, you will get an insider’s view on the most dynamic parts of e-commerce logistics, where every day brings new challenges, fast-paced problem-solving, and a chance to shape the future of fulfillment.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "Be part of the largest and most challenging projects contributing to Hive’s growth across new customer segments and business verticals.",
+        "Work closely with our partner manager on both day-to-day operations and strategic planning, gaining insights into the decisions that help us grow and improve our fulfillment center network.",
+        "Collaborate with our fulfillment partners both on-site and remotely, assisting in resolving operational challenges.",
+        "Measure the performance of our fulfillment sites & suggest improvement points to our operational KPIs and metrics (e.g. throughput, punctuality)",
+        "Become an essential part of the Hive Operations team by working closely with the Head of Fulfillment and Expansion, alongside stakeholders and teams across the organization.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "Interest in logistics and ready to dive into the fast-paced world of a VC-backed startup, helping to shape the future of e-commerce operations.",
+        "Natural problem-solver, ready to roll up your sleeves and hit the ground running with exciting expansion projects.",
+        "Eager to work with Hive’s proprietary WMS (Warehouse Management System) and other cutting-edge software at the pulse of logistics & e-commerce trends.",
+        "You want to join as a working student for ca. 20 hours/week or for a full-time internship for 5-6 months.",
+        "You are business fluent in English (bonus points if you speak German/ Polish!), with strong communication skills to rally internal and external teams.",
+        ],
+      },
+    tags: ["Part-Time", "Commerce", "Berlin", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Operations Intern (Expansion) (f/m/d)",
+      jobType: "Internship",
+      category: "Commerce",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Berlin",
+      mapUrl: "https://www.google.com/maps/place/Hive+Technologies+GmbH+HQ/@52.5213132,13.4028851,17z/data=!3m1!4b1!4m6!3m5!1s0x47a8510eeaffc8b3:0xd29744ecb100f639!8m2!3d52.52131!4d13.40546!16s%2Fg%2F11j6y7t_y3?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 14,
+    postingTime: "2 hours ago",
+    company: {
+      name: "home24 SE",
+      logo: "../images/MBition.png",
+      },
+    summary: {
+      category: "Commerce",
+      jobType: "Internship",
+      location: "Berlin",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>We are home24, a leading home & living e-commerce platform in continental Europe and Brazil. We are currently active in eight countries. Over 1,000 Homies work together towards a common goal: to create happy homes for everyone and every budget.</p>
+      <p>At home24, we strive to deliver a superior assortment of products and the best service. To do this, we need fresh ideas, 100% motivation, and dedication to our company mission. We always have a space at our table for service-minded individuals who are passionate about digitization and modern living.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "You plan, coordinate, and execute CRM campaigns (e-mail & app marketing).",
+        "You assist in the optimization of our overall CRM activities.",
+        "You analyze and monitor the performance of CRM activities and set up new reports.",
+        "You support the coordination between other marketing channels, art direction, and content teams.",
+        "You have the chance to gain insights into different leading tools like Emarsys, Tableau, Dynamic Yield, and Google Analytics.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "You are currently an enrolled student in business administration or a related, relevant field and must complete an internship for your studies.",
+        "You feel responsible for the quality of your work and you always try to find practical solutions.",
+        "Working analytically and process-oriented with a strong attention to detail come naturally to you.",
+        "You have a passion for digital marketing and e-commerce and you are comfortable with managing multiple campaigns and projects with creativity and organization.",
+        "You are fluent in English (German is a plus).",
+        ],
+      },
+    tags: ["Part-Time", "Commerce", "Berlin", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Mandatory Intern - Online Marketing CRM (m/f/d)",
+      jobType: "Internship",
+      category: "Commerce",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Berlin",
+      mapUrl: "https://www.google.com/maps/place/home24+Showroom+-+Berlin+Prenzlauer+Berg/@52.5272915,13.4526736,17z/data=!3m1!4b1!4m6!3m5!1s0x47a851db2f8a90d9:0x8701be09518a9478!8m2!3d52.5272883!4d13.4552485!16s%2Fg%2F11gzbd77c?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 15,
+    postingTime: "1 hour ago",
+    company: {
+      name: "Amazon Deutschland Services GmbH",
+      logo: "../images/MBition.png",
+      },
+    summary: {
+      category: "Commerce",
+      jobType: "Internship",
+      location: "Berlin",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <pOur primary purpose is to make our customer´s lives easier. You will contribute to that purpose by conducting data analysis and deep dives to generate insights into system behavior, on top of identifying performance gaps and improvement potentials for Amazon's most strategic brands.</p>
+      <p>How often can you say that your work changes the world? At Amazon, you’ll say it often. Join us and define tomorrow’s innovations in e-commerce.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "Work alongside a Vendor Manager to help provide a suite of services designed to maximize business performance and grow sales. Vendor Managers build relationships with Amazon Retail Vendors who sell products wholesale to Amazon and are one of our key business partners in the Retail organization.",
+        "Support in the definition, conceptualization, implementation, and growth of strategic programs and products aiming at digitizing the procurement landscape.",
+        "Dive deep into large data sets to analyze trends, identify new customer insights, and turn these insights into action.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "You should then be available between 3 and up to 6 months, full-time (40h/week). Internship length is subject to availability.",
+        "Pursuing a Bachelor’s or Master’s Degree, with an anticipated graduation date after the completion of your internship.",
+        "Fluent written and verbal communication in English (Level - C1 or higher).",
+        "You will be based in Berlin for the duration of the internship. A relocation package may be offered, subject to an eligibility criterion.",
+        ],
+      },
+    tags: ["Part-Time", "Commerce", "Berlin", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Program/Product Manager Intern",
+      jobType: "Internship",
+      category: "Commerce",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Berlin",
+      mapUrl: "https://www.google.com/maps/place/Amazon+DBE2/@52.4354645,13.3713444,17z/data=!3m1!4b1!4m6!3m5!1s0x47a845c8cd1e4113:0x47037c39b318bf64!8m2!3d52.4354613!4d13.3739193!16s%2Fg%2F11gjhfq0w1?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
 ];
