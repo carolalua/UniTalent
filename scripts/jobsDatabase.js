@@ -287,5 +287,535 @@ const jobDatabase = [
       location: "Ludwigsburg",
       mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.8721996638264!2d9.150257199999999!3d48.9178271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799da80ce5ea025%3A0x282d45223872c4ac!2sPorsche%20Pforte%20Werk%207!5e0!3m2!1sen!2sde!4v1733429318349!5m2!1sen!2sde",
       },
-  }
+  },
+  {
+    id: 6,
+    postingTime: "2 hours ago",
+    company: {
+      name: "Inkitt",
+      logo: "../images/Inkitt.png",
+      },
+    summary: {
+      category: "Administration",
+      jobType: "Internship",
+      location: "Berlin",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>Inkitt is building the Disney of the 21st Century, standing at the forefront of technology and entertainment. Leveraging AI and predictive algorithms, Inkitt discovers unknown stories and turns them into blockbuster hits, producing a new $1M ebook every 4 weeks and selling directly to consumers through its Galatea app.</p>
+      <p>Inkitt has become the 11th most bestseller-generating publisher in the world, boasting a 40x higher hit-rate than traditional publishers. Recently raising a Series C and backed by some of the top VC’s such as: Khosla, Kleiner Perkins, and NEA Ventures, our recent expansion into GalateaTV is only the beginning of our journey to becoming the next-gen entertainment powerhouse.</p>
+      <p>We are now looking for an Office Assistant (m/f/d) on a mini-job basis (10 hours/week) or as a working student (15 hours/week).</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "Organize office supplies and maintain stock levels to keep the office well-equipped.",
+        "Oversee office meal management, including coordinating daily meal orders and ensuring efficient meal setup for a positive office experience.",
+        "Coordinate snacks, drinks orders, and assist with meal provider logistics to support a positive office environment.",
+        "Assist with budget forecasting, budget management, and manage invoice processing for efficient financial operations.",
+        "Assist in organizing larger office events and managing vendor relationships to ensure seamless event experiences.",
+        "Provide general administrative support, including document preparation, managing incoming requests, and vendor communications.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "Excellent organizational skills and a keen attention to detail.",
+        "Strong ability to work independently, with a proactive approach to solving office-related challenges.",
+        "Outstanding communication skills, both written and verbal, in English.",
+        "Quick comprehension, an independent working style, and a goal-oriented mindset.",
+        "Self-driven and proactive, with a strong ability to bring solutions rather than problems.",
+        ],
+      },
+    tags: ["Part-Time", "Administration", "Berlin", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Office Assistant - Working Student / Mini Job (m/f/d)",
+      jobType: "Internship",
+      category: "Administration",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Berlin",
+      mapUrl: "https://www.google.com/maps/place/Inkitt+GmbH/@52.5289433,13.4131782,17z/data=!3m2!4b1!5s0x47a84e1cf23aae2d:0xd19b3cb427e149cf!4m6!3m5!1s0x47a8504aac6e564f:0xe1b0e245b7d2e423!8m2!3d52.5289401!4d13.4157531!16s%2Fg%2F11crzx_llb?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 7,
+    postingTime: "1 hour ago",
+    company: {
+      name: "Obton",
+      logo: "../images/Obton.png",
+      },
+    summary: {
+      category: "Administration",
+      jobType: "Internship",
+      location: "Hamburg",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>Are you pursuing your Bachelor’s or Master’s degree and eager to make an impact in the renewable energy sector? Do you thrive in a dynamic, international environment and enjoy taking on new challenges?</p>
+      <p>If so, join Obton Germany as a Student Assistant (Werkstudent) and help shape the future of renewable energy.</p>
+      <p>As a Student Assistant at our Hamburg office, you will work closely with our Asset Management team to support a portfolio of German PV and BESS projects. This role offers a unique opportunity to develop hands-on experience in renewable energy asset management while contributing to critical operational processes.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "Organizing and maintaining document management systems.",
+        "Handling internal workflows and ensuring compliance with standard procedures.",
+        "Updating and managing data in Obton’s internal management system.",
+        "Overseeing practical office tasks, such as managing office supplies and logistics.",
+        "Handling incoming and outgoing mail (including group email addresses).",
+        "Supporting colleagues with ad-hoc administrative and operational tasks.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "Have a “can-do” attitude and a strong sense of ownership.",
+        "Eager to learn and understand complex systems.",
+        "Excellent communication skills and enjoy collaborating in an international context.",
+        "Comfortable balancing routine tasks with independent initiatives.",
+        "Continuously seek ways to improve processes and challenge the status quo.",
+        ],
+      },
+    tags: ["Part-Time", "Administration", "Hamburg", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Student Assistant",
+      jobType: "Internship",
+      category: "Administration",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Hamburg",
+      mapUrl: "https://www.google.com/maps/place/Obton/@51.5007501,7.1053877,17z/data=!3m1!4b1!4m6!3m5!1s0x47b8e719c47a4d59:0x2c9c860d7c928e14!8m2!3d51.5007468!4d7.1079626!16s%2Fg%2F11vx6qhzff?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 8,
+    postingTime: "40 minutes ago",
+    company: {
+      name: "Boston Consulting Group",
+      logo: "../images/BCG.png",
+      },
+    summary: {
+      category: "Administration",
+      jobType: "Internship",
+      location: "Düsseldorf",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>Our strategy? To be anything but typical strategy consultants! Our unconventional nature is embedded deep in our DNA. Sixty years ago, BCG shook up the world of strategy consulting. Now, it has grown to become one of the world leaders in the field. How do we manage to stay ahead of the pack? The answer is simple: by reinventing ourselves every day and providing a home with diverse career opportunities to the best talent and most creative minds all over the world.</p>
+      <p>And by giving you the chance to make an impact in business and society. BCG stands for authenticity, exceptional work, and strong integrity. Once you’ve become part of the Group, we’ll help you find your path, unleash your potential, effect change, and advance the world.</p>
+      <p>As a Working Student on our Copy Center & Internal Services Team, you will be an important point of contact for our employees, actively helping to ensure that day-to-day office life runs smoothly. Service-oriented and reliable, you will handle printing and copy requests, duplicate and bind presentations, and ensure that our offices are stocked with the supplies they need. You’ll also capably maintain databases and Excel lists and carry out minor research independently. Finally, you’ll support any office maintenance activities that arise in day-to-day operations.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "You’ll be part of a small team, but work with many people and have numerous connections to different departments in the Düsseldorf office.",
+        "As an important point of contact at BCG, you are always reliable and polite.",
+        "You have good organizational skills and attention to detail, and you enjoy working in a service role.",
+        "You are highly flexible and think independently.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "You are studying for a bachelor's or master's degree (with at least two years of study remaining at your start date and no mandatory internships planned).",
+        "You communicate competently and professionally in German and English and work proficiently with the MS Office programs.",
+        "You’re known for your organizational talent and conscientious work style.",
+        ],
+      },
+    tags: ["Part-Time", "Administration", "Hamburg", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Working Student—Copy Center & Internal Services Team",
+      jobType: "Internship",
+      category: "Administration",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Düsseldorf",
+      mapUrl: "https://www.google.com/maps/place/Boston+Consulting+Group/@51.2266049,6.7771161,17z/data=!3m1!4b1!4m6!3m5!1s0x4171beb8c2314c81:0x25546bd43be74743!8m2!3d51.2266016!4d6.779691!16s%2Fg%2F11b729n_2g?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 9,
+    postingTime: "59 minutes ago",
+    company: {
+      name: "Canon Production Printing",
+      logo: "../images/Canon.png",
+      },
+    summary: {
+      category: "Administration",
+      jobType: "Internship",
+      location: "Germany",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>For our teams within Research and Development we are looking for working students (m/f/d) to support us with immediate effect.</p>
+      <p>To be successful in this task, you will be coached by our experienced engineering team.</p>
+      <p>As a Student Assistant you will have a challenging, interesting and responsible task at a future-oriented and international workplace.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "You will support your team in the area of testing/developing new high-performance printing systems.",
+        "After being trained by your mentor, you will understand the development/test objectives, plan tests/trials and carry them out",
+        "Independently apply test/measurement methods, evaluate (measurement) results and interpret them",
+        "Supervision of smaller projects may also be part of your tasks",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "You are studying chemistry, electrical engineering, computer science, mechatronics, mechanical engineering, physical engineering, physics or a comparable, technical degree program",
+        "You are committed, show initiative, innovative thinking and possess analytical skills.",
+        "You are a team player with strong communication skills.",
+        "Independent and careful work is a matter of course for you.",
+        "Your good written and spoken English skills complete your profile.",
+        ],
+      },
+    tags: ["Part-Time", "Administration", "Germany", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Working Student (m/f/d) as Development Assistant",
+      jobType: "Internship",
+      category: "Administration",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Germany",
+      mapUrl: "https://www.google.com/maps/place/Canon+Production+Printing/@48.1684715,11.7980289,17z/data=!3m1!5s0x479e0914c157b6af:0xda06b47ae7fc2788!4m14!1m7!3m6!1s0x410903da2f6f2cc3:0x897e93a5a10ff51a!2sCanon+Germany+GmbH!8m2!3d48.168468!4d11.8006038!16s%2Fg%2F1ptw82jjb!3m5!1s0x479e0914ea4cd74f:0x43724ed9b2284089!8m2!3d48.1680775!4d11.8012503!16s%2Fg%2F1tfd1cyv?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 10,
+    postingTime: "35 minutes ago",
+    company: {
+      name: "MBition GmbH",
+      logo: "../images/MBition.png",
+      },
+    summary: {
+      category: "Administration",
+      jobType: "Internship",
+      location: "Berlin",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>A chance to work on a new generation of Infotainment Systems, which will power millions of cars.</p>
+      <p>An international, interdisciplinary software hub, which is part of Mercedes Benz AG.</p>
+      <p>Agile working methods and open feedback culture.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "As a Working Student for Mercedes-Benz Voice Assistant NLU Analysis, you will be part of a cross-functional support team that provides internal customer-facing development teams with empirical insights about the interactions between the MBUX Voice Assistant in Mercedes-Benz cars and its users.",
+        "You will be embedded in a team with backgrounds mainly in the areas of Data Analytics, Data Engineering and Test Automation and will interact with people in other teams working on Voice Interaction Design and Product Management.",
+        "Your main focus areas will be the analysis and annotation of natural language corpora as well as the co-creation and co-refinement of annotation schemas.",
+        "Occasionally, we might also need your assistance in interactively testing the actual system or assisting with user research.",
+        "By working on these topics, you gain practical experiences in topics you’re learning in your studies and have real impact on the user experience in Mercedes-Benz cars.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "Currently enrolled in a Bachelor’s or Master’s program in Computational Linguistics, Corpus Linguistics, or a comparable qualification.",
+        "It is mandatory to be enrolled in a university for the whole employment time.",
+        "Excellent communication skills and enjoy collaborating in an international context.",
+        "Near-native language proficiency in German and English",
+        "Experience with conversational systems/voice technology and experience in annotating natural language corpora.",
+        ],
+      },
+    tags: ["Part-Time", "Administration", "Berlin", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Working Student – Mercedes-Benz Voice Assistant NLU Analysis (all genders)",
+      jobType: "Internship",
+      category: "Administration",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Berlin",
+      mapUrl: "https://www.google.com/maps/place/MBition+GmbH/@52.5199464,13.3169431,17z/data=!3m2!4b1!5s0x47a85119e191863f:0x319329b0b39086c5!4m6!3m5!1s0x47a851d0e1d06b77:0xb539082293932cdc!8m2!3d52.5199432!4d13.319518!16s%2Fg%2F11fzf4hxzl?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 11,
+    postingTime: "5 hours ago",
+    company: {
+      name: "VeeCollective GmbH",
+      logo: "../images/VeeCollective.png",
+      },
+    summary: {
+      category: "Commerce",
+      jobType: "Internship",
+      location: "Berlin",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>This is a mandatory internship and only intended for students.</p>
+      <p>Applications from people who are currently not studying and/or not looking for a compulsory internship will not be considered.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "With a focus on marketing, you will extensively support the team in areas such as sales, e-commerce, and office management",
+        "Assist in developing and implementing marketing concepts across all our channels.",
+        "Assist in identifying and collaborating with influencers to create content and promote brand visibility and contribute to the team by effectively supporting order management.",
+        "Support the Store Manager in ensuring smooth operations for our sales activities in the store.",
+        "Support our content creator with content production and conduct market analysis and report on trends.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "Currently studying or recently completed studies in marketing, fashion management, or a related field.",
+        "Available for at least 4-6 months (longer internships are accepted) as part of a mandatory internship.",
+        "Strong passion for fashion and lifestyle topics, with an awareness and sense of international trends and brands.",
+        "Organizational talent with an independent and structured way of working",
+        "Excellent communication skills, both verbal and written in English, German is also preferred.",
+        ],
+      },
+    tags: ["Part-Time", "Commerce", "Berlin", "Corporate", "Location"],
+    overview: {
+      jobTitle: "MARKETING INTERNSHIP",
+      jobType: "Internship",
+      category: "Commerce",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Berlin",
+      mapUrl: "https://www.google.com/maps/place/VEE+COLLECTIVE/@52.527633,13.3969518,17z/data=!3m1!4b1!4m6!3m5!1s0x47a8514de91280ff:0xc589daf04225305a!8m2!3d52.5276298!4d13.3995267!16s%2Fg%2F11rglrb2sb?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 12,
+    postingTime: "2 hours ago",
+    company: {
+      name: "LionsHome GmbH",
+      logo: "../images/Lionshome.png",
+      },
+    summary: {
+      category: "Commerce",
+      jobType: "Internship",
+      location: "Berlin",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>We are looking for a full-time intern (40h/week) for our business development in the UK market who is an ENGLISH NATIVE SPEAKER and would be available for at least 3 months.</p>
+      <p>You would work in our beautiful startup loft in Mitte at Hackescher Markt in the heart of Berlin.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "You will be responsible for the sales in the UK market in close coordination with the management.",
+        "You will be responsible for cold-calling potential partners to pitch a collaboration that best fits their needs.",
+        "You will be responsible for managing relationships with current customers.",
+        "Independent research for suitable cooperation partners.",
+        "You will learn and work with important key tools in online marketing.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "Native level of English.",
+        "You are an enrolled student at any university (mandatory requirement).",
+        "You can work in a structured and result-oriented way.",
+        "You are an excellent communicator, both verbal and written.",
+        "You are willing to work in an International work environment and you are willing to learn the e-commerce world.",
+        ],
+      },
+    tags: ["Part-Time", "Commerce", "Berlin", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Internship Business Development & Sales UK Native English speaker",
+      jobType: "Internship",
+      category: "Commerce",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Berlin",
+      mapUrl: "https://www.google.com/maps/place/LionsHome+GmbH/@52.5255704,13.3991155,17z/data=!3m2!4b1!5s0x47a851e13433da01:0xed553a63a2048568!4m6!3m5!1s0x47a851e134366839:0xae01b8852983149b!8m2!3d52.5255672!4d13.4016904!16s%2Fg%2F11f__jk7s7?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 13,
+    postingTime: "3 hours ago",
+    company: {
+      name: "Hive Technologies GmbH",
+      logo: "../images/Hive.png",
+      },
+    summary: {
+      category: "Commerce",
+      jobType: "Internship",
+      location: "Berlin",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>Ever wonder what happens behind the scenes after you click ‘Buy Now’?</p>
+      <p>As an Operations Intern at Hive, you will get an insider’s view on the most dynamic parts of e-commerce logistics, where every day brings new challenges, fast-paced problem-solving, and a chance to shape the future of fulfillment.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "Be part of the largest and most challenging projects contributing to Hive’s growth across new customer segments and business verticals.",
+        "Work closely with our partner manager on both day-to-day operations and strategic planning, gaining insights into the decisions that help us grow and improve our fulfillment center network.",
+        "Collaborate with our fulfillment partners both on-site and remotely, assisting in resolving operational challenges.",
+        "Measure the performance of our fulfillment sites & suggest improvement points to our operational KPIs and metrics (e.g. throughput, punctuality)",
+        "Become an essential part of the Hive Operations team by working closely with the Head of Fulfillment and Expansion, alongside stakeholders and teams across the organization.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "Interest in logistics and ready to dive into the fast-paced world of a VC-backed startup, helping to shape the future of e-commerce operations.",
+        "Natural problem-solver, ready to roll up your sleeves and hit the ground running with exciting expansion projects.",
+        "Eager to work with Hive’s proprietary WMS (Warehouse Management System) and other cutting-edge software at the pulse of logistics & e-commerce trends.",
+        "You want to join as a working student for ca. 20 hours/week or for a full-time internship for 5-6 months.",
+        "You are business fluent in English (bonus points if you speak German/ Polish!), with strong communication skills to rally internal and external teams.",
+        ],
+      },
+    tags: ["Part-Time", "Commerce", "Berlin", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Operations Intern (Expansion) (f/m/d)",
+      jobType: "Internship",
+      category: "Commerce",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Berlin",
+      mapUrl: "https://www.google.com/maps/place/Hive+Technologies+GmbH+HQ/@52.5213132,13.4028851,17z/data=!3m1!4b1!4m6!3m5!1s0x47a8510eeaffc8b3:0xd29744ecb100f639!8m2!3d52.52131!4d13.40546!16s%2Fg%2F11j6y7t_y3?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 14,
+    postingTime: "2 hours ago",
+    company: {
+      name: "home24 SE",
+      logo: "../images/Home24.png",
+      },
+    summary: {
+      category: "Commerce",
+      jobType: "Internship",
+      location: "Berlin",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <p>We are home24, a leading home & living e-commerce platform in continental Europe and Brazil. We are currently active in eight countries. Over 1,000 Homies work together towards a common goal: to create happy homes for everyone and every budget.</p>
+      <p>At home24, we strive to deliver a superior assortment of products and the best service. To do this, we need fresh ideas, 100% motivation, and dedication to our company mission. We always have a space at our table for service-minded individuals who are passionate about digitization and modern living.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "You plan, coordinate, and execute CRM campaigns (e-mail & app marketing).",
+        "You assist in the optimization of our overall CRM activities.",
+        "You analyze and monitor the performance of CRM activities and set up new reports.",
+        "You support the coordination between other marketing channels, art direction, and content teams.",
+        "You have the chance to gain insights into different leading tools like Emarsys, Tableau, Dynamic Yield, and Google Analytics.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "You are currently an enrolled student in business administration or a related, relevant field and must complete an internship for your studies.",
+        "You feel responsible for the quality of your work and you always try to find practical solutions.",
+        "Working analytically and process-oriented with a strong attention to detail come naturally to you.",
+        "You have a passion for digital marketing and e-commerce and you are comfortable with managing multiple campaigns and projects with creativity and organization.",
+        "You are fluent in English (German is a plus).",
+        ],
+      },
+    tags: ["Part-Time", "Commerce", "Berlin", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Mandatory Intern - Online Marketing CRM (m/f/d)",
+      jobType: "Internship",
+      category: "Commerce",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Berlin",
+      mapUrl: "https://www.google.com/maps/place/home24+Showroom+-+Berlin+Prenzlauer+Berg/@52.5272915,13.4526736,17z/data=!3m1!4b1!4m6!3m5!1s0x47a851db2f8a90d9:0x8701be09518a9478!8m2!3d52.5272883!4d13.4552485!16s%2Fg%2F11gzbd77c?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
+  {
+    id: 15,
+    postingTime: "1 hour ago",
+    company: {
+      name: "Amazon Deutschland Services GmbH",
+      logo: "../images/Amazon.png",
+      },
+    summary: {
+      category: "Commerce",
+      jobType: "Internship",
+      location: "Berlin",
+      },
+    description: {
+      title: "Job Description",
+      details: `
+      <pOur primary purpose is to make our customer´s lives easier. You will contribute to that purpose by conducting data analysis and deep dives to generate insights into system behavior, on top of identifying performance gaps and improvement potentials for Amazon's most strategic brands.</p>
+      <p>How often can you say that your work changes the world? At Amazon, you’ll say it often. Join us and define tomorrow’s innovations in e-commerce.</p>
+      `,
+      },
+    responsibilities: {
+      title: "Key Responsibilities",
+      details: `What You’ll Do:`,
+      list:[
+        "Work alongside a Vendor Manager to help provide a suite of services designed to maximize business performance and grow sales. Vendor Managers build relationships with Amazon Retail Vendors who sell products wholesale to Amazon and are one of our key business partners in the Retail organization.",
+        "Support in the definition, conceptualization, implementation, and growth of strategic programs and products aiming at digitizing the procurement landscape.",
+        "Dive deep into large data sets to analyze trends, identify new customer insights, and turn these insights into action.",
+        ]
+      },
+    requirements: {
+      title: "Professional Requirements",
+      details: `Your profile:`,
+      list:[
+        "You should then be available between 3 and up to 6 months, full-time (40h/week). Internship length is subject to availability.",
+        "Pursuing a Bachelor’s or Master’s Degree, with an anticipated graduation date after the completion of your internship.",
+        "Fluent written and verbal communication in English (Level - C1 or higher).",
+        "You will be based in Berlin for the duration of the internship. A relocation package may be offered, subject to an eligibility criterion.",
+        ],
+      },
+    tags: ["Part-Time", "Commerce", "Berlin", "Corporate", "Location"],
+    overview: {
+      jobTitle: "Program/Product Manager Intern",
+      jobType: "Internship",
+      category: "Commerce",
+      experience: "Entry level",
+      degree: "Bachelor/Master",
+      gender: "All",
+      location: "Berlin",
+      mapUrl: "https://www.google.com/maps/place/Amazon+DBE2/@52.4354645,13.3713444,17z/data=!3m1!4b1!4m6!3m5!1s0x47a845c8cd1e4113:0x47037c39b318bf64!8m2!3d52.4354613!4d13.3739193!16s%2Fg%2F11gjhfq0w1?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      },
+  },
 ];
