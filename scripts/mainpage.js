@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// Category Data Array
+/// Category Data Array
 const categories = [
   { icon: "💻", name: "IT", jobCount: 1254 },
   { icon: "📁", name: "Administration", jobCount: 816 },
