@@ -195,18 +195,19 @@ h4 {
 }
 .checklist li {
   position: relative;
-  padding-left: 25px;
+  padding-left: 30px;
+  text-indent: -25px; /* Negative indent to align the text with the icon */
+  margin-bottom: 10px; /* Add spacing between list items */
 }
 
 .checklist li::before {
   content: "\f00c"; /* Font Awesome icon */
   font-family: "Font Awesome 6 Pro";
   font-weight: 300; /* Light weight for fa-light */
-  position: absolute;
-  left: 0; /* Position the icon */
-  top: 50%;
-  transform: translateY(-50%); /* Vertically center the icon */
+  position: relative;
   color: var(--text-orange); /* Icon color (adjust as needed) */
+  margin-top: 4px; /* Slight adjustment if needed */
+  margin-inline-end: 10px;
 }
 
 .description-text ol, ul {

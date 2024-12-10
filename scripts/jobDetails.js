@@ -136,3 +136,5 @@ function populateJobDetails(job) {
         mapIframe.style.display = "none"; // Hide iframe if no URL is present
     }
 }
+
+

@@ -35,7 +35,7 @@
                 <input type="checkbox" id="menu-toggle" class="menu-toggle">
                 <label for="menu-toggle" class="hamburger-icon">
                   <i class="fa-solid fa-bars"></i>
-                </label>            
+                </label>
                 <ul class="nav-links">
                   <li><a id="home" href="#">Home</a></li>
                     <li><a href="#">Jobs</a></li>
@@ -188,6 +188,8 @@
                   </ul>
                 </div>
 
+                <button id="reset-filters" class="reset-filters-btn">Reset Filters</button>
+
               </div>
 
               <!-- Photo Section -->
@@ -198,19 +200,19 @@
               </div>
             </div>
 
-            <!-- Job Listings Container -->
-            <div id="job-listings" class="job-listings">
-              <!-- The job listings will be dynamically populated here -->
-            </div>
-
-
+            
+            <div class="job-dynamic-container">
+              <!-- Job Listings Container -->
+              <div id="job-listings" class="job-listings">
+                <!-- Job listings will be dynamically populated here -->
+              </div>
               <!-- Pagination Section -->
               <div class="pagination">
-                <button class="pagination-btn">1</button>
-                <button class="pagination-btn">2</button>
-                <button class="pagination-btn next">Next ></button>
+                <!-- Pagination buttons will be dynamically populated here -->
               </div>
             </div>
+            
+          </div>
 
               <!-- Top Company Section -->
           <div id="top-company" class="top-company-section">
@@ -298,7 +300,7 @@
     </div>  <!-- end of full page container -->
 
     <script src="../scripts/jobsDatabase.js"></script>
-    <script src="../scripts/jobs.js"></script>
+    <script src="../scripts/jobfilter.js"></script>
     <script src="../scripts/header-pages.js"></script>
   </body>
 </html>
