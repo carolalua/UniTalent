@@ -166,7 +166,7 @@
   gap: 15px; /* Add spacing between sections in the listing */
   width: 100%; /* Make the listing span the full width */
   max-width: 1200px; /* Constrain the maximum width */
-  box-sizing: border-box; /* Include padding and border in size */
+  box-sizing: border-box; /* Include padding and border in size */ 
 }
 
 
