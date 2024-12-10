@@ -94,6 +94,19 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   renderJobs(jobs);
+
+  const companiesEmployers = JSON.parse(localStorage.getItem('companies')) || [];
+  const companies = jobDatabase.map(job => job.company.name);
+  const uniqueCompanies = new Set(companies);
+
+  const jobsNumber = document.getElementById("jobs-number");
+  jobsNumber.textContent = jobDatabase.length;
+
+  const compNumber = document.getElementById("companies-number");
+  compNumber.textContent = uniqueCompanies.size;
+  
+  const empNumber = document.getElementById("employers-number");
+  empNumber.textContent = companiesEmployers.length;
 });
 
 
