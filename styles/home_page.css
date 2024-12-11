@@ -420,8 +420,7 @@ h5 {
 .testi-content {
   padding: 50px;
   color: black;
-  max-width: 1200px;
-  max-width: 1200px; /* Optional: Limit the width of the container */
+  max-width: 1400px;
   margin: 0 auto; /* Center horizontally */
 }
 
