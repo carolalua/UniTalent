@@ -371,6 +371,13 @@ h5 {
   background-color: #f8f8f8;
   padding: 40px 0;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+
 }
 
 .testimonials h2 {
@@ -378,11 +385,6 @@ h5 {
   margin-bottom: 30px;
 }
 
-.testimonial-cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
 
 .testimonial-card {
   background-color: white;
@@ -391,6 +393,9 @@ h5 {
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .testimonial-text {
@@ -413,16 +418,18 @@ h5 {
 
 /* ///// TESTIMONIALS ////// */
 .testi-content {
-  display: block;
-  justify-content: space-between;
   padding: 50px;
   color: black;
+  max-width: 1200px;
+  max-width: 1200px; /* Optional: Limit the width of the container */
+  margin: 0 auto; /* Center horizontally */
 }
 
 .testi-row-headline {
   font-size: 30px;
   color: #000000;
   text-align: center;
+
 }
 
 .testi-row-cards {
@@ -438,6 +445,9 @@ h5 {
 }
 .star i {
   color: #ffb813;
+}
+.star i:hover{
+  transform: translateY(-6px);
 }
 .phrase {
   font-size: 20px;
