@@ -1,0 +1,130 @@
+h2 {
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  margin-bottom: 10px !important;
+  margin-top: 10px !important;
+  
+}
+
+/* Application History Table Styling */
+.Application-history-table {
+  max-height: 100%;
+  overflow-y: auto; 
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+.Application-history-table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Fix table layout to control column widths */
+}
+
+/* Table Cells Padding and Font */
+.Application-history-table th,
+.Application-history-table td {
+  padding: 20px; /* Reduced padding for better fit */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Table Header Styles */
+.Application-history-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Company Column Width */
+.Application-history-table th:nth-child(1),
+.Application-history-table td:nth-child(1) {
+  width: 35%; /* Adjusted for company name */
+}
+
+/* Role Column Width */
+.Application-history-table th:nth-child(2),
+.Application-history-table td:nth-child(2) {
+  width: 35%; /* Adjusted for role */
+}
+
+/* Date Applied Column Width */
+.Application-history-table th:nth-child(3),
+.Application-history-table td:nth-child(3) {
+  width: 30%; /* Adjusted for date applied */
+}
+
+
+/* Job Type Styles */
+.Application-history-table .job-type-fulltime {
+  background-color: #7063a8;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.Application-history-table .job-type-parttime {
+  background-color: #FFC107;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.Application-history-table .job-type-freelance {
+  background-color: #9cde90;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* Pagination Styling */
+.Application-history-table .pagination {
+  display: flex;
+  justify-content: flex-end;  /* Align pagination buttons to the right */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.Application-history-table .pagination select {
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.Application-history-table .pagination-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.Application-history-table .pagination-buttons span {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #333; /* Style page number */
+}
+
+.Application-history-table .pagination-buttons button {
+  padding: 6px 12px;
+  background-color: #f08504;  /* Orange background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Application-history-table .pagination-buttons button:hover {
+  background-color: #cc7a16;
+}
+
+/* Pagination page number styling */
+.Application-history-table .pagination-buttons span {
+  padding: 6px 12px;
+  background-color: #f0f0f0;  /* Light background for the page number */
+  border-radius: 4px;
+  font-weight: bold;
+}
