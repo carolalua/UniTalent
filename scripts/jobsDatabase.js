@@ -4,7 +4,7 @@ const jobDatabase = [
     postingTime: "2024-12-02T16:45",
     company: {
       name: "Deutsche Bank AG",
-      logo: "../images/DB.png",
+      logo: "DB.png",
     },
     summary: {
       category: "Commerce",
@@ -67,7 +67,7 @@ const jobDatabase = [
     postingTime: "2024-12-10T15:00",
     company: {
       name: "SAP",
-      logo: "../images/SAP.png",
+      logo: "SAP.png",
       },
     summary: {
       category: "IT",
@@ -153,7 +153,7 @@ const jobDatabase = [
     postingTime: "2024-12-10T12:00",
     company: {
       name: "SICK AG",
-      logo: "../images/SICK.png",
+      logo: "SICK.png",
       },
     summary: {
       category: "IT",
@@ -221,7 +221,7 @@ const jobDatabase = [
     postingTime: "2024-12-10T13:20",
     company: {
       name: "HUGO BOSS AG",
-      logo: "../images/Hugo_Boss.png",
+      logo: "Hugo_Boss.png",
       },
     summary: {
       category: "IT",
@@ -289,7 +289,7 @@ const jobDatabase = [
     postingTime: "2024-12-10T13:00",
     company: {
       name: "PORSCHE",
-      logo: "../images/Porsche.png",
+      logo: "Porsche.png",
       },
     summary: {
       category: "IT",
@@ -358,7 +358,7 @@ const jobDatabase = [
     postingTime: "2024-12-09T20:00",
     company: {
       name: "Inkitt",
-      logo: "../images/Inkitt.png",
+      logo: "Inkitt.png",
       },
     summary: {
       category: "Administration",
@@ -425,7 +425,7 @@ const jobDatabase = [
     postingTime: "2024-12-09T06:00",
     company: {
       name: "Obton",
-      logo: "../images/Obton.png",
+      logo: "Obton.png",
       },
     summary: {
       category: "Administration",
@@ -493,7 +493,7 @@ const jobDatabase = [
     postingTime: "2024-12-09T07:00",
     company: {
       name: "Boston Consulting Group",
-      logo: "../images/BCG.png",
+      logo: "BCG.png",
       },
     summary: {
       category: "Administration",
@@ -557,7 +557,7 @@ const jobDatabase = [
     postingTime: "2024-12-09T09:30",
     company: {
       name: "Canon Production Printing",
-      logo: "../images/Canon.png",
+      logo: "Canon.png",
       },
     summary: {
       category: "Administration",
@@ -623,7 +623,7 @@ const jobDatabase = [
     postingTime: "2024-12-09T10:00",
     company: {
       name: "MBition GmbH",
-      logo: "../images/MBition.png",
+      logo: "MBition.png",
       },
     summary: {
       category: "Administration",
@@ -690,7 +690,7 @@ const jobDatabase = [
     postingTime: "2024-12-09T11:00",
     company: {
       name: "VeeCollective GmbH",
-      logo: "../images/VeeCollective.png",
+      logo: "VeeCollective.png",
       },
     summary: {
       category: "Commerce",
@@ -756,7 +756,7 @@ const jobDatabase = [
     postingTime: "2024-12-09T12:00",
     company: {
       name: "LionsHome GmbH",
-      logo: "../images/Lionshome.png",
+      logo: "Lionshome.png",
       },
     summary: {
       category: "Commerce",
@@ -822,7 +822,7 @@ const jobDatabase = [
     postingTime: "2024-12-09T12:45",
     company: {
       name: "Hive Technologies GmbH",
-      logo: "../images/Hive.png",
+      logo: "Hive.png",
       },
     summary: {
       category: "Commerce",
@@ -888,7 +888,7 @@ const jobDatabase = [
     postingTime: "2024-12-05T12:45",
     company: {
       name: "home24 SE",
-      logo: "../images/Home24.png",
+      logo: "Home24.png",
       },
     summary: {
       category: "Commerce",
@@ -954,7 +954,7 @@ const jobDatabase = [
     postingTime: "2024-12-05T17:30",
     company: {
       name: "Amazon Deutschland Services GmbH",
-      logo: "../images/Amazon.png",
+      logo: "Amazon.png",
       },
     summary: {
       category: "Commerce",

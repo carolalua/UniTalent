@@ -9,24 +9,25 @@ document.addEventListener("DOMContentLoaded", () => {
     return sortedJobs.slice(0, limit);
   };
 
-  // Function to render jobs
-  const renderJobs = (jobs) => {
-    jobsContainer.innerHTML = ""; // Clear previous content
+ // Function to render jobs
+// Function to render jobs
+const renderJobs = (jobs) => {
+  jobsContainer.innerHTML = ""; // Clear previous content
 
-    jobs.forEach((job) => {
-      const jobCard = document.createElement("div");
-      jobCard.classList.add("job-card");
+  jobs.forEach((job) => {
+    const jobCard = document.createElement("div");
+    jobCard.classList.add("job-card");
 
-      jobCard.innerHTML = `
+    jobCard.innerHTML = `
       <div class="recent-jobs-container">
         <div class="job-listing">
           <div class="job-listing-top">
-          <span class="posted-time p1">${getRelativeTime(job.postingTime)}</span>
+            <span class="posted-time p1">${getRelativeTime(job.postingTime)}</span>
           </div>
 
           <div class="job-listing-middle">
             <div class="job-logo">
-              <img src="./${job.company.logo}" alt="${job.company.name} logo" class="company-logo" />
+              <img src="./images/${job.company.logo}" alt="${job.company.name} logo" class="company-logo" />
             </div>
 
             <div class="job-title-company">
@@ -47,10 +48,11 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </div>
       </div>
-      `;
-      jobsContainer.appendChild(jobCard);
-    });
-  };
+    `;
+    jobsContainer.appendChild(jobCard);
+  });
+};
+
 
   // Fetch the first 5 recent jobs
   const recentJobs = getRecentJobs(jobDatabase, 5);
@@ -122,12 +124,15 @@ const categoriesArray = Object.values(categories);
 // Dynamically generating category cards
 categoryGrid.innerHTML = ""; // Clear existing content
 categoriesArray.forEach(category => {
+  const categorySlug = category.name.toLowerCase().replace(/\s+/g, '-'); // Convert category name to slug
   const categoryCard = `
-    <div class="category-card">
-      <div class="category-icon">${category.icon}</div>
-      <h3 class="category-name">${category.name}</h3>
-      <span class="job-count">${category.jobCount} jobs</span>
-    </div>
+    <a href="./pages/jobs.html?category=${categorySlug}" class="category-link">
+      <div class="category-card">
+        <div class="category-icon">${category.icon}</div>
+        <h3 class="category-name">${category.name}</h3>
+        <span class="job-count">${category.jobCount} jobs</span>
+      </div>
+    </a>
   `;
   categoryGrid.innerHTML += categoryCard;
 });

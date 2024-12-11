@@ -7,65 +7,78 @@ document.addEventListener("DOMContentLoaded", () => {
   const jobsPerPage = 5; // Number of jobs per page
   let currentPage = 1; // Start on the first page
 
-  // Sort jobDatabase by postingTime in descending order
-  let filteredJobs = [...jobDatabase].sort((a, b) => new Date(b.postingTime) - new Date(a.postingTime));
+  // Get the category from the URL if it exists
+  const urlParams = new URLSearchParams(window.location.search);
+  const selectedCategory = urlParams.get("category");
 
-  const filterInputs = document.querySelectorAll(
-    "#filter-input, #education-level, #experience-level, #category, input[name='location'], input[type='checkbox'], input[name='proficiency-level']"
+  // Helper function to convert category name to slug format
+  const toSlug = (name) => name.toLowerCase().replace(/\s+/g, '-');
+
+  // Initial filter by URL category (if provided)
+  let filteredJobs = [...jobDatabase].filter(
+    (job) => !selectedCategory || toSlug(job.summary.category) === selectedCategory
   );
 
-  const languageCheckboxes = document.querySelectorAll("#english, #german");
-  const proficiencyRadios = document.querySelectorAll("input[name='proficiency-level']");
-
-  // Initialize proficiency level to none selected
-  proficiencyRadios.forEach((radio) => {
-    radio.checked = false;
-  });
-
-  // Add event listener to language checkboxes
-  languageCheckboxes.forEach((checkbox) => {
-    checkbox.addEventListener("change", () => {
-      if (checkbox.checked) {
-        // Automatically select "Any" proficiency level
-        document.querySelector("input[name='proficiency-level'][value='any']").checked = true;
-      } else {
-        // Check if no language is selected, then deselect proficiency radios
-        const anyLanguageSelected = Array.from(languageCheckboxes).some((cb) => cb.checked);
-        if (!anyLanguageSelected) {
-          proficiencyRadios.forEach((radio) => {
-            radio.checked = false;
-          });
-        }
-      }
-    });
-  });
+  // Sort filtered jobs by posting time
+  filteredJobs.sort((a, b) => new Date(b.postingTime) - new Date(a.postingTime));
 
   // Render initial jobs and pagination
   renderJobs(filteredJobs);
   renderPagination(filteredJobs);
-  updateJobCount(filteredJobs.length); // Update job count initially
+  updateJobCount(filteredJobs.length);
 
   // Event listeners for filters
+  const filterInputs = document.querySelectorAll(
+    "#filter-input, #education-level, #experience-level, #category, input[name='location'], input[type='checkbox'], input[name='proficiency-level']"
+  );
   filterInputs.forEach((input) => {
     input.addEventListener("input", applyFilters);
-    input.addEventListener("change", applyFilters); // Ensures radio buttons are updated
+    input.addEventListener("change", applyFilters); // For select, radio, and checkbox inputs
   });
 
-  // Reset filters and re-render all jobs
+  // Language checkboxes and proficiency radios
+  const languageCheckboxes = document.querySelectorAll("#english, #german");
+  const proficiencyRadios = document.querySelectorAll("input[name='proficiency-level']");
+
+  // Function to update proficiency radio buttons based on language selection
+  const updateProficiencyRadios = () => {
+    const anyLanguageSelected = Array.from(languageCheckboxes).some((cb) => cb.checked);
+
+    if (!anyLanguageSelected) {
+      // Uncheck all proficiency radios if no language is selected
+      proficiencyRadios.forEach((radio) => {
+        radio.checked = false;
+      });
+    } else {
+      // Set "Any" proficiency level as default if a language is selected
+      const anyRadio = document.querySelector("input[name='proficiency-level'][value='any']");
+      if (anyRadio) anyRadio.checked = true;
+    }
+  };
+
+  // Add event listener to language checkboxes
+  languageCheckboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", updateProficiencyRadios);
+  });
+
+  // Ensure proficiency radios are updated on page load
+  updateProficiencyRadios();
+
+  // Reset filters and reload all jobs
   resetButton.addEventListener("click", () => {
-    // Clear all text inputs
+    // Clear all input values
     document.getElementById("filter-input").value = "";
     document.getElementById("education-level").value = "";
     document.getElementById("experience-level").value = "";
     document.getElementById("category").value = "";
 
     // Reset checkboxes
-    document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+    languageCheckboxes.forEach((checkbox) => {
       checkbox.checked = false;
     });
 
     // Reset proficiency level radio buttons
-    document.querySelectorAll('input[name="proficiency-level"]').forEach((radio) => {
+    proficiencyRadios.forEach((radio) => {
       radio.checked = false; // Uncheck all proficiency levels
     });
 
@@ -74,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
       radio.checked = false; // Uncheck all location types
     });
 
-    // Reset page and re-render
+    // Reset filtered jobs and re-render
     filteredJobs = [...jobDatabase].sort((a, b) => new Date(b.postingTime) - new Date(a.postingTime)); // Reapply default sort
     currentPage = 1;
     renderJobs(filteredJobs);
@@ -82,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateJobCount(filteredJobs.length); // Update job count on reset
   });
 
-  // Apply filters and update the results
+  // Apply filters dynamically
   function applyFilters() {
     const titleInput = document.getElementById("filter-input").value.toLowerCase();
     const educationLevel = document.getElementById("education-level").value;
@@ -132,8 +145,8 @@ document.addEventListener("DOMContentLoaded", () => {
           if (englishRequired) {
             const english = job.languages?.English;
             if (
-              !english || // English is not listed
-              !english.required || // English is not required
+              !english || // English not listed
+              !english.required || // English not required
               (proficiencyLevel !== "any" && english.proficiency?.toLowerCase() !== proficiencyLevel.toLowerCase())
             ) {
               languageMatch = false;
@@ -144,8 +157,8 @@ document.addEventListener("DOMContentLoaded", () => {
           if (germanRequired) {
             const german = job.languages?.German;
             if (
-              !german || // German is not listed
-              !german.required || // German is not required
+              !german || // German not listed
+              !german.required || // German not required
               (proficiencyLevel !== "any" && german.proficiency?.toLowerCase() !== proficiencyLevel.toLowerCase())
             ) {
               languageMatch = false;
@@ -153,11 +166,11 @@ document.addEventListener("DOMContentLoaded", () => {
           }
 
           if (!languageMatch) {
-            return false; // Exclude if any language mismatch
+            return false;
           }
         }
 
-        return true; // Include job if it passes all filters
+        return true;
       })
       .sort((a, b) => new Date(b.postingTime) - new Date(a.postingTime)); // Sort filtered results by postingTime
 
@@ -165,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
     currentPage = 1;
     renderJobs(filteredJobs);
     renderPagination(filteredJobs);
-    updateJobCount(filteredJobs.length); // Update job count
+    updateJobCount(filteredJobs.length);
   }
 
   function updateJobCount(count) {
@@ -186,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const endIndex = Math.min(startIndex + jobsPerPage, jobs.length);
 
     jobs.slice(startIndex, endIndex).forEach((job) => {
-      const relativeTime = getRelativeTime(job.postingTime); // Calculate relative time dynamically
+      const relativeTime = getRelativeTime(job.postingTime);
 
       const jobListing = document.createElement("div");
       jobListing.className = "job-listing";
@@ -197,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="job-listing-middle">
           <div class="job-logo">
-            <img src="${job.company.logo}" alt="${job.company.name} Logo">
+            <img src="../images/${job.company.logo}" alt="${job.company.name} Logo">
           </div>
           <div class="job-title-company">
             <h3 class="h3">${job.overview.jobTitle}</h3>
@@ -234,7 +247,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentPage--;
         renderJobs(jobs);
         renderPagination(jobs);
-        updateJobCount(jobs.length); // Update job count on page change
+        updateJobCount(jobs.length);
       });
       paginationContainer.appendChild(prevButton);
     }
@@ -247,7 +260,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentPage = i;
         renderJobs(jobs);
         renderPagination(jobs);
-        updateJobCount(jobs.length); // Update job count on page change
+        updateJobCount(jobs.length);
       });
       paginationContainer.appendChild(pageButton);
     }
@@ -260,16 +273,16 @@ document.addEventListener("DOMContentLoaded", () => {
         currentPage++;
         renderJobs(jobs);
         renderPagination(jobs);
-        updateJobCount(jobs.length); // Update job count on page change
+        updateJobCount(jobs.length);
       });
       paginationContainer.appendChild(nextButton);
     }
   }
 
   function getRelativeTime(postingTime) {
-    const now = new Date(); // Current time
-    const posted = new Date(postingTime); // Convert postingDate to Date object
-    const differenceInSeconds = Math.floor((now - posted) / 1000); // Difference in seconds
+    const now = new Date();
+    const posted = new Date(postingTime);
+    const differenceInSeconds = Math.floor((now - posted) / 1000);
 
     if (differenceInSeconds < 60) {
       return `${differenceInSeconds} seconds ago`;
