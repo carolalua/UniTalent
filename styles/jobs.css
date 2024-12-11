@@ -18,11 +18,11 @@
 
 /* Filter Groups */
 .filter-group {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .filter-group .p1 {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .filter-group input[type="text"] {
@@ -69,7 +69,7 @@
 
 .reset-filters-btn {
   margin-top: 20px;
-  padding: 10px 15px;
+  padding: 10px 25px;
   background-color: #ff6600;
   color: #fff;
   border: none;

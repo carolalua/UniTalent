@@ -46,6 +46,27 @@ function getJobById(id) {
   return jobDatabase.find(job => job.id === id);
 }
 
+
+
+function getRelativeTime(postingTime) {
+    const now = new Date(); // Current time
+    const posted = new Date(postingTime); // Convert postingDate to Date object
+    const differenceInSeconds = Math.floor((now - posted) / 1000); // Difference in seconds
+  
+    if (differenceInSeconds < 60) {
+        return `${differenceInSeconds} seconds ago`;
+    } else if (differenceInSeconds < 3600) {
+        const minutes = Math.floor(differenceInSeconds / 60);
+        return `${minutes} minute${minutes !== 1 ? "s" : ""} ago`;
+    } else if (differenceInSeconds < 86400) {
+        const hours = Math.floor(differenceInSeconds / 3600);
+        return `${hours} hour${hours !== 1 ? "s" : ""} ago`;
+    } else {
+        const days = Math.floor(differenceInSeconds / 86400);
+        return `${days} day${days !== 1 ? "s" : ""} ago`;
+    }
+  }
+
 // Populate the page with job details
 function populateJobDetails(job) {
     if (!job) {
@@ -53,8 +74,11 @@ function populateJobDetails(job) {
         return;
     }
 
+    // Calculate the relative posting time
+    const relativeTime = getRelativeTime(job.postingTime);
+
     // Posting time
-    document.querySelector(".postingtime").textContent = job.postingTime;
+    document.querySelector(".postingtime").textContent = relativeTime;
 
     // Company details
     document.querySelector(".company-logo img").src = job.company.logo;
@@ -73,38 +97,36 @@ function populateJobDetails(job) {
     // Responsibilities
     const responsibiliesDetailsContainer = document.querySelector("#reponsibilites-details"); // For paragraph
     const responsibiliesListContainer = document.querySelector("#reponsibilites-list"); // For list items
-    
-      // Populate the paragraph
-      responsibiliesDetailsContainer.textContent = job.responsibilities.details;
 
-      // Clear existing list items (if any) to avoid duplicates
-      responsibiliesListContainer.innerHTML = "";
+    // Populate the paragraph
+    responsibiliesDetailsContainer.textContent = job.responsibilities.details;
 
-      // Populate the list
-      job.responsibilities.list.forEach(req => {
+    // Clear existing list items (if any) to avoid duplicates
+    responsibiliesListContainer.innerHTML = "";
+
+    // Populate the list
+    job.responsibilities.list.forEach(req => {
         const listItem = document.createElement("li");
         listItem.textContent = req;
         responsibiliesListContainer.appendChild(listItem);
     });
 
-
-
     // Requirements
     const requirementDetailsContainer = document.querySelector("#requirements-details"); // For paragraph
     const requirementListContainer = document.querySelector("#requirements-list"); // For list items
 
-      // Populate the paragraph
-      requirementDetailsContainer.textContent = job.requirements.details;
+    // Populate the paragraph
+    requirementDetailsContainer.textContent = job.requirements.details;
 
-      // Clear existing list items (if any) to avoid duplicates
-      requirementListContainer.innerHTML = "";
+    // Clear existing list items (if any) to avoid duplicates
+    requirementListContainer.innerHTML = "";
 
-      // Populate the list
-      job.requirements.list.forEach(req => {
-          const listItem = document.createElement("li");
-          listItem.textContent = req;
-          requirementListContainer.appendChild(listItem);
-      });
+    // Populate the list
+    job.requirements.list.forEach(req => {
+        const listItem = document.createElement("li");
+        listItem.textContent = req;
+        requirementListContainer.appendChild(listItem);
+    });
 
     // Tags
     const tagsContainer = document.querySelector(".jobdetails-tags .tags-row");
@@ -124,8 +146,8 @@ function populateJobDetails(job) {
     document.querySelector("#degree .joboverview-answer").textContent = job.overview.degree;
     document.querySelector("#gender .joboverview-answer").textContent = job.overview.gender;
     document.querySelector("#location .joboverview-answer").textContent = job.overview.location;
-    
-    //Map
+
+    // Map
     const mapIframe = document.querySelector("#map iframe");
     if (job.overview.mapUrl) {
         mapIframe.src = job.overview.mapUrl;

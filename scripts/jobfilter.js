@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("education-level").value = "";
     document.getElementById("category").value = "";
     document.getElementById("experience-level").value = "";
-    document.getElementById("semester").value = "";
 
     // Reset checkboxes and radio buttons
     document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
@@ -49,32 +48,65 @@ document.addEventListener("DOMContentLoaded", () => {
   // Apply filters and update the results
   function applyFilters() {
     const titleInput = document.getElementById("filter-input").value.toLowerCase();
-    const educationLevel = document.getElementById("education-level").value;
-    const category = document.getElementById("category").value;
-    const experienceLevel = document.getElementById("experience-level").value;
-    const semester = document.getElementById("semester").value;
+    const educationLevel = document.getElementById("education-level").value.toLowerCase(); // Get dropdown value
+    const category = document.getElementById("category").value.toLowerCase();
+    const experienceLevel = document.getElementById("experience-level").value.toLowerCase(); // Match keys in `experience` object
     const englishRequired = document.getElementById("english").checked;
     const germanRequired = document.getElementById("german").checked;
-    const proficiencyLevel = document.querySelector('input[name="proficiency-level"]:checked').value;
-    const location = document.querySelector('input[name="location"]:checked')?.value || "";
+    const proficiencyLevel = document.querySelector('input[name="proficiency-level"]:checked').value.toLowerCase();
+    const locationType = document.querySelector('input[name="location"]:checked')?.value.toLowerCase();
 
     filteredJobs = jobDatabase.filter((job) => {
-      if (titleInput && !job.overview.jobTitle.toLowerCase().includes(titleInput) && !job.company.name.toLowerCase().includes(titleInput)) {
+      // Filter by job title or company name
+      if (
+        titleInput &&
+        !job.overview.jobTitle.toLowerCase().includes(titleInput) &&
+        !job.company.name.toLowerCase().includes(titleInput)
+      ) {
         return false;
       }
-      if (educationLevel && job.requirements.degree !== educationLevel) return false;
-      if (category && job.summary.category.toLowerCase() !== category) return false;
-      if (experienceLevel && job.overview.experience !== experienceLevel) return false;
-      if (semester && job.requirements.semester !== semester) return false;
-      if (englishRequired && !job.requirements.languages.includes("english")) return false;
-      if (germanRequired && !job.requirements.languages.includes("german")) return false;
-      if (proficiencyLevel !== "any" && job.requirements.proficiency !== proficiencyLevel) return false;
-      if (location && job.summary.location.toLowerCase() !== location) return false;
 
-      return true; // Include job if all filters pass
+      // Filter by education level
+      if (educationLevel && !job.educationLevel.some((level) => level.toLowerCase() === educationLevel)) {
+        return false; // Exclude job if the selected education level is not in the array
+      }
+
+      // Filter by category
+      if (category && job.summary.category.toLowerCase() !== category) {
+        return false;
+      }
+
+      // Filter by experience level
+      if (experienceLevel && !job.experience[experienceLevel]) {
+        return false;
+      }
+
+      // Filter by location type
+      if (locationType && !job.locationType[locationType]) {
+        return false;
+      }
+
+      // Filter by language requirements (English)
+      if (englishRequired) {
+        const english = job.languages?.English;
+        if (!english || !english.required || (proficiencyLevel !== "any" && english.proficiency?.toLowerCase() !== proficiencyLevel)) {
+          return false;
+        }
+      }
+
+      // Filter by language requirements (German)
+      if (germanRequired) {
+        const german = job.languages?.German;
+        if (!german || !german.required || (proficiencyLevel !== "any" && german.proficiency?.toLowerCase() !== proficiencyLevel)) {
+          return false;
+        }
+      }
+
+      return true; // Include job if it passes all filters
     });
 
-    currentPage = 1; // Reset to the first page after filtering
+    // Reset to the first page and re-render
+    currentPage = 1;
     renderJobs(filteredJobs);
     renderPagination(filteredJobs);
   }
@@ -92,12 +124,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const endIndex = Math.min(startIndex + jobsPerPage, jobs.length);
 
     jobs.slice(startIndex, endIndex).forEach((job) => {
+      const relativeTime = getRelativeTime(job.postingTime); // Calculate relative time dynamically
+
       const jobListing = document.createElement("div");
       jobListing.className = "job-listing";
 
       jobListing.innerHTML = `
         <div class="job-listing-top">
-          <span class="posted-time p1">${job.postingTime}</span>
+          <span class="posted-time p1">${relativeTime}</span>
         </div>
         <div class="job-listing-middle">
           <div class="job-logo">
@@ -168,3 +202,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
+// Utility to calculate relative time
+function getRelativeTime(postingTime) {
+  const now = new Date(); // Current time
+  const posted = new Date(postingTime); // Convert postingDate to Date object
+  const differenceInSeconds = Math.floor((now - posted) / 1000); // Difference in seconds
+
+  if (differenceInSeconds < 60) {
+    return `${differenceInSeconds} seconds ago`;
+  } else if (differenceInSeconds < 3600) {
+    const minutes = Math.floor(differenceInSeconds / 60);
+    return `${minutes} minute${minutes !== 1 ? "s" : ""} ago`;
+  } else if (differenceInSeconds < 86400) {
+    const hours = Math.floor(differenceInSeconds / 3600);
+    return `${hours} hour${hours !== 1 ? "s" : ""} ago`;
+  } else {
+    const days = Math.floor(differenceInSeconds / 86400);
+    return `${days} day${days !== 1 ? "s" : ""} ago`;
+  }
+}
