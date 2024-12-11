@@ -92,23 +92,36 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-/// Category Data Array
-const categories = [
-  { icon: "💻", name: "IT", jobCount: 1254 },
-  { icon: "📁", name: "Administration", jobCount: 816 },
-  { icon: "🛍️", name: "Commerce", jobCount: 2082 },
-  { icon: "🏗️", name: "Construction", jobCount: 1520 },
-  { icon: "🏨", name: "Hotels & Tourism", jobCount: 1022 },
-  { icon: "🎓", name: "Education", jobCount: 1496 },
-  { icon: "💰", name: "Financial", jobCount: 1529 },
-  { icon: "🚌", name: "Transport", jobCount: 1244 }
-];
+
 
 // Targeting the container for category cards
 const categoryGrid = document.querySelector(".category-grid");
 
+// Calculate dynamic job counts by category
+const categories = jobDatabase.reduce((acc, job) => {
+  const categoryName = job.summary.category;
+  if (!acc[categoryName]) {
+    acc[categoryName] = { icon: "", name: categoryName, jobCount: 0 };
+  }
+  acc[categoryName].jobCount += 1;
+  return acc;
+}, {
+  "IT": { icon: "💻", name: "IT", jobCount: 0 },
+  "Administration": { icon: "📁", name: "Administration", jobCount: 0 },
+  "Commerce": { icon: "🛍️", name: "Commerce", jobCount: 0 },
+  "Construction": { icon: "🏗️", name: "Construction", jobCount: 0 },
+  "Hotels & Tourism": { icon: "🏨", name: "Hotels & Tourism", jobCount: 0 },
+  "Education": { icon: "🎓", name: "Education", jobCount: 0 },
+  "Financial": { icon: "💰", name: "Financial", jobCount: 0 },
+  "Transport": { icon: "🚌", name: "Transport", jobCount: 0 },
+});
+
+// Convert categories to an array for iteration
+const categoriesArray = Object.values(categories);
+
 // Dynamically generating category cards
-categories.forEach(category => {
+categoryGrid.innerHTML = ""; // Clear existing content
+categoriesArray.forEach(category => {
   const categoryCard = `
     <div class="category-card">
       <div class="category-icon">${category.icon}</div>
@@ -118,7 +131,6 @@ categories.forEach(category => {
   `;
   categoryGrid.innerHTML += categoryCard;
 });
-
 
 
 /// Testimonials Data Array
