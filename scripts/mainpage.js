@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <div class="job-listing-middle">
             <div class="job-logo">
-              <img src="./${job.company.logo}" alt="${job.company.name} logo" class="company-logo" />
+              <img src="${job.company.logo}" alt="${job.company.name} logo" class="company-logo" />
             </div>
 
             <div class="job-title-company">
