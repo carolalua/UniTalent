@@ -12,6 +12,32 @@ document.addEventListener("DOMContentLoaded", () => {
     "#filter-input, #education-level, #experience-level, #category, input[name='location'], input[type='checkbox'], input[name='proficiency-level']"
   );
 
+  const languageCheckboxes = document.querySelectorAll("#english, #german");
+  const proficiencyRadios = document.querySelectorAll("input[name='proficiency-level']");
+
+  // Initialize proficiency level to none selected
+  proficiencyRadios.forEach((radio) => {
+    radio.checked = false;
+  });
+
+  // Add event listener to language checkboxes
+  languageCheckboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) {
+        // Automatically select "Any" proficiency level
+        document.querySelector("input[name='proficiency-level'][value='any']").checked = true;
+      } else {
+        // Check if no language is selected, then deselect proficiency radios
+        const anyLanguageSelected = Array.from(languageCheckboxes).some((cb) => cb.checked);
+        if (!anyLanguageSelected) {
+          proficiencyRadios.forEach((radio) => {
+            radio.checked = false;
+          });
+        }
+      }
+    });
+  });
+
   // Render initial jobs and pagination
   renderJobs(filteredJobs);
   renderPagination(filteredJobs);
@@ -25,21 +51,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Reset filters and re-render all jobs
   resetButton.addEventListener("click", () => {
-    // Clear all inputs
+    // Clear all text inputs
     document.getElementById("filter-input").value = "";
     document.getElementById("education-level").value = "";
     document.getElementById("experience-level").value = "";
     document.getElementById("category").value = "";
-
-    // Reset checkboxes and radio buttons
+  
+    // Reset checkboxes
     document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
       checkbox.checked = false;
     });
-    document.querySelectorAll('input[name="location"]').forEach((radio) => {
-      radio.checked = false;
+  
+    // Reset proficiency level radio buttons
+    document.querySelectorAll('input[name="proficiency-level"]').forEach((radio) => {
+      radio.checked = false; // Uncheck all proficiency levels
     });
-    document.querySelector('input[name="proficiency-level"][value="any"]').checked = true;
-
+  
+    // Reset location type radio buttons
+    document.querySelectorAll('input[name="location"]').forEach((radio) => {
+      radio.checked = false; // Uncheck all location types
+    });
+  
     // Reset page and re-render
     filteredJobs = [...jobDatabase];
     currentPage = 1;
@@ -57,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const locationType = document.querySelector('input[name="location"]:checked')?.value.toLowerCase();
     const englishRequired = document.getElementById("english").checked;
     const germanRequired = document.getElementById("german").checked;
-    const proficiencyLevel = document.querySelector('input[name="proficiency-level"]:checked').value;
+    const proficiencyLevel = document.querySelector('input[name="proficiency-level"]:checked')?.value || "any";
 
     filteredJobs = jobDatabase.filter((job) => {
       // Filter by job title or company name
