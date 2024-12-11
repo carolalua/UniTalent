@@ -337,7 +337,11 @@ h5 {
 }
 
 .category-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-7px);
+  -webkit-transform: translateY(-7px);
+  -moz-transform: translateY(-7px);
+  -ms-transform: translateY(-7px);
+  -o-transform: translateY(-7px);
 }
 
 .category-icon {
@@ -350,6 +354,8 @@ h5 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 8px;
+  text-decoration: none;
+  color: black;
 }
 
 .job-count {
