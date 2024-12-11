@@ -1,53 +1,13 @@
-const jobs = [
-  {
-    title: "Forward Security Director",
-    company: "Bauch, Schuppe and Schulist Co",
-    location: "Berlin",
-    category: "Hotels & Tourism",
-    hoursPerWeek: 40,
-    postedTime: "10 min ago",
-    companyLogo: "images/tiktok-png.png",
-  },
-  {
-    title: "Marketing Coordinator",
-    company: "Acme Corp",
-    location: "Hamburg",
-    category: "Marketing",
-    hoursPerWeek: 20,
-    postedTime: "30 min ago",
-    companyLogo: "images/Slack.png",
-  },
-  {
-    title: "Software Development Intern",
-    company: "Tech Solutions Ltd",
-    location: "Munich",
-    category: "IT & Software",
-    hoursPerWeek: 30,
-    postedTime: "1 hour ago",
-    companyLogo: "images/mercedes-benz-logo.png",
-  },
-  {
-    title: "Data Analyst Assistant",
-    company: "Insight Analytics",
-    location: "Stuttgart",
-    category: "Data Analysis",
-    hoursPerWeek: 25,
-    postedTime: "2 hours ago",
-    companyLogo: "images/Microsoft_logo.svg.png",
-  },
-  {
-    title: "Customer Support Representative",
-    company: "Global Services Inc.",
-    location: "Frankfurt",
-    category: "Customer Service",
-    hoursPerWeek: 15,
-    postedTime: "3 hours ago",
-    companyLogo: "images/Slack.png",
-  },
-];
-
 document.addEventListener("DOMContentLoaded", () => {
   const jobsContainer = document.getElementById("jobs-container");
+
+  // Function to sort and retrieve the most recent jobs
+  const getRecentJobs = (jobDatabase, limit = 5) => {
+    // Sort jobs by posting time (newest first)
+    const sortedJobs = jobDatabase.sort((a, b) => new Date(b.postingTime) - new Date(a.postingTime));
+    // Return the top `limit` jobs
+    return sortedJobs.slice(0, limit);
+  };
 
   // Function to render jobs
   const renderJobs = (jobs) => {
@@ -61,25 +21,25 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="recent-jobs-container">
         <div class="job-listing">
           <div class="job-listing-top">
-          <span class="posted-time p1">${job.postedTime}</span>
+          <span class="posted-time p1">${getRelativeTime(job.postingTime)}</span>
           </div>
 
           <div class="job-listing-middle">
             <div class="job-logo">
-              <img src="${job.companyLogo}" alt="${job.company} logo" class="company-logo" />
+              <img src="${job.company.logo}" alt="${job.company.name} logo" class="company-logo" />
             </div>
 
             <div class="job-title-company">
-              <h3 class="h3">${job.title}</h3>
-              <p class="p1">${job.company}</p>
+              <h3 class="h3">${job.overview.jobTitle}</h3>
+              <p class="p1">${job.company.name}</p>
             </div>
           </div>
 
           <div class="job-listing-bottom">
             <div class="job-detail-items">
-              <div class="job-detail-item p1"><i class="fas fa-briefcase"></i> ${job.category}</div>
-              <div class="job-detail-item p1"><i class="fas fa-clock"></i> ${job.hoursPerWeek} hours per week</div>
-              <div class="job-detail-item p1"><i class="fas fa-map-marker-alt"></i> ${job.location}</div>
+              <div class="job-detail-item p1"><i class="fas fa-briefcase"></i> ${job.summary.category}</div>
+              <div class="job-detail-item p1"><i class="fas fa-clock"></i> ${job.summary.jobType}</div>
+              <div class="job-detail-item p1"><i class="fas fa-map-marker-alt"></i> ${job.summary.location}</div>
             </div>
             <div class="action-button">
               <button class="p3">Job Details</button>
@@ -87,16 +47,18 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </div>
       </div>
-        
       `;
       jobsContainer.appendChild(jobCard);
     });
   };
 
-  renderJobs(jobs);
+  // Fetch the first 5 recent jobs
+  const recentJobs = getRecentJobs(jobDatabase, 5);
+  renderJobs(recentJobs);
 
-  const companiesEmployers = JSON.parse(localStorage.getItem('companies')) || [];
-  const companies = jobDatabase.map(job => job.company.name);
+  // Update dashboard statistics
+  const companiesEmployers = JSON.parse(localStorage.getItem("companies")) || [];
+  const companies = jobDatabase.map((job) => job.company.name);
   const uniqueCompanies = new Set(companies);
 
   const jobsNumber = document.getElementById("jobs-number");
@@ -104,9 +66,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const compNumber = document.getElementById("companies-number");
   compNumber.textContent = uniqueCompanies.size;
-  
+
   const empNumber = document.getElementById("employers-number");
   empNumber.textContent = companiesEmployers.length;
+
+  // Utility function to calculate relative time
+  function getRelativeTime(postingTime) {
+    const now = new Date();
+    const posted = new Date(postingTime);
+    const differenceInSeconds = Math.floor((now - posted) / 1000);
+
+    if (differenceInSeconds < 60) {
+      return `${differenceInSeconds} seconds ago`;
+    } else if (differenceInSeconds < 3600) {
+      const minutes = Math.floor(differenceInSeconds / 60);
+      return `${minutes} minute${minutes !== 1 ? "s" : ""} ago`;
+    } else if (differenceInSeconds < 86400) {
+      const hours = Math.floor(differenceInSeconds / 3600);
+      return `${hours} hour${hours !== 1 ? "s" : ""} ago`;
+    } else {
+      const days = Math.floor(differenceInSeconds / 86400);
+      return `${days} day${days !== 1 ? "s" : ""} ago`;
+    }
+  }
 });
 
 
