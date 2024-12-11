@@ -83,8 +83,8 @@
               <img id="sidebar-profile-photo" src="../images/default-user.png" alt="Profile Photo" class="user-image">
             </div>
             <div class="user-info">
-              <p class="user-name">Jake Gyll</p>
-              <p class="user-email">jakegyll@email.com</p>
+              <p class="user-name" id="user-name">Jake Gyll</p>
+              <p class="user-email" id="user-email">jakegyll@email.com</p>
             </div>
           </div> 
 
@@ -166,21 +166,6 @@
                         <label for="location">Location</label>
                         <input type="location" id="location" placeholder="" />
                       </div>
-                
-                      <div>
-                        <label for="Industry">Industry *</label>
-                        <select id="industry">
-                          <option value="none"></option>
-                          <option value="it">IT</option>
-                          <option value="administration">Administration</option>
-                          <option value="commerce">Commerce</option>
-                          <option value="construction">Construction</option>
-                          <option value="hotels-tourism">Hotels & Tourism</option>
-                          <option value="education">Education</option>
-                          <option value="financial">Financial</option>
-                          <option value="transport">Transport</option>
-                        </select>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -188,7 +173,7 @@
               <hr>
 
               <!-- Save Profile Button -->
-              <button class="save-btn">Save Profile</button>
+              <button class="save-btn" id="save-changes">Save Profile</button>
             </div>
           </div>
         </div>
@@ -226,10 +211,10 @@
       </footer>
 
     </div>  <!-- end of full page container -->
-
-    <script src="../scripts/jobsDatabase.js"></script>
-    <script src="../scripts/jobs.js"></script>
+    
     <script src="../scripts/header-pages.js"></script>
     <script src="../scripts/myaccount.js"></script>
+    <script src="../scripts/sidebar.js"></script>
+    <script src="../scripts/profile.js"></script>
   </body>
 </html>
