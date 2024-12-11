@@ -4,7 +4,7 @@ const jobDatabase = [
     postingTime: "2024-12-02T16:45",
     company: {
       name: "Deutsche Bank AG",
-      logo: "/images/DB.png",
+      logo: "DB.png",
     },
     summary: {
       category: "Commerce",
@@ -67,7 +67,7 @@ const jobDatabase = [
     postingTime: "2024-12-10T15:00",
     company: {
       name: "SAP",
-      logo: "/images/SAP.png",
+      logo: "SAP.png",
       },
     summary: {
       category: "IT",

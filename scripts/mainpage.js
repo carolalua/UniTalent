@@ -27,7 +27,7 @@ const renderJobs = (jobs) => {
 
           <div class="job-listing-middle">
             <div class="job-logo">
-              <img src="${job.company.logo}" alt="${job.company.name} logo" class="company-logo" />
+              <img src="./images/${job.company.logo}" alt="${job.company.name} logo" class="company-logo" />
             </div>
 
             <div class="job-title-company">
