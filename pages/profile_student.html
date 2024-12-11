@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css"/>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/grid_layout.css">
+    <link rel="stylesheet" href="../styles/myaccount_profile.css">
+  </head>
+  <body>
+
+    <!-- full page container -->
+    <div class="page-container">
+
+      <!-- header -->
+      <section class="hero-header-container-pages">
+        <header>
+            <button class="left">
+                <div class="logo-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <a href="#"> UniTalent</a>
+            </button>
+            <nav>
+                <ul class="header">
+                    <li><a id="home" href="../index.html">Home</a></li>
+                    <li><a id="jobs" href="../pages/jobs.html">Jobs</a></li>
+                    <li><a id="about" href="../pages/aboutus.html">About Us</a></li>
+                    <li><a id="contact" href="../pages/contactus.html">Contact Us</a></li>
+                </ul>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </label>            
+                <ul class="nav-links">
+                  <li><a id="home" href="#">Home</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="right">
+              <div style="display: none;" class="dropdown" id="user-greeting">
+                <a href="#" id="greeting"></a>
+                <div class="dropdown-content" id="login-header">
+                </div>
+              </div>
+              <div class="dropdown" id="dropdown-first">
+                <a href="#">Login</a>
+                <div id="firstdropdown" class="dropdown-content">
+                  <a href="./login_student.html">For Student</a>
+                  <a href="./login_employer.html">For Company</a>
+                </div>
+              </div>
+              <div class="dropdown" id="dropdown-second">
+                <button>Register</button>
+                <div class="dropdown-content">
+                  <a href="./register_student.html">For Student</a>
+                  <a href="./register_employer.html">For Company</a>
+                </div>
+              </div>
+            </div>
+        </header>
+        <h1 class="title-page">My Account</h1>
+      </section>
+    
+       <!-- Main Content Section -->
+      <div class="main-container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <ul class="sidebar-nav">
+            <li><a href="../pages/profile_student.html" class="active"><i class="fa-light fa-user"></i> My Public Profile</a></li>
+            <li><a href="../pages/myapplications_student.html"><i class="fa-light fa-file-alt"></i> My Applications</a></li>
+            <li><a href="../pages/setting_student.html"><i class="fa-light fa-cog"></i> Settings</a></li>
+          </ul>
+
+          <div class="sidebar-user">
+            <div class="profile-image">
+              <img id="sidebar-profile-photo" src="../images/default-user.png" alt="Profile Photo" class="user-image">
+            </div>
+            <div class="user-info">
+              <p class="user-name">Jake Gyll</p>
+              <p class="user-email">jakegyll@email.com</p>
+            </div>
+          </div> 
+
+          <button class="logout-btn">Logout</button>
+        </div>
+
+        <div class="main-content">
+          <div class="profile-container">
+            <div class="profile-section">
+              <h2>My Profile</h2>
+              <hr> 
+              
+              <!-- Basic Info Section -->
+              <div class="basic-info-section">
+                <h5>Basic Information</h5>
+                <p>This is your personal information that you can update anytime.</p>
+              </div>
+              <hr> 
+
+              <!-- Profile Photo Section -->
+              <div class="profile-photo-section">
+                <h5>Profile Photo</h5>
+                <div class="profile-photo-content">
+                  <!-- Left Column: Description -->
+                  <div class="description">
+                    <p>This image will be shown publicly as your profile picture. It will help recruiters recognize you!</p>
+                  </div>
+
+                  <!-- Middle Column: Photo Display -->
+                  <div class="photo">
+                    <div class="profile-photo-placeholder">
+                      <img id="profile-photo-img" src="../images/default-user.png" alt="Profile Photo">
+                    </div>
+                  </div>
+
+                  <!-- Right Column: Upload Section -->
+                  <div class="upload-section">
+                    <label for="file-input" class="upload-label">Click to replace or drag and drop</label>
+                    <input type="file" id="file-input" class="file-input" accept="image/*">
+                    <p>SVG, PNG, JPG or GIF</p>
+                  </div>
+
+                </div>
+              </div>
+              <hr> 
+       
+              <!-- Personal Details Section -->
+              <div class="personal-details-wrapper">
+                <div class="personal-details-section">
+                  <div class="personal-details-content">
+                    <!-- Personal Details Title -->
+                    <div class="personal-details-title">
+                      <h5>Personal Details</h5>
+                    </div>
+
+                    <!-- Personal Details Input Fields -->
+                    <div class="personal-details-details">
+        
+                      <div class="full-name">
+                        <label for="full-name">Full Name *</label>
+                        <input type="text" id="full-name" placeholder="Jake Gyll" />
+                      </div>
+                      <div>
+                        <label for="phone-number">Phone Number *</label>
+                        <input type="text" id="phone-number" placeholder="+44 1245 572 135" />
+                      </div>
+                      <div>
+                        <label for="dob">Date of Birth *</label>
+                        <input type="date" id="dob" placeholder="dd/mm/yyyy" />
+                      </div>
+
+                      <!-- Second Column (Right side) -->
+                      <div>
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" placeholder="Jakegyll@gmail.com" />
+                      </div>
+                      <div>
+                        <label for="gender">Gender *</label>
+                        <select id="gender">
+                          <option>Male</option>
+                          <option>Female</option>
+                          <option>Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+
+              <!-- Save Profile Button -->
+              <button class="save-btn">Save Profile</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer-top">
+          <div class="footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="logo-text"><h5>UniTalent</a></h5></div>
+          </div>
+          <div class="logo-icon none"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-xing"></i></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-btm">
+          <div class="footer-copyright">
+            © Copyright UniTalent 2024. Designed by Pixel Pirates
+          </div>
+          <div class="footer-aboutus p1">
+            <a href="aboutus">About us</a>
+            <a href="contactus">Contact us</a>
+          </div>
+          <div class="footer-policy p1">
+            <a href="policy">Privacy Policy</a>
+            <a href="terms">Terms & Conditions</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>  <!-- end of full page container -->
+
+    <script src="../scripts/jobsDatabase.js"></script>
+    <script src="../scripts/jobs.js"></script>
+    <script src="../scripts/header-pages.js"></script>
+    <script src="../scripts/myaccount.js"></script>
+  </body>
+</html>
