@@ -10,17 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
  // Function to render jobs
-const renderJobs = (jobs) => {
+ const renderJobs = (jobs) => {
   jobsContainer.innerHTML = ""; // Clear previous content
 
   jobs.forEach((job) => {
     const jobCard = document.createElement("div");
     jobCard.classList.add("job-card");
 
-    // Adjust the logo path dynamically for the main root
-    const logoPath = job.company.logo.startsWith("../")
-      ? job.company.logo.replace("../", "./") // Adjust for index.html in the root
-      : job.company.logo;
+    // Use absolute path from the root
+    const logoPath = `/images/${job.company.logo.split("/").pop()}`;
 
     jobCard.innerHTML = `
     <div class="recent-jobs-container">
@@ -47,7 +45,7 @@ const renderJobs = (jobs) => {
             <div class="job-detail-item p1"><i class="fas fa-map-marker-alt"></i> ${job.summary.location}</div>
           </div>
           <div class="action-button">
-            <button class="p3" onclick="window.open('./pages/jobdisplay.html?id=${job.id}', '_blank')">Job Details</button>
+            <button class="p3" onclick="window.open('/pages/jobdisplay.html?id=${job.id}', '_blank')">Job Details</button>
           </div>
         </div>
       </div>
