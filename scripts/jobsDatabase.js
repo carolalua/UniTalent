@@ -43,8 +43,8 @@ const jobDatabase = [
           proficiency: "Advanced",  // "Beginner", "Intermediate", or "Advanced"
       },
       German: {
-          required: false,
-          proficiency: null,
+          required: true,
+          proficiency: "Beginner", // Can be null if not required
       },
     },
     educationLevel: ["Master"],
@@ -195,7 +195,7 @@ const jobDatabase = [
     languages: {
       English: {
           required: true,
-          proficiency: "Advanced",
+          proficiency: "Intermediate",
       },
       German: {
           required: false,
@@ -267,7 +267,7 @@ const jobDatabase = [
       },
       German: {
           required: true,
-          proficiency: "Advanced",
+          proficiency: "Beginner",
       },
     },
     educationLevel: ["Bachelor","Master"],

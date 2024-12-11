@@ -25,6 +25,10 @@
   margin-bottom: 25px;
 }
 
+.filter-group .proficiency{
+  padding-left: 30px;
+}
+
 .filter-group input[type="text"] {
   width: 100%;
   padding: 8px 12px;

@@ -2,14 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const jobListingsContainer = document.getElementById("job-listings");
   const paginationContainer = document.querySelector(".pagination");
   const resetButton = document.getElementById("reset-filters");
-  const jobCountElement = document.getElementById("job-count"); // Reference to job count display
+  const jobCountElement = document.getElementById("job-count");
 
   const jobsPerPage = 5; // Number of jobs per page
   let currentPage = 1; // Start on the first page
   let filteredJobs = [...jobDatabase]; // Initialize with all jobs
 
   const filterInputs = document.querySelectorAll(
-    "#filter-input, #education-level, #experience-level, #category, input[name='location'], input[type='checkbox']"
+    "#filter-input, #education-level, #experience-level, #category, input[name='location'], input[type='checkbox'], input[name='proficiency-level']"
   );
 
   // Render initial jobs and pagination
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Event listeners for filters
   filterInputs.forEach((input) => {
     input.addEventListener("input", applyFilters);
-    input.addEventListener("change", applyFilters);
+    input.addEventListener("change", applyFilters); // Ensures radio buttons are updated
   });
 
   // Reset filters and re-render all jobs
@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('input[name="location"]').forEach((radio) => {
       radio.checked = false;
     });
+    document.querySelector('input[name="proficiency-level"][value="any"]').checked = true;
 
     // Reset page and re-render
     filteredJobs = [...jobDatabase];
@@ -50,54 +51,92 @@ document.addEventListener("DOMContentLoaded", () => {
   // Apply filters and update the results
   function applyFilters() {
     const titleInput = document.getElementById("filter-input").value.toLowerCase();
-    const educationLevel = document.getElementById("education-level").value; // Get dropdown value
-    const experienceLevel = document.getElementById("experience-level").value; // Get dropdown value
+    const educationLevel = document.getElementById("education-level").value;
+    const experienceLevel = document.getElementById("experience-level").value;
     const category = document.getElementById("category").value.toLowerCase();
     const locationType = document.querySelector('input[name="location"]:checked')?.value.toLowerCase();
+    const englishRequired = document.getElementById("english").checked;
+    const germanRequired = document.getElementById("german").checked;
+    const proficiencyLevel = document.querySelector('input[name="proficiency-level"]:checked').value;
 
     filteredJobs = jobDatabase.filter((job) => {
-        // Filter by job title or company name
-        if (
-            titleInput &&
-            !job.overview.jobTitle.toLowerCase().includes(titleInput) &&
-            !job.company.name.toLowerCase().includes(titleInput)
-        ) {
-            return false;
-        }
+      // Filter by job title or company name
+      if (
+        titleInput &&
+        !job.overview.jobTitle.toLowerCase().includes(titleInput) &&
+        !job.company.name.toLowerCase().includes(titleInput)
+      ) {
+        return false;
+      }
 
-        // Filter by education level
-        if (educationLevel && !job.educationLevel.includes(educationLevel)) {
-            return false; // Exclude job if the selected education level is not in the array
-        }
+      // Filter by education level
+      if (educationLevel && !job.educationLevel.includes(educationLevel)) {
+        return false;
+      }
 
-        // Filter by experience level
-        if (experienceLevel && !job.experienceLevel.includes(experienceLevel)) {
-            return false; // Exclude job if the selected experience level is not in the array
-        }
+      // Filter by experience level
+      if (experienceLevel && !job.experienceLevel.includes(experienceLevel)) {
+        return false;
+      }
 
-        // Filter by category
-        if (category && job.summary.category.toLowerCase() !== category) {
-            return false;
-        }
+      // Filter by category
+      if (category && job.summary.category.toLowerCase() !== category) {
+        return false;
+      }
 
-        // Filter by location type
-        if (locationType && !job.locationType.includes(locationType)) {
-          return false; // Exclude job if the selected location type is not in the array
+      // Filter by location type
+      if (locationType && !job.locationType.includes(locationType)) {
+        return false;
+      }
+
+      // Filter by language requirements and proficiency
+      if (englishRequired || germanRequired) {
+        let languageMatch = true;
+
+        // Check English proficiency
+        if (englishRequired) {
+          const english = job.languages?.English;
+          if (
+            !english || // English is not listed
+            !english.required || // English is not required
+            (proficiencyLevel !== "any" && english.proficiency?.toLowerCase() !== proficiencyLevel.toLowerCase())
+          ) {
+            languageMatch = false;
           }
+        }
 
-        return true; // Include job if it passes all filters
+        // Check German proficiency
+        if (germanRequired) {
+          const german = job.languages?.German;
+          if (
+            !german || // German is not listed
+            !german.required || // German is not required
+            (proficiencyLevel !== "any" && german.proficiency?.toLowerCase() !== proficiencyLevel.toLowerCase())
+          ) {
+            languageMatch = false;
+          }
+        }
+
+        if (!languageMatch) {
+          return false; // Exclude if any language mismatch
+        }
+      }
+
+      return true; // Include job if it passes all filters
     });
 
     // Reset to the first page and re-render
     currentPage = 1;
     renderJobs(filteredJobs);
     renderPagination(filteredJobs);
-    updateJobCount(filteredJobs.length); // Update job count after filtering
+    updateJobCount(filteredJobs.length); // Update job count
   }
 
   // Update job count
   function updateJobCount(count) {
-    jobCountElement.textContent = `Showing ${count} job${count !== 1 ? "s" : ""}`;
+    if (jobCountElement) {
+      jobCountElement.textContent = `${count} jobs found`;
+    }
   }
 
   // Render job listings in the container (with pagination)
