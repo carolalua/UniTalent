@@ -9,48 +9,53 @@ document.addEventListener("DOMContentLoaded", () => {
     return sortedJobs.slice(0, limit);
   };
 
-  // Function to render jobs
-  const renderJobs = (jobs) => {
-    jobsContainer.innerHTML = ""; // Clear previous content
+ // Function to render jobs
+const renderJobs = (jobs) => {
+  jobsContainer.innerHTML = ""; // Clear previous content
 
-    jobs.forEach((job) => {
-      const jobCard = document.createElement("div");
-      jobCard.classList.add("job-card");
+  jobs.forEach((job) => {
+    const jobCard = document.createElement("div");
+    jobCard.classList.add("job-card");
 
-      jobCard.innerHTML = `
-      <div class="recent-jobs-container">
-        <div class="job-listing">
-          <div class="job-listing-top">
-          <span class="posted-time p1">${getRelativeTime(job.postingTime)}</span>
+    // Adjust the logo path dynamically for the main root
+    const logoPath = job.company.logo.startsWith("../")
+      ? job.company.logo.replace("../", "./") // Adjust for index.html in the root
+      : job.company.logo;
+
+    jobCard.innerHTML = `
+    <div class="recent-jobs-container">
+      <div class="job-listing">
+        <div class="job-listing-top">
+        <span class="posted-time p1">${getRelativeTime(job.postingTime)}</span>
+        </div>
+
+        <div class="job-listing-middle">
+          <div class="job-logo">
+            <img src="${logoPath}" alt="${job.company.name} logo" class="company-logo" />
           </div>
 
-          <div class="job-listing-middle">
-            <div class="job-logo">
-              <img src="${job.company.logo}" alt="${job.company.name} logo" class="company-logo" />
-            </div>
-
-            <div class="job-title-company">
-              <h3 class="h3">${job.overview.jobTitle}</h3>
-              <p class="p1">${job.company.name}</p>
-            </div>
+          <div class="job-title-company">
+            <h3 class="h3">${job.overview.jobTitle}</h3>
+            <p class="p1">${job.company.name}</p>
           </div>
+        </div>
 
-          <div class="job-listing-bottom">
-            <div class="job-detail-items">
-              <div class="job-detail-item p1"><i class="fas fa-briefcase"></i> ${job.summary.category}</div>
-              <div class="job-detail-item p1"><i class="fas fa-clock"></i> ${job.summary.jobType}</div>
-              <div class="job-detail-item p1"><i class="fas fa-map-marker-alt"></i> ${job.summary.location}</div>
-            </div>
-            <div class="action-button">
-              <button class="p3" onclick="window.open('./pages/jobdisplay.html?id=${job.id}', '_blank')">Job Details</button>
-            </div>
+        <div class="job-listing-bottom">
+          <div class="job-detail-items">
+            <div class="job-detail-item p1"><i class="fas fa-briefcase"></i> ${job.summary.category}</div>
+            <div class="job-detail-item p1"><i class="fas fa-clock"></i> ${job.summary.jobType}</div>
+            <div class="job-detail-item p1"><i class="fas fa-map-marker-alt"></i> ${job.summary.location}</div>
+          </div>
+          <div class="action-button">
+            <button class="p3" onclick="window.open('./pages/jobdisplay.html?id=${job.id}', '_blank')">Job Details</button>
           </div>
         </div>
       </div>
-      `;
-      jobsContainer.appendChild(jobCard);
-    });
-  };
+    </div>
+    `;
+    jobsContainer.appendChild(jobCard);
+  });
+};
 
   // Fetch the first 5 recent jobs
   const recentJobs = getRecentJobs(jobDatabase, 5);
