@@ -176,28 +176,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function renderJobs(jobs) {
     jobListingsContainer.innerHTML = ""; // Clear existing listings
-
+  
     if (jobs.length === 0) {
       jobListingsContainer.innerHTML = "<p>No jobs match your search criteria.</p>";
       return;
     }
-
+  
     const startIndex = (currentPage - 1) * jobsPerPage;
     const endIndex = Math.min(startIndex + jobsPerPage, jobs.length);
-
+  
     jobs.slice(startIndex, endIndex).forEach((job) => {
       const relativeTime = getRelativeTime(job.postingTime); // Calculate relative time dynamically
-
+  
+      // Adjust the logo path dynamically
+      const logoPath = job.company.logo.startsWith("../")
+        ? job.company.logo.replace("../", "./") // Adjust for root HTML
+        : job.company.logo;
+  
       const jobListing = document.createElement("div");
       jobListing.className = "job-listing";
-
+  
       jobListing.innerHTML = `
         <div class="job-listing-top">
           <span class="posted-time p1">${relativeTime}</span>
         </div>
         <div class="job-listing-middle">
           <div class="job-logo">
-            <img src="${job.company.logo}" alt="${job.company.name} Logo">
+            <img src="${logoPath}" alt="${job.company.name} Logo">
           </div>
           <div class="job-title-company">
             <h3 class="h3">${job.overview.jobTitle}</h3>
@@ -215,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </div>
       `;
-
+  
       jobListingsContainer.appendChild(jobListing);
     });
   }
