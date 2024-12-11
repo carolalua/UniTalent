@@ -418,8 +418,7 @@ const jobDatabase = [
       degree: "Bachelor/Master",
       gender: "All",
       location: "Berlin",
-      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.2483812586374!2d13.4157531!3d52.52894009999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a8504aac6e564f%3A0xe1b0e245b7d2e423!2sInkitt%20GmbH!5e0!3m2!1sen!2sde!4v1733848914972!5m2!1sen!2sde",
-    },
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.2483812586374!2d13.4157531!3d52.52894009999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a8504aac6e564f%3A0xe1b0e245b7d2e423!2sInkitt%20GmbH!5e0!3m2!1sen!2sde!4v1733848914972!5m2!1sen!2sde",},
   },
   {
     id: 7,
@@ -486,8 +485,8 @@ const jobDatabase = [
       degree: "Bachelor/Master",
       gender: "All",
       location: "Hamburg",
-      mapUrl: "https://www.google.com/maps/place/Obton/@51.5007501,7.1053877,17z/data=!3m1!4b1!4m6!3m5!1s0x47b8e719c47a4d59:0x2c9c860d7c928e14!8m2!3d51.5007468!4d7.1079626!16s%2Fg%2F11vx6qhzff?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
-      },
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6796031559475!2d7.1079626!3d51.50074679999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8e719c47a4d59%3A0x2c9c860d7c928e14!2sObton!5e0!3m2!1sen!2sde!4v1733919845665!5m2!1sen!2sde",
+    },
   },
   {
     id: 8,
@@ -550,8 +549,8 @@ const jobDatabase = [
       degree: "Bachelor/Master",
       gender: "All",
       location: "Düsseldorf",
-      mapUrl: "https://www.google.com/maps/place/Boston+Consulting+Group/@51.2266049,6.7771161,17z/data=!3m1!4b1!4m6!3m5!1s0x4171beb8c2314c81:0x25546bd43be74743!8m2!3d51.2266016!4d6.779691!16s%2Fg%2F11b729n_2g?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
-      },
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.591439580367!2d6.779691!3d51.226601599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4171beb8c2314c81%3A0x25546bd43be74743!2sBoston%20Consulting%20Group!5e0!3m2!1sen!2sde!4v1733919880837!5m2!1sen!2sde",
+    },
   },
   {
     id: 9,
@@ -616,7 +615,7 @@ const jobDatabase = [
       degree: "Bachelor/Master",
       gender: "All",
       location: "Germany",
-      mapUrl: "https://www.google.com/maps/place/Canon+Production+Printing/@48.1684715,11.7980289,17z/data=!3m1!5s0x479e0914c157b6af:0xda06b47ae7fc2788!4m14!1m7!3m6!1s0x410903da2f6f2cc3:0x897e93a5a10ff51a!2sCanon+Germany+GmbH!8m2!3d48.168468!4d11.8006038!16s%2Fg%2F1ptw82jjb!3m5!1s0x479e0914ea4cd74f:0x43724ed9b2284089!8m2!3d48.1680775!4d11.8012503!16s%2Fg%2F1tfd1cyv?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.591439580367!2d6.779691!3d51.226601599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4171beb8c2314c81%3A0x25546bd43be74743!2sBoston%20Consulting%20Group!5e0!3m2!1sen!2sde!4v1733919880837!5m2!1sen!2sde",
       },
   },
   {
@@ -683,7 +682,7 @@ const jobDatabase = [
       degree: "Bachelor/Master",
       gender: "All",
       location: "Berlin",
-      mapUrl: "https://www.google.com/maps/place/MBition+GmbH/@52.5199464,13.3169431,17z/data=!3m2!4b1!5s0x47a85119e191863f:0x319329b0b39086c5!4m6!3m5!1s0x47a851d0e1d06b77:0xb539082293932cdc!8m2!3d52.5199432!4d13.319518!16s%2Fg%2F11fzf4hxzl?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.7455824160684!2d13.319517999999997!3d52.51994319999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851d0e1d06b77%3A0xb539082293932cdc!2sMBition%20GmbH!5e0!3m2!1sen!2sde!4v1733920383048!5m2!1sen!2sde",
       },
   },
   {
@@ -749,7 +748,7 @@ const jobDatabase = [
       degree: "Bachelor/Master",
       gender: "All",
       location: "Berlin",
-      mapUrl: "https://www.google.com/maps/place/VEE+COLLECTIVE/@52.527633,13.3969518,17z/data=!3m1!4b1!4m6!3m5!1s0x47a8514de91280ff:0xc589daf04225305a!8m2!3d52.5276298!4d13.3995267!16s%2Fg%2F11rglrb2sb?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.3207968883085!2d13.3995267!3d52.5276298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a8514de91280ff%3A0xc589daf04225305a!2sVEE%20COLLECTIVE!5e0!3m2!1sen!2sde!4v1733920427328!5m2!1sen!2sde",
       },
   },
   {
@@ -815,7 +814,7 @@ const jobDatabase = [
       degree: "Bachelor/Master",
       gender: "All",
       location: "Berlin",
-      mapUrl: "https://www.google.com/maps/place/LionsHome+GmbH/@52.5255704,13.3991155,17z/data=!3m2!4b1!5s0x47a851e13433da01:0xed553a63a2048568!4m6!3m5!1s0x47a851e134366839:0xae01b8852983149b!8m2!3d52.5255672!4d13.4016904!16s%2Fg%2F11f__jk7s7?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.434786896439!2d13.401690400000001!3d52.5255672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851e134366839%3A0xae01b8852983149b!2sLionsHome%20GmbH!5e0!3m2!1sen!2sde!4v1733920466576!5m2!1sen!2sde",
       },
   },
   {
@@ -881,7 +880,7 @@ const jobDatabase = [
       degree: "Bachelor/Master",
       gender: "All",
       location: "Berlin",
-      mapUrl: "https://www.google.com/maps/place/Hive+Technologies+GmbH+HQ/@52.5213132,13.4028851,17z/data=!3m1!4b1!4m6!3m5!1s0x47a8510eeaffc8b3:0xd29744ecb100f639!8m2!3d52.52131!4d13.40546!16s%2Fg%2F11j6y7t_y3?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.670051972185!2d13.405460000000001!3d52.52131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a8510eeaffc8b3%3A0xd29744ecb100f639!2sHive%20Technologies%20GmbH%20HQ!5e0!3m2!1sen!2sde!4v1733920507615!5m2!1sen!2sde",
       },
   },
   {
@@ -947,7 +946,7 @@ const jobDatabase = [
       degree: "Bachelor/Master",
       gender: "All",
       location: "Berlin",
-      mapUrl: "https://www.google.com/maps/place/home24+Showroom+-+Berlin+Prenzlauer+Berg/@52.5272915,13.4526736,17z/data=!3m1!4b1!4m6!3m5!1s0x47a851db2f8a90d9:0x8701be09518a9478!8m2!3d52.5272883!4d13.4552485!16s%2Fg%2F11gzbd77c?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4854.679340345003!2d13.455248500000001!3d52.527288299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851db2f8a90d9%3A0x8701be09518a9478!2shome24%20Showroom%20-%20Berlin%20Prenzlauer%20Berg!5e0!3m2!1sen!2sde!4v1733920544559!5m2!1sen!2sde",
       },
   },
   {
@@ -1010,7 +1009,7 @@ const jobDatabase = [
       degree: "Bachelor/Master",
       gender: "All",
       location: "Berlin",
-      mapUrl: "https://www.google.com/maps/place/Amazon+DBE2/@52.4354645,13.3713444,17z/data=!3m1!4b1!4m6!3m5!1s0x47a845c8cd1e4113:0x47037c39b318bf64!8m2!3d52.4354613!4d13.3739193!16s%2Fg%2F11gjhfq0w1?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D",
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.4114352263596!2d13.373919299999999!3d52.4354613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a845c8cd1e4113%3A0x47037c39b318bf64!2sAmazon%20DBE2!5e0!3m2!1sen!2sde!4v1733920584855!5m2!1sen!2sde",
       },
   },
 ];
