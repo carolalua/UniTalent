@@ -81,7 +81,7 @@ function populateJobDetails(job) {
     document.querySelector(".postingtime").textContent = relativeTime;
 
     // Company details
-    document.querySelector(".company-logo img").src = job.company.logo;
+    document.querySelector(".company-logo img").src = `../images/${job.company.logo}`;
     document.querySelector(".company-name h3").textContent = job.company.name;
 
     // Summary details
