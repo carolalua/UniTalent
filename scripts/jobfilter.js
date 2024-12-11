@@ -2,18 +2,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const jobListingsContainer = document.getElementById("job-listings");
   const paginationContainer = document.querySelector(".pagination");
   const resetButton = document.getElementById("reset-filters");
+  const jobCountElement = document.getElementById("job-count"); // Reference to job count display
 
   const jobsPerPage = 5; // Number of jobs per page
   let currentPage = 1; // Start on the first page
   let filteredJobs = [...jobDatabase]; // Initialize with all jobs
 
   const filterInputs = document.querySelectorAll(
-    "#filter-input, #education-level, #category, #experience-level, #semester, input[name='proficiency-level'], input[name='location'], input[type='checkbox']"
+    "#filter-input, #education-level, #experience-level, #category, input[name='location'], input[type='checkbox']"
   );
 
   // Render initial jobs and pagination
   renderJobs(filteredJobs);
   renderPagination(filteredJobs);
+  updateJobCount(filteredJobs.length); // Update job count initially
 
   // Event listeners for filters
   filterInputs.forEach((input) => {
@@ -26,14 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // Clear all inputs
     document.getElementById("filter-input").value = "";
     document.getElementById("education-level").value = "";
-    document.getElementById("category").value = "";
     document.getElementById("experience-level").value = "";
+    document.getElementById("category").value = "";
 
     // Reset checkboxes and radio buttons
     document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
       checkbox.checked = false;
     });
-    document.querySelector('input[name="proficiency-level"][value="any"]').checked = true;
     document.querySelectorAll('input[name="location"]').forEach((radio) => {
       radio.checked = false;
     });
@@ -43,72 +44,60 @@ document.addEventListener("DOMContentLoaded", () => {
     currentPage = 1;
     renderJobs(filteredJobs);
     renderPagination(filteredJobs);
+    updateJobCount(filteredJobs.length); // Update job count on reset
   });
 
   // Apply filters and update the results
   function applyFilters() {
     const titleInput = document.getElementById("filter-input").value.toLowerCase();
-    const educationLevel = document.getElementById("education-level").value.toLowerCase(); // Get dropdown value
+    const educationLevel = document.getElementById("education-level").value; // Get dropdown value
+    const experienceLevel = document.getElementById("experience-level").value; // Get dropdown value
     const category = document.getElementById("category").value.toLowerCase();
-    const experienceLevel = document.getElementById("experience-level").value.toLowerCase(); // Match keys in `experience` object
-    const englishRequired = document.getElementById("english").checked;
-    const germanRequired = document.getElementById("german").checked;
-    const proficiencyLevel = document.querySelector('input[name="proficiency-level"]:checked').value.toLowerCase();
     const locationType = document.querySelector('input[name="location"]:checked')?.value.toLowerCase();
 
     filteredJobs = jobDatabase.filter((job) => {
-      // Filter by job title or company name
-      if (
-        titleInput &&
-        !job.overview.jobTitle.toLowerCase().includes(titleInput) &&
-        !job.company.name.toLowerCase().includes(titleInput)
-      ) {
-        return false;
-      }
-
-      // Filter by education level
-      if (educationLevel && !job.educationLevel.some((level) => level.toLowerCase() === educationLevel)) {
-        return false; // Exclude job if the selected education level is not in the array
-      }
-
-      // Filter by category
-      if (category && job.summary.category.toLowerCase() !== category) {
-        return false;
-      }
-
-      // Filter by experience level
-      if (experienceLevel && !job.experience[experienceLevel]) {
-        return false;
-      }
-
-      // Filter by location type
-      if (locationType && !job.locationType[locationType]) {
-        return false;
-      }
-
-      // Filter by language requirements (English)
-      if (englishRequired) {
-        const english = job.languages?.English;
-        if (!english || !english.required || (proficiencyLevel !== "any" && english.proficiency?.toLowerCase() !== proficiencyLevel)) {
-          return false;
+        // Filter by job title or company name
+        if (
+            titleInput &&
+            !job.overview.jobTitle.toLowerCase().includes(titleInput) &&
+            !job.company.name.toLowerCase().includes(titleInput)
+        ) {
+            return false;
         }
-      }
 
-      // Filter by language requirements (German)
-      if (germanRequired) {
-        const german = job.languages?.German;
-        if (!german || !german.required || (proficiencyLevel !== "any" && german.proficiency?.toLowerCase() !== proficiencyLevel)) {
-          return false;
+        // Filter by education level
+        if (educationLevel && !job.educationLevel.includes(educationLevel)) {
+            return false; // Exclude job if the selected education level is not in the array
         }
-      }
 
-      return true; // Include job if it passes all filters
+        // Filter by experience level
+        if (experienceLevel && !job.experienceLevel.includes(experienceLevel)) {
+            return false; // Exclude job if the selected experience level is not in the array
+        }
+
+        // Filter by category
+        if (category && job.summary.category.toLowerCase() !== category) {
+            return false;
+        }
+
+        // Filter by location type
+        if (locationType && !job.locationType.includes(locationType)) {
+          return false; // Exclude job if the selected location type is not in the array
+          }
+
+        return true; // Include job if it passes all filters
     });
 
     // Reset to the first page and re-render
     currentPage = 1;
     renderJobs(filteredJobs);
     renderPagination(filteredJobs);
+    updateJobCount(filteredJobs.length); // Update job count after filtering
+  }
+
+  // Update job count
+  function updateJobCount(count) {
+    jobCountElement.textContent = `Showing ${count} job${count !== 1 ? "s" : ""}`;
   }
 
   // Render job listings in the container (with pagination)
@@ -173,6 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentPage--;
         renderJobs(jobs);
         renderPagination(jobs);
+        updateJobCount(jobs.length); // Update job count on page change
       });
       paginationContainer.appendChild(prevButton);
     }
@@ -185,6 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentPage = i;
         renderJobs(jobs);
         renderPagination(jobs);
+        updateJobCount(jobs.length); // Update job count on page change
       });
       paginationContainer.appendChild(pageButton);
     }
@@ -197,28 +188,29 @@ document.addEventListener("DOMContentLoaded", () => {
         currentPage++;
         renderJobs(jobs);
         renderPagination(jobs);
+        updateJobCount(jobs.length); // Update job count on page change
       });
       paginationContainer.appendChild(nextButton);
     }
   }
-});
 
-// Utility to calculate relative time
-function getRelativeTime(postingTime) {
-  const now = new Date(); // Current time
-  const posted = new Date(postingTime); // Convert postingDate to Date object
-  const differenceInSeconds = Math.floor((now - posted) / 1000); // Difference in seconds
+  // Utility to calculate relative time
+  function getRelativeTime(postingTime) {
+    const now = new Date(); // Current time
+    const posted = new Date(postingTime); // Convert postingDate to Date object
+    const differenceInSeconds = Math.floor((now - posted) / 1000); // Difference in seconds
 
-  if (differenceInSeconds < 60) {
-    return `${differenceInSeconds} seconds ago`;
-  } else if (differenceInSeconds < 3600) {
-    const minutes = Math.floor(differenceInSeconds / 60);
-    return `${minutes} minute${minutes !== 1 ? "s" : ""} ago`;
-  } else if (differenceInSeconds < 86400) {
-    const hours = Math.floor(differenceInSeconds / 3600);
-    return `${hours} hour${hours !== 1 ? "s" : ""} ago`;
-  } else {
-    const days = Math.floor(differenceInSeconds / 86400);
-    return `${days} day${days !== 1 ? "s" : ""} ago`;
+    if (differenceInSeconds < 60) {
+      return `${differenceInSeconds} seconds ago`;
+    } else if (differenceInSeconds < 3600) {
+      const minutes = Math.floor(differenceInSeconds / 60);
+      return `${minutes} minute${minutes !== 1 ? "s" : ""} ago`;
+    } else if (differenceInSeconds < 86400) {
+      const hours = Math.floor(differenceInSeconds / 3600);
+      return `${hours} hour${hours !== 1 ? "s" : ""} ago`;
+    } else {
+      const days = Math.floor(differenceInSeconds / 86400);
+      return `${days} day${days !== 1 ? "s" : ""} ago`;
+    }
   }
-}
+});

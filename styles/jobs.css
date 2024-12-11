@@ -154,6 +154,11 @@
   padding: 20px; /* Add padding around the container */
   box-sizing: border-box; /* Include padding in height calculation */
 }
+.job-count {
+  font-weight: 500;
+  margin-top: -30px;
+  padding-bottom: 10px;
+}
 .job-listing {
   display: flex; /* Enable flexbox */
   flex-direction: column; /* Stack job listing content vertically */

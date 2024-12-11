@@ -88,9 +88,9 @@
                   <p1>Education Level</p1>
                   <select id="education-level">
                     <option value="">Any</option>
-                    <option value="bachelor">Bachelor's Degree</option>
-                    <option value="master">Master's Degree</option>
-                    <option value="phd">PhD</option>
+                    <option value="Bachelor">Bachelor's Degree</option>
+                    <option value="Master">Master's Degree</option>
+                    <option value="PhD">PhD</option>
                   </select>
                 </div>
 
@@ -115,10 +115,10 @@
                   <p1>Experience in the Field</p1>
                   <select id="experience-level">
                     <option value="">Any</option>
-                    <option value="none">None</option>
-                    <option value="1-2-years">1-2 Years</option>
-                    <option value="3-5-years">3-5 Years</option>
-                    <option value="5-plus-years">5+ Years</option>
+                    <option value="Entry">Entry: No experience</option>
+                    <option value="Junior">Junior: 1-2 Years</option>
+                    <option value="Senior">Senior: 3-5 Years</option>
+                    <option value="Professional">Professional: 5+ Years</option>
                   </select>
                 </div>
 
@@ -161,7 +161,7 @@
                   <ul>
 
                     <li>
-                      <input type="radio" id="location-on-site" name="location" value="on-site">
+                      <input type="radio" id="location-on-site" name="location" value="onsite">
                       <label for="location-on-site">On-Site</label>
                     </li>
                     <li>
@@ -189,6 +189,9 @@
 
             
             <div class="job-dynamic-container">
+              <div class="job-count">
+                <p id="job-count">Showing 0 jobs</p>
+              </div>
               <!-- Job Listings Container -->
               <div id="job-listings" class="job-listings">
                 <!-- Job listings will be dynamically populated here -->
