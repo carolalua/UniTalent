@@ -124,12 +124,15 @@ const categoriesArray = Object.values(categories);
 // Dynamically generating category cards
 categoryGrid.innerHTML = ""; // Clear existing content
 categoriesArray.forEach(category => {
+  const categorySlug = category.name.toLowerCase().replace(/\s+/g, '-'); // Convert category name to slug
   const categoryCard = `
-    <div class="category-card">
-      <div class="category-icon">${category.icon}</div>
-      <h3 class="category-name">${category.name}</h3>
-      <span class="job-count">${category.jobCount} jobs</span>
-    </div>
+    <a href="./pages/jobs.html?category=${categorySlug}" class="category-link">
+      <div class="category-card">
+        <div class="category-icon">${category.icon}</div>
+        <h3 class="category-name">${category.name}</h3>
+        <span class="job-count">${category.jobCount} jobs</span>
+      </div>
+    </a>
   `;
   categoryGrid.innerHTML += categoryCard;
 });
