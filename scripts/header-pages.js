@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     if (userType === 'student') {
-      settingHeader('#', './login_student.html');
+      settingHeader('./profile_student.html', './login_student.html');
     } else if (userType === 'company') {
-      settingHeader('#', './login_employer.html');
+      settingHeader('./profile_employer.html', './login_employer.html');
     }
 
     loginText.addEventListener('click', (event) => {
