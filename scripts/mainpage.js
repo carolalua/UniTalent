@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="job-detail-item p1"><i class="fas fa-map-marker-alt"></i> ${job.summary.location}</div>
             </div>
             <div class="action-button">
-              <button class="p3">Job Details</button>
+              <button class="p3" onclick="window.open('./pages/jobdisplay.html?id=${job.id}', '_blank')">Job Details</button>
             </div>
           </div>
         </div>
@@ -90,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
-
 
 
 /// Category Data Array
