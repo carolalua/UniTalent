@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return sortedJobs.slice(0, limit);
   };
 
- // Function to render jobs
+
 // Function to render jobs
 const renderJobs = (jobs) => {
   jobsContainer.innerHTML = ""; // Clear previous content
