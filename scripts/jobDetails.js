@@ -1,3 +1,5 @@
+const jobDatabase = JSON.parse(localStorage.getItem('jobDatabase'));
+
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const jobId = parseInt(urlParams.get("id"), 10); // Parse the ID as an integer

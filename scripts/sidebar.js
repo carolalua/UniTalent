@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(userType ==='company') {
         const company = companies.find(company => company.contactEmail === userEmail);
-        console.log(company)
         userNameId.innerHTML = company.contactPerson;
     }
 });

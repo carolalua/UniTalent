@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
             student.lastName = lastName.value;
             student.telephone = phoneNumber.value;
             student.email = email.value;
-            console.log(student.email);
             localStorage.setItem('users', JSON.stringify(users));
             localStorage.setItem('userEmail', student.email);
             localStorage.setItem('loggedInUser', student.firstName);

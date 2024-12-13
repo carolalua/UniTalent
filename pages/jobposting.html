@@ -69,7 +69,7 @@
 
       <div class="main-container">
         <section class="form-posting"> 
-          <form action="" class="actual-form">
+          <form id="actual-form">
             <h3 id="sub-title-posting">Post a Job</h3>
             <section class="form-group name-group">
               <section>
@@ -97,31 +97,29 @@
               <section class="left-posting">
                 <section class="form-group">
                   <label for="educationlevel">Education Level</label><br>
-                  <select name="educationlevel" id="educationlevel">
-                      <option selected>Select Education Level</option>
+                  <select name="educationlevel" id="educationlevel" required>
+                      <option value="" selected>Select Education Level</option>
                       <option value="bachelor">Bachelor's Degree</option>
                       <option value="master">Master's Degree</option>
+                      <option value="PhD">PhD</option>
                   </select>
                 </section>
                 <section id="language-section">
                 <section class="form-group">
                   <label for="languagerequirement">Language requirement</label><br>
-                  <select name="languagerequirement[]" class="languagerequirement">
-                      <option selected>Select Language</option>
+                  <select name="languagerequirement[]" class="languagerequirement" required>
+                      <option value="" selected>Select Language</option>
                       <option value="english">English</option>
                       <option value="german">German</option>
                   </select>
                 </section>
                 <section class="form-group">
                   <label for="proficiencylevel">Proficiency Level</label><br>
-                  <select name="proficiencylevel[]" class="proficiencylevel">
-                    <option selected>Select Proficiency Level</option>
-                    <option value="a1">A1</option>
-                    <option value="a2">A2</option>
-                    <option value="b1">B1</option>
-                    <option value="b2">B2</option>
-                    <option value="c1">C1</option>
-                    <option value="c2">C2</option>
+                  <select name="proficiencylevel[]" class="proficiencylevel" required>
+                    <option value="" selected>Select Proficiency Level</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
                   </select>
                 </section>
                 </section>
@@ -132,49 +130,49 @@
               <section class="right-posting">
                 <section class="form-group">
                   <label for="experience">Experience in the field</label><br>
-                  <select name="experience" id="experience">
-                      <option selected>Select Experience in the field</option>
-                      <option value="noexperience">No experience</option>
-                      <option value="lessone">Less than 1 year</option>
-                      <option value="moreone">More than 1 year</option>
-                  </select>
-                </section>
-                <section class="form-group">
-                  <label for="experience">Semester for Internship / Working student position</label><br>
-                  <select name="experience" id="experience">
-                      <option selected>Select Semester</option>
-                      <option value="noexperience">1st Semester</option>
-                      <option value="lessone">2nd Semester</option>
-                      <option value="moreone">3rd Semester</option>
-                      <option value="noexperience">4th Semester</option>
-                      <option value="lessone">5th Semester</option>
-                      <option value="moreone">6th Semester</option>
-                      <option value="moreone">7th Semester</option>
-                      <option value="moreone">8th Semester</option>
+                  <select name="experience" id="experience" required>
+                      <option value="" selected>Select Experience in the field</option>
+                      <option value="Entry">Entry: No experience</option>
+                      <option value="Junior">Junior: 1-2 Years</option>
+                      <option value="Senior">Senior: 3-4 Years</option>
+                      <option value="Professional">Professional: 5+ Years</option>
                   </select>
                 </section>
                 <section class="form-group">
                   <label for="jobcategory">Job Category</label><br>
-                  <select name="jobcategory" id="jobcategory">
-                      <option selected>Select Category</option>
-                      <option value="administration">Administration</option>
-                      <option value="it">IT</option>
-                      <option value="financial">Financial</option>
+                  <select name="jobcategory" id="jobcategory" required>
+                      <option value="" selected>Select Category</option>
+                      <option value="IT">IT</option>
+                      <option value="Administration">Administration</option>
+                      <option value="Commerce">Commerce</option>
+                      <option value="Construction">Construction</option>
+                      <option value="Hotel&Tourism">Hotel & Tourism</option>
+                      <option value="Education">Education</option>
+                      <option value="Financial">Financial</option>
+                      <option value="Transport">Transport</option>
                   </select>
                 </section>
                 <section class="form-group">
                   <label for="location">Location</label><br>
-                  <select name="location" id="location">
-                      <option selected>Select Location</option>
+                  <select name="location" id="location" required>
+                      <option value="" selected>Select Location</option>
                       <option value="onsite">On Site</option>
                       <option value="remote">Remote</option>
                       <option value="hybrid">Hybrid</option>
                   </select>
                 </section>
+                <section class="form-group">
+                  <label for="jobtype">Job Type</label><br>
+                  <select name="jobtype" id="jobtype" required>
+                      <option value="" selected>Select Job Type</option>
+                      <option value="Internship">Internship</option>
+                      <option value="Working Student">Working Student</option>
+                  </select>
+                </section>
             </section>
             </section>
             <section id="postjob-group">
-              <button id="postjob-company">Post Job</button>
+              <button type="submit" id="postjob-company">Post Job</button>
             </section>
           </form>
         </section>
@@ -210,63 +208,7 @@
         </div>
       </footer>
     </div>  <!-- end of full page container -->
-    <script>
-      document.getElementById('add-language').addEventListener('click', function() {
-      // Get the section where we want to add new fields
-      const languageSection = document.getElementById('language-section');
-      
-      // Create a new div to hold the language fields and delete button
-      const languageGroup = document.createElement('div');
-      languageGroup.classList.add('language-group');
-      
-      // Create new language requirement field
-      const languageField = document.createElement('div');
-      languageField.classList.add('form-group');
-      languageField.innerHTML = `
-          <label for="languagerequirement">Language Requirement</label><br>
-          <select name="languagerequirement[]" class="languagerequirement">
-              <option selected>Select Language</option>
-              <option value="english">English</option>
-              <option value="german">German</option>
-          </select>
-      `;
-      
-      // Create new proficiency level field
-      const proficiencyField = document.createElement('div');
-      proficiencyField.classList.add('form-group');
-      proficiencyField.innerHTML = `
-          <label for="proficiencylevel">Proficiency Level</label><br>
-          <select name="proficiencylevel[]" class="proficiencylevel">
-              <option selected>Select Proficiency Level</option>
-              <option value="a1">A1</option>
-              <option value="a2">A2</option>
-              <option value="b1">B1</option>
-              <option value="b2">B2</option>
-              <option value="c1">C1</option>
-              <option value="c2">C2</option>
-          </select>
-      `;
-      
-      // Create the delete button
-      const deleteButton = document.createElement('button');
-      deleteButton.textContent = 'Delete Language';
-      deleteButton.classList.add('delete-language');
-      
-      // Add an event listener to the delete button to remove the group
-      deleteButton.addEventListener('click', function() {
-          languageSection.removeChild(languageGroup);
-      });
-      
-      // Append language and proficiency fields to the languageGroup div
-      languageGroup.appendChild(languageField);
-      languageGroup.appendChild(proficiencyField);
-      languageGroup.appendChild(deleteButton);
-      
-      // Append the whole languageGroup to the languageSection
-      languageSection.appendChild(languageGroup);
-      });
-
-    </script>
   <script src="../scripts/header-pages.js"></script>
+  <script src="../scripts/jobposting.js"></script>
   </body>
 </html>

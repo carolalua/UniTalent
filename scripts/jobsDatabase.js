@@ -1013,3 +1013,8 @@ const jobDatabase = [
       },
   },
 ];
+
+//TODO: uncomment the condition when job database is done
+//if (localStorage.getItem('jobDatabase') === null) {
+  localStorage.setItem('jobDatabase', JSON.stringify(jobDatabase));
+//}

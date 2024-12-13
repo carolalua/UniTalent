@@ -4,7 +4,6 @@ const student = users.find(student => student.email === userEmail);
 
 document.addEventListener("DOMContentLoaded", () => {
     const emailUser = document.getElementById('email-user');
-console.log('here' + student);
     if(student) {
         emailUser.textContent = student.email;
     }

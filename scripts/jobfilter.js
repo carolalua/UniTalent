@@ -1,3 +1,5 @@
+const jobDatabase = JSON.parse(localStorage.getItem('jobDatabase'));
+
 document.addEventListener("DOMContentLoaded", () => {
   const jobListingsContainer = document.getElementById("job-listings");
   const paginationContainer = document.querySelector(".pagination");
