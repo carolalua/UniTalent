@@ -69,14 +69,8 @@
           <h1>Find Jobs That Fit Your Student Life</h1>
           <p class="sub-title">Connecting Talent with Opportunity. Your Gateway to Career Success.</p>
           <div class="search-bar">
-            <input class="job-title" type="text" placeholder="Job Title or Keywords...">
-            <select class="location" name="locations" id="locations">
-              <option selected>Select Location</option>
-              <option value="berlin">Berlin</option>
-              <option value="frankfurt">Frankfurt</option>
-              <option value="munich">Munich</option>
-              <option value="furtwangen">Furtwangen</option>
-            </select>
+            <input class="job-title" type="text" id="job-title" placeholder="Job Title or Keywords ...">
+            <input class="location" type="text"  id="locations" placeholder="Location ...">
             <select name="category" id="category">
               <option selected>Select Category</option>
               <option value="it">IT</option>
@@ -99,7 +93,7 @@
                 <i class="fa-solid fa-briefcase"></i>
               </div>
               <div class="details">
-                <h5 id="jobs-number">25,850</h5>
+                <h5 id="jobs-number"></h5>
                 <p class="details-name">Jobs</p>
               </div>
             </li>
@@ -108,7 +102,7 @@
                 <i class="fa-regular fa-building"></i>
               </div>
               <div class="details">
-                <h5 id="companies-number">10,250</h5>
+                <h5 id="companies-number"></h5>
                 <p class="details-name">Companies</p>
               </div>
             </li>
@@ -117,7 +111,7 @@
                 <i class="fa-solid fa-user-group"></i>
               </div>
               <div class="details">
-                <h5 id="employers-number">18,400</h5>
+                <h5 id="employers-number"></h5>
                 <p class="details-name">Employers</p>
               </div>
             </li>
@@ -204,5 +198,6 @@
     <script src="scripts/jobsDatabase.js"></script>
     <script src="scripts/mainpage.js"></script>
     <script src="scripts/header.js"></script>
+    <script src="scripts/jobfilter.js"></script>
   </body>
 </html>

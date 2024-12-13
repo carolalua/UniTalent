@@ -205,3 +205,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderTestimonials();
 });
+
+
+/// Event Listener to Serach Bar
+document.addEventListener("DOMContentLoaded", () => {
+  const titleInput = document.getElementById("job-title");
+  const locationInput = document.getElementById("locations");
+  const searchButton = document.querySelector(".button-search");
+
+  const triggerSearch = () => {
+    const titleValue = titleInput.value.trim();
+    const locationValue = locationInput.value.trim();
+    const categoryValue = document.getElementById("category").value.trim();
+
+    const searchParams = new URLSearchParams({
+      "job-title": titleValue,
+      locations: locationValue,
+      category: categoryValue,
+    });
+
+    window.location.href = `pages/jobs.html?${searchParams.toString()}`;
+  };
+
+  // Event listener for the search button
+  searchButton.addEventListener("click", triggerSearch);
+
+  // Add Enter key listener to search inputs
+  const searchInputs = [titleInput, locationInput];
+  searchInputs.forEach((input) => {
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault(); // Prevent the default form submission behavior
+        triggerSearch(); // Trigger the search
+      }
+    });
+  });
+});

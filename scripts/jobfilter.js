@@ -7,22 +7,51 @@ document.addEventListener("DOMContentLoaded", () => {
   const jobsPerPage = 5; // Number of jobs per page
   let currentPage = 1; // Start on the first page
 
-  // Get the category from the URL if it exists
+  // Get search parameters from the URL
   const urlParams = new URLSearchParams(window.location.search);
-  const selectedCategory = urlParams.get("category");
+  const searchTitle = urlParams.get("job-title")?.toLowerCase() || "";
+  const searchLocation = urlParams.get("locations")?.toLowerCase() || "";
+  const selectedCategory =
+  urlParams.get("category")?.toLowerCase() === "select category"
+    ? ""
+    : urlParams.get("category")?.toLowerCase() || "";
+
+  console.log({ searchTitle, searchLocation, selectedCategory }); // Debugging URL parameters
 
   // Helper function to convert category name to slug format
-  const toSlug = (name) => name.toLowerCase().replace(/\s+/g, '-');
+  const toSlug = (name) => name.toLowerCase().replace(/\s+/g, "-");
 
-  // Initial filter by URL category (if provided)
-  let filteredJobs = [...jobDatabase].filter(
-    (job) => !selectedCategory || toSlug(job.summary.category) === selectedCategory
-  );
+  // Initial filter based on search parameters
+  let filteredJobs = jobDatabase.filter((job) => {
+    const matchesTitle =
+      !searchTitle ||
+      job.overview.jobTitle.toLowerCase().includes(searchTitle) ||
+      job.company.name.toLowerCase().includes(searchTitle);
+
+    const matchesLocation =
+      !searchLocation || job.summary.location.toLowerCase().includes(searchLocation);
+
+    const matchesCategory =
+      !selectedCategory || job.summary.category.toLowerCase() === selectedCategory;
+
+      console.log({
+        jobTitle: job.overview.jobTitle,
+        company: job.company.name,
+        location: job.summary.location,
+        matchesTitle,
+        matchesLocation,
+        matchesCategory,
+      });
+
+    return matchesTitle && matchesLocation && matchesCategory;
+  });
+
 
   // Sort filtered jobs by posting time
   filteredJobs.sort((a, b) => new Date(b.postingTime) - new Date(a.postingTime));
 
   // Render initial jobs and pagination
+  currentPage = 1;
   renderJobs(filteredJobs);
   renderPagination(filteredJobs);
   updateJobCount(filteredJobs.length);
@@ -32,8 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "#filter-input, #education-level, #experience-level, #category, input[name='location'], input[type='checkbox'], input[name='proficiency-level']"
   );
   filterInputs.forEach((input) => {
-    input.addEventListener("input", applyFilters);
-    input.addEventListener("change", applyFilters); // For select, radio, and checkbox inputs
+    input.addEventListener("input", () => applyFilters(filteredJobs)); // Apply filters dynamically
+    input.addEventListener("change", () => applyFilters(filteredJobs)); // Handle select, checkbox, and radio inputs
   });
 
   // Language checkboxes and proficiency radios
@@ -64,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Ensure proficiency radios are updated on page load
   updateProficiencyRadios();
 
-  // Reset filters and reload all jobs
+  // Reset filters
   resetButton.addEventListener("click", () => {
     // Clear all input values
     document.getElementById("filter-input").value = "";
@@ -88,11 +117,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Reset filtered jobs and re-render
-    filteredJobs = [...jobDatabase].sort((a, b) => new Date(b.postingTime) - new Date(a.postingTime)); // Reapply default sort
+    filteredJobs = [...jobDatabase].sort((a, b) => new Date(b.postingTime) - new Date(a.postingTime));
     currentPage = 1;
     renderJobs(filteredJobs);
     renderPagination(filteredJobs);
-    updateJobCount(filteredJobs.length); // Update job count on reset
+    updateJobCount(filteredJobs.length);
   });
 
   // Apply filters dynamically
@@ -106,9 +135,29 @@ document.addEventListener("DOMContentLoaded", () => {
     const germanRequired = document.getElementById("german").checked;
     const proficiencyLevel = document.querySelector('input[name="proficiency-level"]:checked')?.value || "any";
 
-    filteredJobs = jobDatabase
-      .filter((job) => {
-        // Filter by job title or company name
+    // Apply filters to filteredJobs (not baseJobs, which is undefined)
+    const dynamicallyFilteredJobs = jobDatabase.filter((job) => {
+      // Combine search parameters with dynamic filters
+      const matchesSearchTitle =
+        !searchTitle ||
+        job.overview.jobTitle.toLowerCase().includes(searchTitle) ||
+        job.company.name.toLowerCase().includes(searchTitle);
+    
+      const matchesSearchLocation =
+        !searchLocation || job.summary.location.toLowerCase().includes(searchLocation);
+    
+      // Existing dynamic filters
+      const titleInput = document.getElementById("filter-input").value.toLowerCase();
+      const educationLevel = document.getElementById("education-level").value;
+      const experienceLevel = document.getElementById("experience-level").value;
+      const category = document.getElementById("category").value.toLowerCase();
+      const locationType = document.querySelector('input[name="location"]:checked')?.value.toLowerCase();
+      const englishRequired = document.getElementById("english").checked;
+      const germanRequired = document.getElementById("german").checked;
+      const proficiencyLevel = document.querySelector('input[name="proficiency-level"]:checked')?.value || "any";
+    
+      const matchesDynamicFilters = (() => {
+        // Filter by job title or company name (dynamic input)
         if (
           titleInput &&
           !job.overview.jobTitle.toLowerCase().includes(titleInput) &&
@@ -116,32 +165,31 @@ document.addEventListener("DOMContentLoaded", () => {
         ) {
           return false;
         }
-
+    
         // Filter by education level
         if (educationLevel && !job.educationLevel.includes(educationLevel)) {
           return false;
         }
-
+    
         // Filter by experience level
         if (experienceLevel && !job.experienceLevel.includes(experienceLevel)) {
           return false;
         }
-
+    
         // Filter by category
         if (category && job.summary.category.toLowerCase() !== category) {
           return false;
         }
-
+    
         // Filter by location type
         if (locationType && !job.locationType.includes(locationType)) {
           return false;
         }
-
+    
         // Filter by language requirements and proficiency
         if (englishRequired || germanRequired) {
           let languageMatch = true;
-
-          // Check English proficiency
+    
           if (englishRequired) {
             const english = job.languages?.English;
             if (
@@ -152,8 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
               languageMatch = false;
             }
           }
-
-          // Check German proficiency
+    
           if (germanRequired) {
             const german = job.languages?.German;
             if (
@@ -164,36 +211,44 @@ document.addEventListener("DOMContentLoaded", () => {
               languageMatch = false;
             }
           }
-
+    
           if (!languageMatch) {
             return false;
           }
         }
-
+    
         return true;
-      })
-      .sort((a, b) => new Date(b.postingTime) - new Date(a.postingTime)); // Sort filtered results by postingTime
+      })();
+    
+      return matchesSearchTitle && matchesSearchLocation && matchesDynamicFilters;
+    });
 
-    // Reset to the first page and re-render
-    currentPage = 1;
-    renderJobs(filteredJobs);
-    renderPagination(filteredJobs);
-    updateJobCount(filteredJobs.length);
-  }
+  // Reset to the first page and re-render
+  currentPage = 1;
+  renderJobs(dynamicallyFilteredJobs);
+  renderPagination(dynamicallyFilteredJobs);
+  updateJobCount(dynamicallyFilteredJobs.length);
+}
 
+  // Function to update the job count
   function updateJobCount(count) {
-    if (jobCountElement) {
-      jobCountElement.textContent = `${count} jobs found`;
-    }
+    jobCountElement.textContent = `${count} jobs found`;
   }
 
+  // Function to render jobs
   function renderJobs(jobs) {
-    jobListingsContainer.innerHTML = ""; // Clear existing listings
+    console.log("Jobs to Render:", jobs); // Debugging
+
+    jobListingsContainer.innerHTML = "";
 
     if (jobs.length === 0) {
-      jobListingsContainer.innerHTML = "<p>No jobs match your search criteria.</p>";
-      return;
+      jobListingsContainer.innerHTML = `
+        <p>No jobs match your search criteria.</p>
+      `;
+
+  return;
     }
+
 
     const startIndex = (currentPage - 1) * jobsPerPage;
     const endIndex = Math.min(startIndex + jobsPerPage, jobs.length);
@@ -233,11 +288,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Function to render pagination
   function renderPagination(jobs) {
-    paginationContainer.innerHTML = ""; // Clear existing pagination
+    console.log("Jobs to Render:", jobs); // Debugging
+    paginationContainer.innerHTML = "";
 
     const totalPages = Math.ceil(jobs.length / jobsPerPage);
-    if (totalPages <= 1) return; // No pagination needed for one page
+    if (totalPages <= 1) return;
 
     if (currentPage > 1) {
       const prevButton = document.createElement("button");
@@ -282,19 +339,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function getRelativeTime(postingTime) {
     const now = new Date();
     const posted = new Date(postingTime);
-    const differenceInSeconds = Math.floor((now - posted) / 1000);
+    const diff = Math.floor((now - posted) / 1000);
 
-    if (differenceInSeconds < 60) {
-      return `${differenceInSeconds} seconds ago`;
-    } else if (differenceInSeconds < 3600) {
-      const minutes = Math.floor(differenceInSeconds / 60);
-      return `${minutes} minute${minutes !== 1 ? "s" : ""} ago`;
-    } else if (differenceInSeconds < 86400) {
-      const hours = Math.floor(differenceInSeconds / 3600);
-      return `${hours} hour${hours !== 1 ? "s" : ""} ago`;
-    } else {
-      const days = Math.floor(differenceInSeconds / 86400);
-      return `${days} day${days !== 1 ? "s" : ""} ago`;
-    }
+    if (diff < 60) return `${diff} seconds ago`;
+    if (diff < 3600) return `${Math.floor(diff / 60)} minutes ago`;
+    if (diff < 86400) return `${Math.floor(diff / 3600)} hours ago`;
+    return `${Math.floor(diff / 86400)} days ago`;
   }
 });
