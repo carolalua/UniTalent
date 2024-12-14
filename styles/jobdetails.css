@@ -16,6 +16,11 @@ h4 {
 
 #jobs {
   color: var(--text-orange);
+  
+}
+.main-container{
+  max-width: 1200px;
+  margin: auto;
 }
 
 .jobdetails {
