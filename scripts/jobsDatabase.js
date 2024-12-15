@@ -3244,6 +3244,1287 @@ const jobDatabase = [
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5324.465790026287!2d11.5750797!3d48.1443151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f291fdf32d%3A0x69160158a06c87c4!2sSiemens%20AG%20-%20Corporate%20Headquarters!5e0!3m2!1sen!2sde!4v1734180609672!5m2!1sen!2sde",
     },
   },
+  {
+    "id": 47,
+    "postingTime": "2024-12-13T10:30",
+    "company": {
+      "name": "BauHaus AG",
+      "logo": "BauHaus.png"
+    },
+    "summary": {
+      "category": "Construction",
+      "jobType": "Internship",
+      "location": "Berlin"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Join BauHaus AG as an intern in construction management. Assist with planning, scheduling, and ensuring project deadlines are met."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist in planning and organizing construction activities",
+        "Coordinate with suppliers to ensure timely delivery of materials",
+        "Monitor the progress of the project and report status",
+        "Collaborate with project managers to resolve issues",
+        "Ensure quality standards and safety protocols are maintained",
+        "Help prepare project timelines and budgets",
+        "Assist in reviewing construction contracts and documentation",
+        "Attend site meetings and assist in preparation"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student eager to learn more about construction project management.",
+      "list": [
+        "Currently studying Civil Engineering or Construction Management",
+        "Good communication and organizational skills",
+        "Fluent in English, German is a plus"
+      ]
+    },
+    "tags": [
+      "Internship",
+      "Construction",
+      "Berlin",
+      "Project Management",
+      "Engineering"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Basic"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 2,
+    "overview": {
+      "jobTitle": "Intern – Construction Management",
+      "jobType": "Internship",
+      "category": "Construction",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Berlin",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    }
+  },
+  {
+    "id": 48,
+    "postingTime": "2024-12-14T09:45",
+    "company": {
+      "name": "Vogelbau Construction",
+      "logo": "Vogelbau.png"
+    },
+    "summary": {
+      "category": "Construction",
+      "jobType": "Part-Time",
+      "location": "Frankfurt"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Join Vogelbau Construction as a part-time project assistant. Help with site management, ensure quality control, and assist with planning and scheduling."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist with construction site management and organization",
+        "Coordinate with contractors and suppliers to maintain workflow",
+        "Help track material inventory and monitor delivery schedules",
+        "Ensure safety and quality standards are maintained",
+        "Prepare reports and document progress",
+        "Attend and participate in meetings with senior project managers",
+        "Monitor budgets and assist in cost tracking",
+        "Review and process invoices and payment claims"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student studying construction management or civil engineering.",
+      "list": [
+        "Currently studying Civil Engineering, Construction Management, or related fields",
+        "Proficient in MS Office and Excel",
+        "Fluent in English, German is a plus"
+      ]
+    },
+    "tags": [
+      "Part-time",
+      "Construction",
+      "Frankfurt",
+      "Site Management",
+      "Engineering"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Intermediate"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 4,
+    "overview": {
+      "jobTitle": "Working Student – Project Assistant",
+      "jobType": "Part-Time",
+      "category": "Construction",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Frankfurt",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    }
+  },
+  {
+    "id": 49,
+    "postingTime": "2024-12-15T11:00",
+    "company": {
+      "name": "UrbanPlan Corp.",
+      "logo": "UrbanPlan.png"
+    },
+    "summary": {
+      "category": "Construction",
+      "jobType": "Part-Time",
+      "location": "Hamburg"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Join UrbanPlan Corp. as a part-time construction assistant. Help with site coordination, material management, and support the construction team."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist with day-to-day construction site operations",
+        "Monitor material usage and inventory",
+        "Coordinate between contractors and the project team",
+        "Ensure site safety and compliance with regulations",
+        "Help prepare project documentation and reports",
+        "Track project milestones and progress",
+        "Assist in managing project timelines and schedules",
+        "Provide administrative support for construction activities"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student in construction management or a related field.",
+      "list": [
+        "Currently studying Construction Management or Civil Engineering",
+        "Excellent communication and organizational skills",
+        "Fluent in English, German is a plus"
+      ]
+    },
+    "tags": [
+      "Part-time",
+      "Construction",
+      "Hamburg",
+      "Site Coordination",
+      "Engineering"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Basic"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 3,
+    "overview": {
+      "jobTitle": "Working Student – Site Assistant",
+      "jobType": "Part-Time",
+      "category": "Construction",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Hamburg",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    }
+  },
+  {
+    "id": 50,
+    "postingTime": "2024-12-16T12:15",
+    "company": {
+      "name": "RedBrick Construction",
+      "logo": "RedBrick.png"
+    },
+    "summary": {
+      "category": "Construction",
+      "jobType": "Internship",
+      "location": "Cologne"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Assist with ongoing construction projects, help manage daily site activities, and assist in organizing materials and resources."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist with daily site activities and task management",
+        "Ensure the site is organized and materials are available",
+        "Coordinate deliveries and communicate with suppliers",
+        "Monitor safety procedures and site compliance",
+        "Prepare site progress reports",
+        "Help manage project budgets and costs",
+        "Track project timelines and deadlines",
+        "Assist in managing client expectations and communication"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student pursuing a degree in construction or civil engineering.",
+      "list": [
+        "Currently studying Civil Engineering, Construction Management, or related fields",
+        "Strong problem-solving skills",
+        "Fluent in English, German is a plus"
+      ]
+    },
+    "tags": [
+      "Internship",
+      "Construction",
+      "Cologne",
+      "Project Assistance",
+      "Engineering"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Intermediate"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 4,
+    "overview": {
+      "jobTitle": "Intern – Construction Project Assistance",
+      "jobType": "Internship",
+      "category": "Construction",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Cologne",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    }
+  },
+  {
+    "id": 51,
+    "postingTime": "2024-12-17T14:00",
+    "company": {
+      "name": "WestPoint Builders",
+      "logo": "WestPoint.png"
+    },
+    "summary": {
+      "category": "Construction",
+      "jobType": "Part-Time",
+      "location": "Stuttgart"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Join WestPoint Builders as a working student and assist with construction project documentation, scheduling, and material tracking."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist with scheduling and planning of construction tasks",
+        "Track project materials and equipment",
+        "Help with documentation and reporting of project progress",
+        "Ensure quality standards are followed on-site",
+        "Collaborate with team members to ensure tasks are completed on time",
+        "Monitor timelines and milestones",
+        "Assist in managing construction budgets",
+        "Coordinate with subcontractors and suppliers"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student pursuing a degree in construction management or civil engineering.",
+      "list": [
+        "Currently studying Civil Engineering, Construction Management, or related fields",
+        "Strong attention to detail and time management skills",
+        "Fluent in English, German is a plus"
+      ]
+    },
+    "tags": [
+      "Part-time",
+      "Construction",
+      "Stuttgart",
+      "Documentation",
+      "Engineering"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Intermediate"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 2,
+    "overview": {
+      "jobTitle": "Working Student – Project Documentation",
+      "jobType": "Part-Time",
+      "category": "Construction",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Stuttgart",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    }
+  },
+  {
+    "id": 52,
+    "postingTime": "2024-12-18T16:15",
+    "company": {
+      "name": "TechBuild Ltd.",
+      "logo": "TechBuild.png"
+    },
+    "summary": {
+      "category": "Construction",
+      "jobType": "Internship",
+      "location": "Düsseldorf"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Support TechBuild Ltd. in project management tasks. Assist with construction planning, site supervision, and budget management."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist with managing construction projects",
+        "Help plan schedules, budgets, and resources",
+        "Monitor the progress of various construction phases",
+        "Track project spending and ensure compliance with budget",
+        "Ensure all safety standards are met on-site",
+        "Help coordinate with project stakeholders",
+        "Assist with the preparation of reports and documentation",
+        "Support project managers with day-to-day tasks"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student studying construction management or civil engineering.",
+      "list": [
+        "Currently studying Civil Engineering or Construction Management",
+        "Good communication and problem-solving skills",
+        "Fluent in English, German is a plus"
+      ]
+    },
+    "tags": [
+      "Internship",
+      "Construction",
+      "Düsseldorf",
+      "Project Management",
+      "Engineering"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Basic"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 3,
+    "overview": {
+      "jobTitle": "Intern – Project Management",
+      "jobType": "Internship",
+      "category": "Construction",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Düsseldorf",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    },
+  },
+  {
+    "id": 53,
+    "postingTime": "2024-12-12T00:30",
+    "company": {
+      "name": "Siemens AG",
+      "logo": "Siemens.png"
+    },
+    "summary": {
+      "category": "Construction",
+      "jobType": "Part-Time",
+      "location": "Munich"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Join Siemens AG as a Working Student in Construction Project Management. Assist with construction planning, help ensure material availability, and support the team in tracking project progress."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist with project planning and scheduling",
+        "Help ensure material availability for construction projects",
+        "Track project progress and update reports",
+        "Collaborate with contractors and subcontractors",
+        "Ensure compliance with health and safety regulations",
+        "Attend site meetings and assist in coordination",
+        "Review construction documents and blueprints",
+        "Prepare and distribute daily reports to management"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student pursuing a degree in construction or civil engineering.",
+      "list": [
+        "Currently studying Civil Engineering, Construction Management, or related fields",
+        "Strong organizational and communication skills",
+        "Fluent in English, German is a plus"
+      ]
+    },
+    "tags": [
+      "Part-time",
+      "Construction",
+      "Munich",
+      "Project Management",
+      "Engineering"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Intermediate"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 4,
+    "overview": {
+      "jobTitle": "Working Student – Construction Project Management",
+      "jobType": "Part-Time",
+      "category": "Construction",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Munich",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    }
+  },
+  {
+    "id": 54,
+    "postingTime": "2024-12-13T08:45",
+    "company": {
+      "name": "TechBuild Ltd.",
+      "logo": "TechBuild.png"
+    },
+    "summary": {
+      "category": "Construction",
+      "jobType": "Internship",
+      "location": "Berlin"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Join TechBuild Ltd. as a Construction Intern. Help manage construction project documentation, assist with site inspections, and track progress and materials."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist in managing construction project documentation",
+        "Help with on-site inspections and supervision",
+        "Track materials and equipment usage",
+        "Collaborate with the construction team to monitor project progress",
+        "Ensure all safety regulations are adhered to on-site",
+        "Help prepare and organize reports for stakeholders",
+        "Provide general administrative support",
+        "Attend project meetings and take notes"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student studying construction or civil engineering.",
+      "list": [
+        "Currently studying Civil Engineering or Construction Management",
+        "Fluent in English, German is a plus",
+        "Excellent organizational and communication skills"
+      ]
+    },
+    "tags": [
+      "Internship",
+      "Construction",
+      "Berlin",
+      "Project Management",
+      "Engineering"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Basic"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 3,
+    "overview": {
+      "jobTitle": "Intern – Construction Project Documentation",
+      "jobType": "Internship",
+      "category": "Construction",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Berlin",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    }
+  },
+
+  {
+    "id": 55,
+    "postingTime": "2024-12-12T12:00",
+    "company": {
+      "name": "Hotel Royale",
+      "logo": "HotelRoyale.png"
+    },
+    "summary": {
+      "category": "Hotels & Tourism",
+      "jobType": "Part-Time",
+      "location": "Hamburg"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Join Hotel Royale as a working student in customer service. Assist guests with inquiries, help manage bookings, and ensure guest satisfaction."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist guests with check-in and check-out procedures",
+        "Manage room bookings and reservations",
+        "Provide information about hotel services and local attractions",
+        "Ensure a high level of customer satisfaction",
+        "Handle guest inquiries and complaints professionally",
+        "Assist in managing daily operations of the hotel",
+        "Prepare reports for the hotel management",
+        "Support other hotel departments as needed"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student studying hospitality or tourism management.",
+      "list": [
+        "Currently studying Hospitality Management or related fields",
+        "Excellent communication skills in English, German is a plus",
+        "Strong organizational and multitasking abilities"
+      ]
+    },
+    "tags": [
+      "Part-time",
+      "Hotels & Tourism",
+      "Hamburg",
+      "Customer Service",
+      "Tourism"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Intermediate"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 5,
+    "overview": {
+      "jobTitle": "Working Student – Customer Service",
+      "jobType": "Part-Time",
+      "category": "Hotels & Tourism",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Hamburg",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    }
+  },
+  {
+    "id": 56,
+    "postingTime": "2024-12-13T09:00",
+    "company": {
+      "name": "Grand Plaza Hotel",
+      "logo": "GrandPlaza.png"
+    },
+    "summary": {
+      "category": "Hotels & Tourism",
+      "jobType": "Internship",
+      "location": "Berlin"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Join Grand Plaza Hotel as an Intern in the food and beverage department. Support the team in preparing orders, handling guest requests, and ensuring smooth service delivery."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist in food and beverage preparation and service",
+        "Ensure food safety and hygiene standards are maintained",
+        "Handle guest requests and inquiries efficiently",
+        "Ensure timely delivery of food orders",
+        "Help maintain inventory levels and stock rooms",
+        "Assist with event planning and execution",
+        "Support restaurant staff during peak hours",
+        "Monitor guest satisfaction and address issues when needed"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student studying hospitality, tourism, or food management.",
+      "list": [
+        "Currently studying Hospitality Management, Food Service, or related fields",
+        "Fluent in English, German is a plus",
+        "Strong teamwork and communication skills"
+      ]
+    },
+    "tags": [
+      "Internship",
+      "Hotels & Tourism",
+      "Berlin",
+      "Food & Beverage",
+      "Customer Service"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Basic"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 3,
+    "overview": {
+      "jobTitle": "Intern – Food & Beverage Department",
+      "jobType": "Internship",
+      "category": "Hotels & Tourism",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Berlin",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    },
+  },
+  {
+    "id": 57,
+    "postingTime": "2024-12-15T10:30",
+    "company": {
+      "name": "Builder's Corp",
+      "logo": "BuildersCorp.png"
+    },
+    "summary": {
+      "category": "Construction",
+      "jobType": "Part-Time",
+      "location": "Frankfurt"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Join Builder's Corp as a Working Student in Construction Supervision. Assist the team with site inspections, project tracking, and materials management."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist with site inspections and ensuring compliance with plans",
+        "Monitor material usage and manage inventories",
+        "Prepare and distribute project reports",
+        "Collaborate with contractors and internal teams",
+        "Help with scheduling and tracking project timelines",
+        "Attend site meetings and take notes",
+        "Ensure safety protocols are followed",
+        "Assist with quality control checks"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student studying construction or civil engineering.",
+      "list": [
+        "Currently studying Civil Engineering, Construction Management, or related fields",
+        "Fluent in English, German is a plus",
+        "Strong communication and organizational skills"
+      ]
+    },
+    "tags": [
+      "Part-time",
+      "Construction",
+      "Frankfurt",
+      "Project Management",
+      "Engineering"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Intermediate"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 4,
+    "overview": {
+      "jobTitle": "Working Student – Construction Supervision",
+      "jobType": "Part-Time",
+      "category": "Construction",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Frankfurt",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    }
+  },
+  {
+    "id": 58,
+    "postingTime": "2024-12-16T08:00",
+    "company": {
+      "name": "BuildSmart",
+      "logo": "BuildSmart.png"
+    },
+    "summary": {
+      "category": "Construction",
+      "jobType": "Internship",
+      "location": "Hamburg"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Join BuildSmart as an intern in Construction Design. Assist in drafting designs, managing project documentation, and ensuring compliance with safety and building codes."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist in drafting construction plans and designs",
+        "Ensure compliance with building codes and safety regulations",
+        "Help manage project documentation and reports",
+        "Coordinate with contractors and suppliers",
+        "Participate in design review meetings",
+        "Help with cost estimation and project budgeting",
+        "Track construction milestones and deliverables",
+        "Assist in preparing presentations for clients"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student in construction design or civil engineering.",
+      "list": [
+        "Currently studying Civil Engineering, Architecture, or Construction Design",
+        "Fluent in English, German is a plus",
+        "Knowledge of design software such as AutoCAD or Revit is a plus"
+      ]
+    },
+    "tags": [
+      "Internship",
+      "Construction",
+      "Hamburg",
+      "Design",
+      "Engineering"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Basic"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 3,
+    "overview": {
+      "jobTitle": "Intern – Construction Design",
+      "jobType": "Internship",
+      "category": "Construction",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Hamburg",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    }
+  },
+
+  {
+    "id": 59,
+    "postingTime": "2024-12-15T10:00",
+    "company": {
+      "name": "TravelWorld",
+      "logo": "TravelWorld.png"
+    },
+    "summary": {
+      "category": "Hotels & Tourism",
+      "jobType": "Part-Time",
+      "location": "Berlin"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Join TravelWorld as a Working Student in Tour Management. Assist in organizing travel packages, customer service, and supporting the team with logistical arrangements."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist in creating and managing travel itineraries",
+        "Handle customer inquiries and bookings",
+        "Support the team with organizing tours and activities",
+        "Prepare and send confirmations to customers",
+        "Ensure customer satisfaction during travel experiences",
+        "Assist in marketing travel packages",
+        "Handle travel documents and bookings",
+        "Collaborate with tour guides and service providers"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student in tourism or hospitality management.",
+      "list": [
+        "Currently studying Tourism Management, Hospitality, or related fields",
+        "Fluent in English, German is a plus",
+        "Strong organizational skills and attention to detail"
+      ]
+    },
+    "tags": [
+      "Part-time",
+      "Hotels & Tourism",
+      "Berlin",
+      "Tourism Management",
+      "Customer Service"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Intermediate"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 5,
+    "overview": {
+      "jobTitle": "Working Student – Tour Management",
+      "jobType": "Part-Time",
+      "category": "Hotels & Tourism",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Berlin",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    }
+  },
+  {
+    "id": 60,
+    "postingTime": "2024-12-16T09:00",
+    "company": {
+      "name": "Elite Resorts",
+      "logo": "EliteResorts.png"
+    },
+    "summary": {
+      "category": "Hotels & Tourism",
+      "jobType": "Internship",
+      "location": "Hamburg"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Join Elite Resorts as an Intern in Event Planning. Assist with organizing and managing events, customer service, and handling reservations."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist in organizing corporate and leisure events",
+        "Help manage event logistics, including bookings and setups",
+        "Provide customer service and handle reservations",
+        "Coordinate with vendors and suppliers",
+        "Help with marketing and promoting events",
+        "Prepare event schedules and ensure smooth operations",
+        "Attend client meetings and take notes",
+        "Ensure high customer satisfaction during events"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student studying hospitality or event management.",
+      "list": [
+        "Currently studying Event Management, Hospitality, or related fields",
+        "Fluent in English, German is a plus",
+        "Excellent communication and organizational skills"
+      ]
+    },
+    "tags": [
+      "Internship",
+      "Hotels & Tourism",
+      "Hamburg",
+      "Event Planning",
+      "Customer Service"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Basic"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 4,
+    "overview": {
+      "jobTitle": "Intern – Event Planning",
+      "jobType": "Internship",
+      "category": "Hotels & Tourism",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Hamburg",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    },
+  },
+  {
+    "id": 61,
+    "postingTime": "2024-12-17T11:00",
+    "company": {
+      "name": "BuildTech Solutions",
+      "logo": "BuildTechSolutions.png"
+    },
+    "summary": {
+      "category": "Construction",
+      "jobType": "Part-Time",
+      "location": "Cologne"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Join BuildTech Solutions as a Working Student in Project Coordination. Assist the team with project scheduling, tracking construction activities, and coordinating with vendors."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist in coordinating project schedules and timelines",
+        "Help manage project resources and material orders",
+        "Track progress and report project status",
+        "Communicate with vendors and subcontractors",
+        "Support the team in site visits and inspections",
+        "Prepare reports and documentation",
+        "Help with contract administration and procurement",
+        "Maintain project documentation and ensure accuracy"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student with an interest in construction project management.",
+      "list": [
+        "Currently studying Construction Management, Civil Engineering, or related fields",
+        "Fluent in English, German is a plus",
+        "Strong organizational skills and attention to detail"
+      ]
+    },
+    "tags": [
+      "Part-time",
+      "Construction",
+      "Cologne",
+      "Project Coordination",
+      "Engineering"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Intermediate"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 4,
+    "overview": {
+      "jobTitle": "Working Student – Project Coordination",
+      "jobType": "Part-Time",
+      "category": "Construction",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Cologne",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    }
+  },
+  {
+    "id": 62,
+    "postingTime": "2024-12-17T12:30",
+    "company": {
+      "name": "ConstructPro",
+      "logo": "ConstructPro.png"
+    },
+    "summary": {
+      "category": "Construction",
+      "jobType": "Internship",
+      "location": "Düsseldorf"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "ConstructPro is looking for an Intern in Construction Planning. Help with the development of construction plans, material estimation, and logistics support."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist with construction planning and scheduling",
+        "Support the team in estimating material quantities",
+        "Help with the preparation of construction drawings",
+        "Maintain records of construction activities",
+        "Liaise with suppliers and vendors for project materials",
+        "Assist in tracking project progress and milestones",
+        "Help with documentation and regulatory compliance",
+        "Prepare cost estimations and project budgets"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student with a passion for construction and planning.",
+      "list": [
+        "Currently studying Construction Engineering, Civil Engineering, or related fields",
+        "Fluent in English, German is a plus",
+        "Experience with AutoCAD or similar design software is a plus"
+      ]
+    },
+    "tags": [
+      "Internship",
+      "Construction",
+      "Düsseldorf",
+      "Planning",
+      "Engineering"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Basic"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 3,
+    "overview": {
+      "jobTitle": "Intern – Construction Planning",
+      "jobType": "Internship",
+      "category": "Construction",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Düsseldorf",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    }
+  },
+
+  {
+    "id": 63,
+    "postingTime": "2024-12-17T09:00",
+    "company": {
+      "name": "LuxuryHotels",
+      "logo": "LuxuryHotels.png"
+    },
+    "summary": {
+      "category": "Hotels & Tourism",
+      "jobType": "Part-Time",
+      "location": "Munich"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "Join LuxuryHotels as a Working Student in Guest Services. Assist in welcoming guests, answering queries, and providing support during their stay."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist with guest check-ins and check-outs",
+        "Answer guest inquiries and provide information about services",
+        "Coordinate room service and other guest requests",
+        "Ensure guest satisfaction during their stay",
+        "Support the front desk team with administrative tasks",
+        "Manage reservations and bookings",
+        "Assist in handling complaints and feedback",
+        "Help with event coordination and arrangements"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student passionate about hospitality and customer service.",
+      "list": [
+        "Currently studying Hospitality Management, Tourism, or related fields",
+        "Fluent in English, German is a plus",
+        "Excellent communication and interpersonal skills"
+      ]
+    },
+    "tags": [
+      "Part-time",
+      "Hotels & Tourism",
+      "Munich",
+      "Guest Services",
+      "Customer Service"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Intermediate"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 5,
+    "overview": {
+      "jobTitle": "Working Student – Guest Services",
+      "jobType": "Part-Time",
+      "category": "Hotels & Tourism",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Munich",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    }
+  },
+  {
+    "id": 64,
+    "postingTime": "2024-12-18T08:30",
+    "company": {
+      "name": "HotelGlobe",
+      "logo": "HotelGlobe.png"
+    },
+    "summary": {
+      "category": "Hotels & Tourism",
+      "jobType": "Internship",
+      "location": "Berlin"
+    },
+    "description": {
+      "title": "Job Description",
+      "details": "HotelGlobe is seeking an Intern for Event Management. You’ll assist in organizing and coordinating hotel events, handling reservations, and liaising with clients."
+    },
+    "responsibilities": {
+      "title": "Key Responsibilities",
+      "details": "What you’ll do",
+      "list": [
+        "Assist with organizing and managing hotel events",
+        "Help coordinate logistics for events and conferences",
+        "Manage guest inquiries and bookings",
+        "Collaborate with clients and event planners",
+        "Ensure smooth event operations",
+        "Assist with post-event feedback and reports",
+        "Help with budgeting and cost estimation for events",
+        "Ensure customer satisfaction throughout events"
+      ]
+    },
+    "requirements": {
+      "title": "Professional Requirements",
+      "details": "You are a student interested in event planning and hospitality.",
+      "list": [
+        "Currently studying Event Management, Hospitality, or related fields",
+        "Fluent in English, German is a plus",
+        "Excellent organizational and communication skills"
+      ]
+    },
+    "tags": [
+      "Internship",
+      "Hotels & Tourism",
+      "Berlin",
+      "Event Planning",
+      "Hospitality"
+    ],
+    "languages": {
+      "English": {
+        "required": true,
+        "proficiency": "Fluent"
+      },
+      "German": {
+        "required": false,
+        "proficiency": "Basic"
+      }
+    },
+    "experienceLevel": ["Entry"],
+    "educationLevel": ["Bachelor"],
+    "locationType": ["onsite"],
+    "applicantCount": 3,
+    "overview": {
+      "jobTitle": "Intern – Event Management",
+      "jobType": "Internship",
+      "category": "Hotels & Tourism",
+      "experience": "Entry level",
+      "degree": "Bachelor",
+      "gender": "All",
+      "location": "Berlin",
+      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+    },
+  },
 ];
 
 //TODO: uncomment the condition when job database is done
