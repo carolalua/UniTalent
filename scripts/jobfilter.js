@@ -40,6 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
     return matchesTitle && matchesLocation && matchesCategory;
   });
 
+  // Sort jobs and render them initially
+  filteredJobs.sort((a, b) => new Date(b.postingTime) - new Date(a.postingTime));
+  renderJobs(filteredJobs);
+  renderPagination(filteredJobs);
+  updateJobCount(filteredJobs.length);
+
+
   // Sort filtered jobs by posting time
   filteredJobs.sort((a, b) => new Date(b.postingTime) - new Date(a.postingTime));
 
@@ -47,6 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
   renderJobs(filteredJobs);
   renderPagination(filteredJobs);
   updateJobCount(filteredJobs.length);
+
+  
 
 
   // Event listeners for filters
@@ -177,6 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+
   function renderJobs(jobs) {
     jobListingsContainer.innerHTML = jobs
       .slice((currentPage - 1) * jobsPerPage, currentPage * jobsPerPage)
@@ -193,6 +203,8 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateJobCount(count) {
     jobCountElement.textContent = `${count} jobs found`;
   }
+
+  
 
   function renderJobs(jobs) {
     jobListingsContainer.innerHTML = "";
@@ -338,3 +350,24 @@ document.addEventListener("DOMContentLoaded", () => {
     return `${diffInDays} day${diffInDays !== 1 ? "s" : ""} ago`;
   }
 });
+
+function updateTopCompanyJobCounts() {
+  const companyCards = document.querySelectorAll(".top-company-card");
+  
+  // Iterate through each company card and update job count
+  companyCards.forEach((card) => {
+    const companyName = card.dataset.company.trim().toLowerCase(); // Get company name
+    const jobCount = jobDatabase.filter((job) => 
+      job.company.name.trim().toLowerCase() === companyName
+    ).length;
+
+    // Find the open-jobs span and update its text content
+    const jobCountElement = card.querySelector(".open-jobs");
+    if (jobCountElement) {
+      jobCountElement.textContent = `${jobCount} open job${jobCount !== 1 ? "s" : ""}`;
+    }
+  });
+}
+
+// Call this function after jobDatabase is loaded
+updateTopCompanyJobCounts();
