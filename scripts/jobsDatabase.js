@@ -2809,7 +2809,7 @@ const jobDatabase = [
     id: 41,
     postingTime: "2024-12-13T21:30",
     company: {
-      name: "Siemens AG",
+      name: "Siemens",
       logo: "Siemens.png",
     },
     summary: {
@@ -2881,7 +2881,7 @@ const jobDatabase = [
     id: 42,
     postingTime: "2024-12-12T22:30",
     company: {
-      name: "Siemens AG",
+      name: "Siemens",
       logo: "Siemens.png",
     },
     summary: {
@@ -2945,7 +2945,7 @@ const jobDatabase = [
     id: 43,
     postingTime: "2024-12-07T23:00",
     company: {
-      name: "Siemens AG",
+      name: "Siemens",
       logo: "Siemens.png",
     },
     summary: {
@@ -3093,7 +3093,7 @@ const jobDatabase = [
     id: 45,
     postingTime: "2024-12-13T00:00",
     company: {
-      name: "Siemens AG",
+      name: "Siemens",
       logo: "Siemens.png",
     },
     summary: {
@@ -3168,7 +3168,7 @@ const jobDatabase = [
     id: 46,
     postingTime: "2024-12-12T00:30",
     company: {
-      name: "Siemens AG",
+      name: "Siemens",
       logo: "Siemens.png",
     },
     summary: {
@@ -3674,7 +3674,7 @@ const jobDatabase = [
     "id": 53,
     "postingTime": "2024-12-12T00:30",
     "company": {
-      "name": "Siemens AG",
+      "name": "Siemens",
       "logo": "Siemens.png"
     },
     "summary": {
@@ -3684,7 +3684,7 @@ const jobDatabase = [
     },
     "description": {
       "title": "Job Description",
-      "details": "Join Siemens AG as a Working Student in Construction Project Management. Assist with construction planning, help ensure material availability, and support the team in tracking project progress."
+      "details": "Join Siemens as a Working Student in Construction Project Management. Assist with construction planning, help ensure material availability, and support the team in tracking project progress."
     },
     "responsibilities": {
       "title": "Key Responsibilities",
