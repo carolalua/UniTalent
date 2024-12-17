@@ -76,20 +76,18 @@ const renderJobs = (jobs) => {
   function getRelativeTime(postingTime) {
     const now = new Date();
     const posted = new Date(postingTime);
-    const differenceInSeconds = Math.floor((now - posted) / 1000);
-
-    if (differenceInSeconds < 60) {
-      return `${differenceInSeconds} seconds ago`;
-    } else if (differenceInSeconds < 3600) {
-      const minutes = Math.floor(differenceInSeconds / 60);
-      return `${minutes} minute${minutes !== 1 ? "s" : ""} ago`;
-    } else if (differenceInSeconds < 86400) {
-      const hours = Math.floor(differenceInSeconds / 3600);
-      return `${hours} hour${hours !== 1 ? "s" : ""} ago`;
-    } else {
-      const days = Math.floor(differenceInSeconds / 86400);
-      return `${days} day${days !== 1 ? "s" : ""} ago`;
+    const diffInSeconds = Math.floor((now - posted) / 1000);
+  
+    if (diffInSeconds < 3600) {
+      const diffInMinutes = Math.max(1, Math.floor(diffInSeconds / 60)); // Ensure at least 1 minute
+      return `${diffInMinutes} minute${diffInMinutes !== 1 ? "s" : ""} ago`;
     }
+    if (diffInSeconds < 86400) {
+      const diffInHours = Math.floor(diffInSeconds / 3600);
+      return `${diffInHours} hour${diffInHours !== 1 ? "s" : ""} ago`;
+    }
+    const diffInDays = Math.floor(diffInSeconds / 86400);
+    return `${diffInDays} day${diffInDays !== 1 ? "s" : ""} ago`;
   }
 });
 
