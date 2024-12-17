@@ -292,16 +292,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function to render pagination
   function renderPagination(jobs) {
-    console.log("Jobs to Render:", jobs); // Debugging
     paginationContainer.innerHTML = "";
-
+  
     const totalPages = Math.ceil(jobs.length / jobsPerPage);
-    if (totalPages <= 1) return;
-
+    if (totalPages <= 1) return; // No pagination needed for one page
+  
+    const maxVisiblePages = 5; // Fixed 5 pages before ellipsis
+  
+    // Helper function to create a page button
+    const createPageButton = (page, isActive = false) => {
+      const button = document.createElement("button");
+      button.textContent = page;
+      button.className = `pagination-btn ${isActive ? "active" : ""}`;
+      button.addEventListener("click", () => {
+        currentPage = page;
+        renderJobs(jobs);
+        renderPagination(jobs);
+        updateJobCount(jobs.length);
+      });
+      return button;
+    };
+  
+    // Helper function to create ellipsis
+    const createEllipsis = () => {
+      const ellipsis = document.createElement("span");
+      ellipsis.textContent = "...";
+      ellipsis.className = "pagination-ellipsis";
+      return ellipsis;
+    };
+  
+    // Add "Previous" button
     if (currentPage > 1) {
       const prevButton = document.createElement("button");
       prevButton.className = "pagination-btn prev";
-      prevButton.textContent = "< Previous";
+      prevButton.textContent = "❮";
       prevButton.addEventListener("click", () => {
         currentPage--;
         renderJobs(jobs);
@@ -310,24 +334,39 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       paginationContainer.appendChild(prevButton);
     }
-
-    for (let i = 1; i <= totalPages; i++) {
-      const pageButton = document.createElement("button");
-      pageButton.className = `pagination-btn ${i === currentPage ? "active" : ""}`;
-      pageButton.textContent = i;
-      pageButton.addEventListener("click", () => {
-        currentPage = i;
-        renderJobs(jobs);
-        renderPagination(jobs);
-        updateJobCount(jobs.length);
-      });
-      paginationContainer.appendChild(pageButton);
+  
+    // Always show the first page
+    paginationContainer.appendChild(createPageButton(1, currentPage === 1));
+  
+    // Left ellipsis if currentPage > maxVisiblePages
+    if (currentPage > maxVisiblePages) {
+      paginationContainer.appendChild(createEllipsis());
     }
-
+  
+    // Calculate visible range
+    const startPage = Math.max(2, currentPage - 2);
+    const endPage = Math.min(totalPages - 1, startPage + maxVisiblePages - 2);
+  
+    // Render visible pages
+    for (let i = startPage; i <= endPage; i++) {
+      paginationContainer.appendChild(createPageButton(i, currentPage === i));
+    }
+  
+    // Right ellipsis if there are pages after the visible range
+    if (endPage < totalPages - 1) {
+      paginationContainer.appendChild(createEllipsis());
+    }
+  
+    // Always show the last page
+    if (totalPages > 1) {
+      paginationContainer.appendChild(createPageButton(totalPages, currentPage === totalPages));
+    }
+  
+    // Add "Next" button
     if (currentPage < totalPages) {
       const nextButton = document.createElement("button");
       nextButton.className = "pagination-btn next";
-      nextButton.textContent = "Next >";
+      nextButton.textContent = "❯";
       nextButton.addEventListener("click", () => {
         currentPage++;
         renderJobs(jobs);
@@ -341,11 +380,17 @@ document.addEventListener("DOMContentLoaded", () => {
   function getRelativeTime(postingTime) {
     const now = new Date();
     const posted = new Date(postingTime);
-    const diff = Math.floor((now - posted) / 1000);
-
-    if (diff < 60) return `${diff} seconds ago`;
-    if (diff < 3600) return `${Math.floor(diff / 60)} minutes ago`;
-    if (diff < 86400) return `${Math.floor(diff / 3600)} hours ago`;
-    return `${Math.floor(diff / 86400)} days ago`;
+    const diffInSeconds = Math.floor((now - posted) / 1000);
+  
+    if (diffInSeconds < 3600) {
+      const diffInMinutes = Math.max(1, Math.floor(diffInSeconds / 60)); // Ensure at least 1 minute
+      return `${diffInMinutes} minute${diffInMinutes !== 1 ? "s" : ""} ago`;
+    }
+    if (diffInSeconds < 86400) {
+      const diffInHours = Math.floor(diffInSeconds / 3600);
+      return `${diffInHours} hour${diffInHours !== 1 ? "s" : ""} ago`;
+    }
+    const diffInDays = Math.floor(diffInSeconds / 86400);
+    return `${diffInDays} day${diffInDays !== 1 ? "s" : ""} ago`;
   }
 });
