@@ -21,4 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const company = companies.find(company => company.contactEmail === userEmail);
         userNameId.innerHTML = company.contactPerson;
     }
+
+    document.getElementsByClassName('logout-btn')[0].addEventListener('click', (event) => {
+        if (event.target && event.target.class === 'logout-btn') {
+            localStorage.removeItem('userType');
+            localStorage.removeItem('loggedInUser');
+            localStorage.removeItem('userEmail');
+        }
+
+        if(userType === 'student') {
+            window.location.href = './login_student.html';
+        } else {
+            window.location.href = './login_employer.html';
+        }
+    });
 });

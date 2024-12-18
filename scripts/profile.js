@@ -53,5 +53,31 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('userEmail', company.contactEmail);
             window.location.href = '../pages/profile_employer.html';
         });
+
+        window.onload = function() {        
+            if (company && company.logo) {
+                const profilePhotoImg = document.getElementById('profile-photo-img');
+                profilePhotoImg.src = company.logo; // Set the base64 logo as the src
+            }
+        };
+
+        document.getElementById('file-input').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onloadend = function() {
+                    // Get the base64 string of the selected image
+                    const newLogo = reader.result;
+    
+                    // Update the image on the page
+                    const profilePhotoImg = document.getElementById('profile-photo-img');
+                    profilePhotoImg.src = newLogo; // Set the new image as the src of the img element
+    
+                    company.logo = newLogo; // Update the logo field of the company
+                    localStorage.setItem('companies', JSON.stringify(companies)); // Save the updated companies array back to localStorage
+                };
+                reader.readAsDataURL(file); // Convert the image to a base64 string
+            }
+        });    
     }
 });

@@ -9,7 +9,7 @@ document.getElementById('register-company').addEventListener('submit', function(
     const postalCode = document.getElementById('postal-code').value;
     const telephoneCompany = document.getElementById('telephone-company').value;
     const street = document.getElementById('street').value;
-    const logo = document.getElementById('logo').value;
+    const logoFile = document.getElementById('logo').files[0];
     const houseNumber = document.getElementById('house-number').value;
     const vatNumber = document.getElementById('vat-number').value;
     const password = document.getElementById('password').value;
@@ -27,11 +27,23 @@ document.getElementById('register-company').addEventListener('submit', function(
         return;
     }
 
-    const newCompany = { companyName, contactPerson, city, contactEmail, postalCode, telephoneCompany, 
-        telephoneCompany, street, logo, houseNumber, vatNumber, website, password};
-    companies.push(newCompany);
+    const saveCompanyData = (logo) => {
+        const newCompany = { companyName, contactPerson, city, contactEmail, postalCode, telephoneCompany, 
+            telephoneCompany, street, logo, houseNumber, vatNumber, website, password};
+        companies.push(newCompany);
 
-    localStorage.setItem('companies', JSON.stringify(companies));
+        localStorage.setItem('companies', JSON.stringify(companies));
+        window.location.href = './login_employer.html';
+    };
 
-    window.location.href = './login_employer.html';
+    if (logoFile) {
+        const reader = new FileReader();
+        reader.onloadend = function() {
+            const logo = reader.result; // This will be the base64 encoded image
+            saveCompanyData(logo); // Now save company data along with the logo
+        };
+        reader.readAsDataURL(logoFile); // Convert the image to a base64 string
+    } else {
+        saveCompanyData(null); 
+    }
 });

@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <div class="job-listing-middle">
             <div class="job-logo">
-              <img src="../images/${job.company.logo}" alt="${job.company.name} Logo">
+              <img src="${job.company.logo.startsWith('data:image') ? job.company.logo : `../images/${job.company.logo}`}" alt="${job.company.name} Logo">
             </div>
             <div class="job-title-company">
               <h3 class="h3">${job.overview.jobTitle}</h3>
