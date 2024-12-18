@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-/// Event Listener to Serach Bar
+/// Event Listener to Search Bar
 document.addEventListener("DOMContentLoaded", () => {
   const titleInput = document.getElementById("job-title");
   const locationInput = document.getElementById("locations");
