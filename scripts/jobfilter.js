@@ -172,9 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Comparing:", job.company.name.trim(), "with", companyName);
         return job.company.name.trim().toLowerCase() === companyName.toLowerCase();
       });
-  
-      console.log("Filtered Jobs:", filteredJobs); // Check if Siemens jobs are included
-  
+      
       currentPage = 1;
   
       renderJobs(filteredJobs);
