@@ -1,30 +1,3 @@
-// Get the file input for both profile section and sidebar
-/*const fileInput = document.getElementById("file-input");
-const profilePhotoImg = document.getElementById("profile-photo-img");
-const profilePhotoText = document.getElementById("profile-photo-text");
-const sidebarProfilePhoto = document.getElementById("sidebar-profile-photo");
-
-// Add an event listener to handle file input change
-fileInput.addEventListener("change", function (event) {
-  const file = event.target.files[0]; // Get the selected file
-
-  if (file) {
-    // Create a URL for the selected file
-    const reader = new FileReader();
-
-    reader.onload = function (e) {
-      // Set the image source to the uploaded file
-      profilePhotoImg.src = e.target.result;
-      sidebarProfilePhoto.src = e.target.result; // Update sidebar profile photo as well
-      profilePhotoImg.style.display = "block"; // Show the image
-      profilePhotoText.style.display = "none"; // Hide the text
-    };
-
-    // Read the file as a data URL
-    reader.readAsDataURL(file);
-  }
-});*/
-
 const jobDatabase = JSON.parse(localStorage.getItem('jobDatabase')) || [];
 const companies = JSON.parse(localStorage.getItem('companies')) || [];
 const userEmail= localStorage.getItem('userEmail');
@@ -54,8 +27,8 @@ function generateJobTable() {
     // Status (For simplicity, assuming all jobs are 'Open')
     const status = document.createElement("td");
 
-    status.className = job.status === 'Open' ? 'status-open' : 'status-closed';
-    status.textContent = job.status || 'Open';
+    status.className = 'status-open';
+    status.textContent = 'Open';
     row.appendChild(status);
 
     // Date Posted
@@ -63,20 +36,14 @@ function generateJobTable() {
     datePosted.textContent = new Date(job.postingTime).toLocaleDateString();
     row.appendChild(datePosted);
 
-    // Due Date (Use job's due date or a default)
-    const dueDate = document.createElement("td");
-    dueDate.textContent = "24 May 2024";  // Placeholder, replace with actual logic if needed
-    row.appendChild(dueDate);
-
     // Job Type
     const jobType = document.createElement("td");
-    //jobType.className = `job-type-${job.summary.jobType.toLowerCase()}`;
     jobType.textContent = job.summary.jobType;
     row.appendChild(jobType);
 
     // Applicants (Static for now, you can adjust accordingly)
     const applicants = document.createElement("td");
-    applicants.textContent = "100";  // Placeholder, replace with actual number
+    applicants.textContent = job.applicantCount;  // Placeholder, replace with actual number
     row.appendChild(applicants);
 
     // Append the row to the table body

@@ -76,8 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         let germanRequired = false;
         let germanLevel = '';
-        console.log('aqui');
-    
+
         for (let i = 0; i < languages.length; i++) {
     
             if(languages[i].value === 'english') {
@@ -110,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
             postingTime: formattedDate,
             company: {
                 name: company.companyName,
-                logo: "Canon.png",
+                logo: company.logo,
             },
             summary: {
                 category: jobcategory,
@@ -145,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
             educationLevel: educationlevel,
             experienceLevel: experience,
             locationType: location,
+            applicantCount: 0,
             overview: {
                 jobTitle: jobTitle,
                 jobType: jobtype,
