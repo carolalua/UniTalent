@@ -4237,7 +4237,7 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Hamburg",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=..." 
     },
   },
   {
