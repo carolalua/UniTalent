@@ -48,6 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
             date: `${day} ${month} ${year}`,
             email: document.getElementById('email').value,
         });
+        const applicationCount = job.applicantCount || 0;
+        job.applicantCount = applicationCount + 1;
+        localStorage.setItem('jobDatabase', JSON.stringify(jobDatabase));
         localStorage.setItem('applications', JSON.stringify(applications));
         window.close();
     });
