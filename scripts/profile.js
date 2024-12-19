@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const users = JSON.parse(localStorage.getItem('users')) || [];
     const userType = localStorage.getItem('userType');
     const userEmail= localStorage.getItem('userEmail');
+    const applications = JSON.parse(localStorage.getItem('applications')) || [];
+    const studentApplications = applications.filter(application => application.email === userEmail);
 
     if(userType === 'student') {
         const firstName = document.getElementById('first-name');
@@ -21,8 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
             student.lastName = lastName.value;
             student.telephone = phoneNumber.value;
             student.email = email.value;
-            const applications = JSON.parse(localStorage.getItem('applications')) || [];
-            const studentApplications = applications.filter(application => application.email === userEmail);
             studentApplications.forEach(application => {
                 application.email = student.email;
             });
@@ -50,11 +50,21 @@ document.addEventListener('DOMContentLoaded', () => {
         location.value = company.city;
 
         document.getElementById('save-changes').addEventListener('click', function() {
+            const jobDatabase = JSON.parse(localStorage.getItem('jobDatabase')) || [];
+            const jobsFilter = jobDatabase.filter(job => job.company.name === company.companyName);
+            jobsFilter.forEach(job => {
+                job.company.name = fullName.value;
+            });
             company.companyName = fullName.value;
             company.website = website.value;
             company.telephoneCompany = phoneNumber.value;
             company.contactEmail = email.value;
             company.city = location.value;
+            studentApplications.forEach(application => {
+                application.companyName = company.companyName;
+            });
+            localStorage.setItem('jobDatabase', JSON.stringify(jobDatabase));
+            localStorage.setItem('applications', JSON.stringify(applications));
             localStorage.setItem('companies', JSON.stringify(companies));
             localStorage.setItem('userEmail', company.contactEmail);
             window.location.href = '../pages/profile_employer.html';
