@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
             student.lastName = lastName.value;
             student.telephone = phoneNumber.value;
             student.email = email.value;
+            const applications = JSON.parse(localStorage.getItem('applications')) || [];
+            const studentApplications = applications.filter(application => application.email === userEmail);
+            studentApplications.forEach(application => {
+                application.email = student.email;
+            });
+            localStorage.setItem('applications', JSON.stringify(applications));
             localStorage.setItem('users', JSON.stringify(users));
             localStorage.setItem('userEmail', student.email);
             localStorage.setItem('loggedInUser', student.firstName);

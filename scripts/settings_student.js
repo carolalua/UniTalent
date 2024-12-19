@@ -15,6 +15,12 @@ document.getElementById('form-email').addEventListener('submit', function(event)
     
     if (student) {
         student.email = email;
+        const applications = JSON.parse(localStorage.getItem('applications')) || [];
+        const studentApplications = applications.filter(application => application.email === userEmail);
+        studentApplications.forEach(application => {
+            application.email = email;
+        });
+        localStorage.setItem('applications', JSON.stringify(applications));
         localStorage.setItem('users', JSON.stringify(users));
         localStorage.setItem('userEmail', email);
         email.value = '';
