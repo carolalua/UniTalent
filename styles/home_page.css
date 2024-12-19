@@ -609,7 +609,7 @@ body {
   .job-listing {
     width: calc(100% - 60px); /* Add 30px margin on each side */
     margin: 0 auto; /* Center the job card horizontally */
-    padding: 12px; /* Reduce padding for smaller screens */
+    padding: 12px;
   }
 
   /* Section title adjustments for alignment */
