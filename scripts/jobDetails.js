@@ -147,6 +147,16 @@ function populateJobDetails(job) {
     document.querySelector("#gender .joboverview-answer").textContent = job.overview.gender;
     document.querySelector("#location .joboverview-answer").textContent = job.overview.location;
 
+    const userType = localStorage.getItem('userType');
+    console.log(userType + 'aqui');  
+    if (userType === 'student') {
+        document.querySelector('.apply-button').addEventListener('click', function() {
+            window.open(`./jobapplication.html?id=${job.id}`, '_blank')
+        });
+    } else {
+        document.querySelector('.apply-button').style.visibility = 'hidden';  
+    }
+
     // Map
     const mapIframe = document.querySelector("#map iframe");
     if (job.overview.mapUrl) {
