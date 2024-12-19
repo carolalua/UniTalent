@@ -2586,7 +2586,7 @@ const jobDatabase = [
     id: 38,
     postingTime: "2024-12-10T20:00",
     company: {
-      name: "Allianz Partners",
+      name: "Allianz",
       logo: "Allianz.png",
     },
     summary: {
@@ -2596,7 +2596,7 @@ const jobDatabase = [
     },
     description: {
       title: "Job Description",
-      details: `Join Allianz Partners as a Working Student in Travel Portfolio Analysis. Work closely with the Head of Portfolio Monitoring and Remediation to develop tools, improve data quality, and help drive financial planning for the global travel portfolio.<br>`,
+      details: `Join Allianz as a Working Student in Travel Portfolio Analysis. Work closely with the Head of Portfolio Monitoring and Remediation to develop tools, improve data quality, and help drive financial planning for the global travel portfolio.<br>`,
     },
     responsibilities: {
       title: "Key Responsibilities",
@@ -2660,7 +2660,7 @@ const jobDatabase = [
     id: 39,
     postingTime: "2024-12-07T20:30",
     company: {
-      name: "Allianz Partners",
+      name: "Allianz",
       logo: "Allianz.png",
     },
     summary: {
@@ -2670,7 +2670,7 @@ const jobDatabase = [
     },
     description: {
       title: "Job Description",
-      details: `Join Allianz Partners as a Working Student in Project Management for New Mobility & Fleet. Support the team in analyzing performance, researching market trends, and developing new business models in the mobility insurance industry.<br>`,
+      details: `Join Allianz as a Working Student in Project Management for New Mobility & Fleet. Support the team in analyzing performance, researching market trends, and developing new business models in the mobility insurance industry.<br>`,
     },
     responsibilities: {
       title: "Key Responsibilities",
