@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
         applications.push({
             companyName: job.company.name,
             role: job.overview.jobTitle,
-            date: `${day} ${month} ${year}`
+            date: `${day} ${month} ${year}`,
+            email: document.getElementById('email').value,
         });
         localStorage.setItem('applications', JSON.stringify(applications));
         window.close();

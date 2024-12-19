@@ -109,57 +109,7 @@
                     <th>Date Applied</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>Facebook</td>
-                    <td>Social Media Assistant</td>
-                    <td>20 May 2020</td>
-                  </tr>
-                  <tr>
-                    <td>Google</td>
-                    <td>Social Media Manager</td>
-                    <td>18 May 2020</td>
-                  </tr>
-                  <tr>
-                    <td>Twitter</td>
-                    <td>Content Strategist</td>
-                    <td>17 May 2020</td>
-                  </tr>
-                  <tr>
-                    <td>Instagram</td>
-                    <td>Digital Marketing Specialist</td>
-                    <td>15 May 2020</td>
-                  </tr>
-                  <tr>
-                    <td>LinkedIn</td>
-                    <td>Brand Strategist</td>
-                    <td>10 May 2020</td>
-                  </tr>
-                  <tr>
-                    <td>Snapchat</td>
-                    <td>Community Manager</td>
-                    <td>8 May 2020</td>
-                  </tr>
-                  <tr>
-                    <td>Amazon</td>
-                    <td>Content Marketing Manager</td>
-                    <td>5 May 2020</td>
-                  </tr>
-                  <tr>
-                    <td>Spotify</td>
-                    <td>Social Media Coordinator</td>
-                    <td>2 May 2020</td>
-                  </tr>
-                  <tr>
-                    <td>Netflix</td>
-                    <td>Marketing Communications Specialist</td>
-                    <td>30 April 2020</td>
-                  </tr>
-                  <tr>
-                    <td>Reddit</td>
-                    <td>Content Marketing Lead</td>
-                    <td>28 April 2020</td>
-                  </tr>
+                <tbody id="job-application-body">
                 </tbody>
               </table>
             </div>
@@ -167,20 +117,18 @@
 
             <!-- Pagination -->
             <div class="pagination">
-              <select>
-                <option>View 10</option>
-                <option>View 20</option>
-                <option>View 50</option>
+              <select id="page-size">
+                <option value="10">View 10</option>
+                <option value="20">View 20</option>
+                <option value="50">View 50</option>
               </select>
               <div class="pagination-buttons">
-                <span>1</span>
-                <button>Next</button>
+                <button id="prev-button">Previous</button>
+                <span id="page-number" >1</span>
+                <button id="next-button">Next</button>
               </div>
             </div>
           </div>
-
-
-
       </div>
 
       <!-- footer -->
@@ -216,7 +164,7 @@
     </div>  <!-- end of full page container -->
 
     <script src="../scripts/header-pages.js"></script>
-    <script src="../scripts/myaccount.js"></script>
     <script src="../scripts/sidebar.js"></script>
+    <script src="../scripts/jobs-students-list.js"></script>
   </body>
 </html>
