@@ -91,6 +91,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
                     company.logo = newLogo; // Update the logo field of the company
                     localStorage.setItem('companies', JSON.stringify(companies)); // Save the updated companies array back to localStorage
+                    
+                    const jobDatabase = JSON.parse(localStorage.getItem('jobDatabase')) || [];
+                    const jobsFilter = jobDatabase.filter(job => job.company.name === company.companyName);
+                    jobsFilter.forEach(job => {
+                        job.company.logo = newLogo;
+                    });
+                    localStorage.setItem('jobDatabase', JSON.stringify(jobDatabase));
                 };
                 reader.readAsDataURL(file); // Convert the image to a base64 string
             }
