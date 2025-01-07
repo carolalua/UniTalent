@@ -1669,7 +1669,7 @@ const jobDatabase = [
     },
     description: {
       title: "Job Description",
-      details: `Join SAP's CPIT Security Risk and Architecture team to assist in the design, implementation, and monitoring of security frameworks. Support risk assessments and the implementation of security measures.<br>`,
+      details: `Join SAP's CPIT Security Risk and Architecture team to assist in designing, implementing, and monitoring security frameworks. Support risk assessments and the implementation of security measures.<br>`,
     },
     responsibilities: {
       title: "Key Responsibilities",
