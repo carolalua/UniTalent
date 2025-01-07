@@ -27,19 +27,36 @@ document.addEventListener("DOMContentLoaded", () => {
     //student information
     const users = JSON.parse(localStorage.getItem('users')) || [];
     const userEmail= localStorage.getItem('userEmail');
-
     const student = users.find(user => user.email === userEmail);
 
-    document.getElementById('full-name').value = student.firstName + ' ' + student.lastName;
-    document.getElementById('phone').value = student.telephone;
-    document.getElementById('email').value = student.email;
+    if (student) {
+        document.getElementById('full-name').value = student.firstName + ' ' + student.lastName;
+        document.getElementById('phone').value = student.telephone;
+        document.getElementById('email').value = student.email;
+    }
 
+    // File input for resume upload
+    const fileInput = document.getElementById('resume-upload');
+    const fileLabel = document.getElementById('resume-upload-label');
+
+
+    fileInput.addEventListener('change', function () {
+        if (fileInput.files.length > 0) {
+          const fileName = fileInput.files[0].name;
+          fileLabel.textContent = `Uploaded: ${fileName}`;
+        } else {
+          fileLabel.textContent = 'No file chosen';
+        }
+      });
+
+    // Form submission
     document.getElementById('form-application').addEventListener('submit', function(e) {
+        e.preventDefault();
+
         const date = new Date();
-        // Get the day, month, and year
-        const day = String(date.getDate()).padStart(2, '0'); // Pad single-digit days with a leading zero
-        const month = date.toLocaleString('default', { month: 'short' }); // Get short month name
-        const year = date.getFullYear(); // Get the full year
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = date.toLocaleString('default', { month: 'short' });
+        const year = date.getFullYear();
 
         const applications = JSON.parse(localStorage.getItem('applications')) || [];
         applications.push({
@@ -48,13 +65,16 @@ document.addEventListener("DOMContentLoaded", () => {
             date: `${day} ${month} ${year}`,
             email: document.getElementById('email').value,
         });
+
         const applicationCount = job.applicantCount || 0;
         job.applicantCount = applicationCount + 1;
         localStorage.setItem('jobDatabase', JSON.stringify(jobDatabase));
         localStorage.setItem('applications', JSON.stringify(applications));
+        alert("Your application has been submitted successfully!");
         window.close();
     });
 });
+
 
 function displayError(message) {
     // Select the container where job details are displayed
