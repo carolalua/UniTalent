@@ -1669,7 +1669,7 @@ const jobDatabase = [
     },
     description: {
       title: "Job Description",
-      details: `Join SAP's CPIT Security Risk and Architecture team to assist in the design, implementation, and monitoring of security frameworks. Support risk assessments and the implementation of security measures.<br>`,
+      details: `Join SAP's CPIT Security Risk and Architecture team to assist in designing, implementing, and monitoring security frameworks. Support risk assessments and the implementation of security measures.<br>`,
     },
     responsibilities: {
       title: "Key Responsibilities",
@@ -3245,7 +3245,7 @@ const jobDatabase = [
     },
   },
   {
-    "id": 47,
+    id: 47,
     "postingTime": "2024-12-13T10:30",
     "company": {
       "name": "BauHaus AG",
@@ -3312,11 +3312,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Berlin",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603792695!2d13.25992711787948!3d52.50693861615697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246884591!5m2!1sen!2sro"
     }
   },
   {
-    "id": 48,
+    id: 48,
     "postingTime": "2024-12-14T09:45",
     "company": {
       "name": "Vogelbau Construction",
@@ -3383,11 +3383,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Frankfurt",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163720.230337725!2d8.47175867841817!3d50.121315517438866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f477096c5%3A0x422435029b0c600!2sFrankfurt%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246495824!5m2!1sen!2sro"
     }
   },
   {
-    "id": 49,
+    id: 49,
     "postingTime": "2024-12-15T11:00",
     "company": {
       "name": "UrbanPlan Corp.",
@@ -3454,11 +3454,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Hamburg",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151676.79043788702!2d9.763017088984043!3d53.558662684697204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247114899!5m2!1sen!2sro"
     }
   },
   {
-    "id": 50,
+    id: 50,
     "postingTime": "2024-12-16T12:15",
     "company": {
       "name": "RedBrick Construction",
@@ -3525,11 +3525,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Cologne",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160842.04207193156!2d6.802517398092801!3d50.95780316234826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf259169ab2fe5%3A0x42760fc4a2a77f0!2sCologne%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247353363!5m2!1sen!2sro"
     }
   },
   {
-    "id": 51,
+    id: 51,
     "postingTime": "2024-12-17T14:00",
     "company": {
       "name": "WestPoint Builders",
@@ -3596,11 +3596,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Stuttgart",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84132.35367700653!2d9.094815102565494!3d48.77929280327212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799db34c1ad8fd3%3A0x79d5c11c7791cfe4!2sStuttgart%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247475481!5m2!1sen!2sro"
     }
   },
   {
-    "id": 52,
+    id: 52,
     "postingTime": "2024-12-18T16:15",
     "company": {
       "name": "TechBuild Ltd.",
@@ -3667,11 +3667,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Düsseldorf",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159868.3194697957!2d6.649545305517321!3d51.23855399843801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8c97bf1465907%3A0x42760fc4a2a73b0!2sD%C3%BCsseldorf%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247623477!5m2!1sen!2sro"
     },
   },
   {
-    "id": 53,
+    id: 53,
     "postingTime": "2024-12-12T00:30",
     "company": {
       "name": "Siemens",
@@ -3738,11 +3738,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Munich",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85173.72408330304!2d11.459435622844921!3d48.15499582554481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247753297!5m2!1sen!2sro"
     }
   },
   {
-    "id": 54,
+    id: 54,
     "postingTime": "2024-12-13T08:45",
     "company": {
       "name": "TechBuild Ltd.",
@@ -3809,12 +3809,12 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Berlin",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603792695!2d13.25992711787948!3d52.50693861615697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246884591!5m2!1sen!2sro"
     }
   },
 
   {
-    "id": 55,
+    id: 55,
     "postingTime": "2024-12-12T12:00",
     "company": {
       "name": "Hotel Royale",
@@ -3881,11 +3881,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Hamburg",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151676.79043788702!2d9.763017088984043!3d53.558662684697204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247114899!5m2!1sen!2sro"
     }
   },
   {
-    "id": 56,
+    id: 56,
     "postingTime": "2024-12-13T09:00",
     "company": {
       "name": "Grand Plaza Hotel",
@@ -3952,11 +3952,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Berlin",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603792695!2d13.25992711787948!3d52.50693861615697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246884591!5m2!1sen!2sro"
     },
   },
   {
-    "id": 57,
+    id: 57,
     "postingTime": "2024-12-15T10:30",
     "company": {
       "name": "Builder's Corp",
@@ -4023,11 +4023,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Frankfurt",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163720.230337725!2d8.47175867841817!3d50.121315517438866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f477096c5%3A0x422435029b0c600!2sFrankfurt%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246495824!5m2!1sen!2sro"
     }
   },
   {
-    "id": 58,
+    id: 58,
     "postingTime": "2024-12-16T08:00",
     "company": {
       "name": "BuildSmart",
@@ -4094,12 +4094,12 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Hamburg",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151676.79043788702!2d9.763017088984043!3d53.558662684697204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247114899!5m2!1sen!2sro"
     }
   },
 
   {
-    "id": 59,
+    id: 59,
     "postingTime": "2024-12-15T10:00",
     "company": {
       "name": "TravelWorld",
@@ -4166,11 +4166,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Berlin",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603792695!2d13.25992711787948!3d52.50693861615697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246884591!5m2!1sen!2sro"
     }
   },
   {
-    "id": 60,
+    id: 60,
     "postingTime": "2024-12-16T09:00",
     "company": {
       "name": "Elite Resorts",
@@ -4237,11 +4237,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Hamburg",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..." 
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151676.79043788702!2d9.763017088984043!3d53.558662684697204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247114899!5m2!1sen!2sro" 
     },
   },
   {
-    "id": 61,
+    id: 61,
     "postingTime": "2024-12-17T11:00",
     "company": {
       "name": "BuildTech Solutions",
@@ -4308,11 +4308,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Cologne",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160842.04207193156!2d6.802517398092801!3d50.95780316234826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf259169ab2fe5%3A0x42760fc4a2a77f0!2sCologne%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247353363!5m2!1sen!2sro"
     }
   },
   {
-    "id": 62,
+    id: 62,
     "postingTime": "2024-12-17T12:30",
     "company": {
       "name": "ConstructPro",
@@ -4379,12 +4379,12 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Düsseldorf",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159868.3194697957!2d6.649545305517321!3d51.23855399843801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8c97bf1465907%3A0x42760fc4a2a73b0!2sD%C3%BCsseldorf%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247623477!5m2!1sen!2sro"
     }
   },
 
   {
-    "id": 63,
+    id: 63,
     "postingTime": "2024-12-17T09:00",
     "company": {
       "name": "LuxuryHotels",
@@ -4451,11 +4451,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Munich",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85173.72408330304!2d11.459435622844921!3d48.15499582554481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247753297!5m2!1sen!2sro"
     }
   },
   {
-    "id": 64,
+    id: 64,
     "postingTime": "2024-12-18T08:30",
     "company": {
       "name": "HotelGlobe",
@@ -4522,11 +4522,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Berlin",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603792695!2d13.25992711787948!3d52.50693861615697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246884591!5m2!1sen!2sro"
     },
   },
   {
-    "id": 65,
+    id: 65,
     "postingTime": "2024-12-18T10:00",
     "company": {
       "name": "Urban Builders",
@@ -4594,11 +4594,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Stuttgart",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84132.35367700653!2d9.094815102565494!3d48.77929280327212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799db34c1ad8fd3%3A0x79d5c11c7791cfe4!2sStuttgart%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247475481!5m2!1sen!2sro"
     }
   },
   {
-    "id": 66,
+    id: 66,
     "postingTime": "2024-12-18T11:15",
     "company": {
       "name": "EcoBuild Innovators",
@@ -4666,11 +4666,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Hamburg",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151676.79043788702!2d9.763017088984043!3d53.558662684697204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247114899!5m2!1sen!2sro"
     }
   },
   {
-    "id": 67,
+    id: 67,
     "postingTime": "2024-12-19T09:00",
     "company": {
       "name": "CityHotels Group",
@@ -4737,11 +4737,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Frankfurt",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163720.230337725!2d8.47175867841817!3d50.121315517438866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f477096c5%3A0x422435029b0c600!2sFrankfurt%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246495824!5m2!1sen!2sro"
     }
   },
   {
-    "id": 68,
+    id: 68,
     "postingTime": "2024-12-19T10:30",
     "company": {
       "name": "Global Travel Co.",
@@ -4808,11 +4808,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Munich",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85173.72408330304!2d11.459435622844921!3d48.15499582554481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247753297!5m2!1sen!2sro"
     },
   },
   {
-    "id": 69,
+    id: 69,
     "postingTime": "2024-12-20T09:00",
     "company": {
       "name": "Skyline Constructors",
@@ -4880,11 +4880,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Berlin",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603792695!2d13.25992711787948!3d52.50693861615697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246884591!5m2!1sen!2sro"
     }
   },
   {
-    "id": 70,
+    id: 70,
     "postingTime": "2024-12-20T10:30",
     "company": {
       "name": "Modern Builders Inc.",
@@ -4952,11 +4952,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Cologne",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160842.04207193156!2d6.802517398092801!3d50.95780316234826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf259169ab2fe5%3A0x42760fc4a2a77f0!2sCologne%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247353363!5m2!1sen!2sro"
     }
   },
   {
-    "id": 71,
+    id: 71,
     "postingTime": "2024-12-21T09:15",
     "company": {
       "name": "Elite Hotels Group",
@@ -5023,11 +5023,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Berlin",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603792695!2d13.25992711787948!3d52.50693861615697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246884591!5m2!1sen!2sro"
     }
   },
   {
-    "id": 72,
+    id: 72,
     "postingTime": "2024-12-21T11:30",
     "company": {
       "name": "ExploreWorld Travel",
@@ -5095,11 +5095,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Dresden",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160429.3346040308!2d13.607780772430605!3d51.0769336101748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4709cf29101ad6a9%3A0x421b1cb4288feb0!2sDresden%2C%20Germany!5e0!3m2!1sen!2sro!4v1736248041175!5m2!1sen!2sro"
     },
   },
   {
-    "id": 73,
+    id: 73,
     "postingTime": "2024-12-22T09:00",
     "company": {
       "name": "UrbanBuild Co.",
@@ -5167,11 +5167,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Frankfurt",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163720.230337725!2d8.47175867841817!3d50.121315517438866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f477096c5%3A0x422435029b0c600!2sFrankfurt%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246495824!5m2!1sen!2sro"
     }
   },
   {
-    "id": 74,
+    id: 74,
     "postingTime": "2024-12-22T10:45",
     "company": {
       "name": "BuildTech Solutions",
@@ -5239,11 +5239,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Stuttgart",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84132.35367700653!2d9.094815102565494!3d48.77929280327212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799db34c1ad8fd3%3A0x79d5c11c7791cfe4!2sStuttgart%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247475481!5m2!1sen!2sro"
     }
   },
   {
-    "id": 75,
+    id: 75,
     "postingTime": "2024-12-23T09:30",
     "company": {
       "name": "Royal Stay Hotels",
@@ -5311,11 +5311,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Hamburg",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151676.79043788702!2d9.763017088984043!3d53.558662684697204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247114899!5m2!1sen!2sro"
     }
   },
   {
-    "id": 76,
+    id: 76,
     "postingTime": "2024-12-23T11:00",
     "company": {
       "name": "TravelPro Experts",
@@ -5383,11 +5383,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Munich",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85173.72408330304!2d11.459435622844921!3d48.15499582554481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247753297!5m2!1sen!2sro"
     },
   },
   {
-    "id": 77,
+    id: 77,
     "postingTime": "2024-12-24T08:00",
     "company": {
       "name": "GreenBuild Engineers",
@@ -5455,11 +5455,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Cologne",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160842.04207193156!2d6.802517398092801!3d50.95780316234826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf259169ab2fe5%3A0x42760fc4a2a77f0!2sCologne%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247353363!5m2!1sen!2sro"
     }
   },
   {
-    "id": 78,
+    id: 78,
     "postingTime": "2024-12-24T10:30",
     "company": {
       "name": "Skyline Construction",
@@ -5527,11 +5527,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Berlin",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603792695!2d13.25992711787948!3d52.50693861615697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246884591!5m2!1sen!2sro"
     }
   },
   {
-    "id": 79,
+    id: 79,
     "postingTime": "2024-12-24T12:00",
     "company": {
       "name": "Seaside Hotels",
@@ -5599,11 +5599,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Bremen",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153244.59853049603!2d8.571481296403885!3d53.120123672105684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b128100ceee335%3A0xc2e8885cf937df51!2sBremen%2C%20Germany!5e0!3m2!1sen!2sro!4v1736248126603!5m2!1sen!2sro"
     }
   },
   {
-    "id": 80,
+    id: 80,
     "postingTime": "2024-12-24T14:00",
     "company": {
       "name": "Holiday Bliss Tours",
@@ -5671,11 +5671,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Düsseldorf",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159868.3194697957!2d6.649545305517321!3d51.23855399843801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8c97bf1465907%3A0x42760fc4a2a73b0!2sD%C3%BCsseldorf%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247623477!5m2!1sen!2sro"
     },
   },
   {
-    "id": 81,
+    id: 81,
     "postingTime": "2024-12-25T09:00",
     "company": {
       "name": "EcoBuilders Ltd.",
@@ -5743,11 +5743,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Hamburg",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151676.79043788702!2d9.763017088984043!3d53.558662684697204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247114899!5m2!1sen!2sro"
     }
   },
   {
-    "id": 82,
+    id: 82,
     "postingTime": "2024-12-25T11:00",
     "company": {
       "name": "UrbanConstruct",
@@ -5815,11 +5815,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Frankfurt",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163720.230337725!2d8.47175867841817!3d50.121315517438866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f477096c5%3A0x422435029b0c600!2sFrankfurt%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246495824!5m2!1sen!2sro"
     }
   },
   {
-    "id": 83,
+    id: 83,
     "postingTime": "2024-12-25T13:00",
     "company": {
       "name": "Luxury Stays",
@@ -5887,11 +5887,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Leipzig",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159508.98365649194!2d12.228830026711499!3d51.34188135837527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a6f818200f2c73%3A0x93df80d2b9b4f552!2sLeipzig%2C%20Germany!5e0!3m2!1sen!2sro!4v1736248194305!5m2!1sen!2sro"
     }
   },
   {
-    "id": 84,
+    id: 84,
     "postingTime": "2024-12-25T15:00",
     "company": {
       "name": "Adventure Tours",
@@ -5959,11 +5959,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Munich",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85173.72408330304!2d11.459435622844921!3d48.15499582554481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247753297!5m2!1sen!2sro"
     },
   },
   {
-    "id": 84,
+    id: 84,
     "postingTime": "2024-12-26T09:00",
     "company": {
       "name": "BuildWell Co.",
@@ -6032,11 +6032,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Berlin",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603792695!2d13.25992711787948!3d52.50693861615697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246884591!5m2!1sen!2sro"
     }
   },
   {
-    "id": 85,
+    id: 85,
     "postingTime": "2024-12-26T11:00",
     "company": {
       "name": "Skyline Constructors",
@@ -6105,11 +6105,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Stuttgart",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84132.35367700653!2d9.094815102565494!3d48.77929280327212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799db34c1ad8fd3%3A0x79d5c11c7791cfe4!2sStuttgart%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247475481!5m2!1sen!2sro"
     }
   },
   {
-    "id": 86,
+    id: 86,
     "postingTime": "2024-12-26T13:00",
     "company": {
       "name": "Elite Hotels",
@@ -6177,11 +6177,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Munich",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85173.72408330304!2d11.459435622844921!3d48.15499582554481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247753297!5m2!1sen!2sro"
     }
   },
   {
-    "id": 87,
+    id: 87,
     "postingTime": "2024-12-26T15:00",
     "company": {
       "name": "Explore Travel Agency",
@@ -6249,11 +6249,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Berlin",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603792695!2d13.25992711787948!3d52.50693861615697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246884591!5m2!1sen!2sro"
     },
   },
   {
-    "id": 87,
+    id: 87,
     "postingTime": "2024-12-27T08:00",
     "company": {
       "name": "BrickTech Ltd.",
@@ -6322,11 +6322,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Frankfurt",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163720.230337725!2d8.47175867841817!3d50.121315517438866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f477096c5%3A0x422435029b0c600!2sFrankfurt%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246495824!5m2!1sen!2sro"
     }
   },
   {
-    "id": 88,
+    id: 88,
     "postingTime": "2024-12-27T10:00",
     "company": {
       "name": "GreenBuild Solutions",
@@ -6395,11 +6395,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Düsseldorf",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159868.3194697957!2d6.649545305517321!3d51.23855399843801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8c97bf1465907%3A0x42760fc4a2a73b0!2sD%C3%BCsseldorf%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247623477!5m2!1sen!2sro"
     }
   },
   {
-    "id": 89,
+    id: 89,
     "postingTime": "2024-12-27T12:00",
     "company": {
       "name": "Luxury Stays",
@@ -6467,11 +6467,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Hamburg",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151676.79043788702!2d9.763017088984043!3d53.558662684697204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247114899!5m2!1sen!2sro"
     }
   },
   {
-    "id": 90,
+    id: 90,
     "postingTime": "2024-12-27T14:00",
     "company": {
       "name": "Adventure Awaits Tours",
@@ -6539,11 +6539,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Munich",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85173.72408330304!2d11.459435622844921!3d48.15499582554481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247753297!5m2!1sen!2sro"
     },
   },
   {
-    "id": 91,
+    id: 91,
     "postingTime": "2024-12-27T16:00",
     "company": {
       "name": "Bright Minds Academy",
@@ -6612,11 +6612,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Berlin",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603792695!2d13.25992711787948!3d52.50693861615697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246884591!5m2!1sen!2sro"
     }
   },
   {
-    "id": 92,
+    id: 92,
     "postingTime": "2024-12-27T18:00",
     "company": {
       "name": "Language Connect",
@@ -6684,11 +6684,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Cologne",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160842.04207193156!2d6.802517398092801!3d50.95780316234826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf259169ab2fe5%3A0x42760fc4a2a77f0!2sCologne%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247353363!5m2!1sen!2sro"
     }
   },
   {
-    "id": 93,
+    id: 93,
     "postingTime": "2024-12-27T20:00",
     "company": {
       "name": "WealthVision",
@@ -6757,11 +6757,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Frankfurt",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163720.230337725!2d8.47175867841817!3d50.121315517438866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f477096c5%3A0x422435029b0c600!2sFrankfurt%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246495824!5m2!1sen!2sro"
     }
   },
   {
-    "id": 94,
+    id: 94,
     "postingTime": "2024-12-27T22:00",
     "company": {
       "name": "EuroBank Corp.",
@@ -6830,11 +6830,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Munich",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85173.72408330304!2d11.459435622844921!3d48.15499582554481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247753297!5m2!1sen!2sro"
     },
   },
   {
-    "id": 95,
+    id: 95,
     "postingTime": "2024-12-28T08:00",
     "company": {
       "name": "Deutsche Bahn",
@@ -6903,11 +6903,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Berlin",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603792695!2d13.25992711787948!3d52.50693861615697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246884591!5m2!1sen!2sro"
     }
   },
   {
-    "id": 96,
+    id: 96,
     "postingTime": "2024-12-28T10:00",
     "company": {
       "name": "Lufthansa Group",
@@ -6976,11 +6976,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Frankfurt",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163720.230337725!2d8.47175867841817!3d50.121315517438866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f477096c5%3A0x422435029b0c600!2sFrankfurt%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246495824!5m2!1sen!2sro"
     }
   },
   {
-    "id": 97,
+    id: 97,
     "postingTime": "2024-12-28T12:00",
     "company": {
       "name": "FlixBus",
@@ -7048,11 +7048,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Munich",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85173.72408330304!2d11.459435622844921!3d48.15499582554481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247753297!5m2!1sen!2sro"
     }
   },
   {
-    "id": 98,
+    id: 98,
     "postingTime": "2024-12-28T14:00",
     "company": {
       "name": "CargoLink Logistics",
@@ -7121,11 +7121,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Hamburg",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151676.79043788702!2d9.763017088984043!3d53.558662684697204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg%2C%20Germany!5e0!3m2!1sen!2sro!4v1736247114899!5m2!1sen!2sro"
     },
   },
   {
-    "id": 99,
+    id: 99,
     "postingTime": "2024-12-30T09:00",
     "company": {
       "name": "Hilton Hotels",
@@ -7194,11 +7194,11 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Berlin",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603792695!2d13.25992711787948!3d52.50693861615697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246884591!5m2!1sen!2sro"
     }
   },
   {
-    "id": 100,
+    id: 100,
     "postingTime": "2024-12-30T12:00",
     "company": {
       "name": "Accenture",
@@ -7267,7 +7267,7 @@ const jobDatabase = [
       "degree": "Bachelor",
       "gender": "All",
       "location": "Frankfurt",
-      "mapUrl": "https://www.google.com/maps/embed?pb=..."
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163720.230337725!2d8.47175867841817!3d50.121315517438866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f477096c5%3A0x422435029b0c600!2sFrankfurt%2C%20Germany!5e0!3m2!1sen!2sro!4v1736246495824!5m2!1sen!2sro"
     },
   },
 ];
