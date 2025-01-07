@@ -18,10 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
         phoneNumber.value = student.telephone;
         email.value = student.email;
 
+        const phoneInput = window.intlTelInput(phoneNumber, {
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+        });
+        let telephoneStudent = '';
+        phoneNumber.addEventListener('blur', function() {
+            telephoneStudent = phoneInput.getNumber();
+        });
+
         document.getElementById('save-changes').addEventListener('click', function(e) {
             student.firstName = firstName.value;
             student.lastName = lastName.value;
-            student.telephone = phoneNumber.value;
+            student.telephone = telephoneStudent;
             student.email = email.value;
             studentApplications.forEach(application => {
                 application.email = student.email;
@@ -49,6 +57,14 @@ document.addEventListener('DOMContentLoaded', () => {
         email.value = company.contactEmail;
         location.value = company.city;
 
+        const phoneInput = window.intlTelInput(phoneNumber, {
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+        });
+        let telephoneCompany = '';
+        phoneNumber.addEventListener('blur', function() {
+            telephoneCompany = phoneInput.getNumber();
+        });
+
         document.getElementById('save-changes').addEventListener('click', function() {
             const jobDatabase = JSON.parse(localStorage.getItem('jobDatabase')) || [];
             const jobsFilter = jobDatabase.filter(job => job.company.name === company.companyName);
@@ -57,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             company.companyName = fullName.value;
             company.website = website.value;
-            company.telephoneCompany = phoneNumber.value;
+            company.telephoneCompany = telephoneCompany;
             company.contactEmail = email.value;
             company.city = location.value;
             studentApplications.forEach(application => {

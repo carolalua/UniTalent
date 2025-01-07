@@ -1,5 +1,16 @@
 const companies = JSON.parse(localStorage.getItem('companies')) || [];
 
+const phonenumber = document.querySelector('#telephone-company');
+const phoneInput = window.intlTelInput(phonenumber, {
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+});
+
+let telephoneCompany = '';
+
+phonenumber.addEventListener('blur', function() {
+    telephoneCompany = phoneInput.getNumber();
+});
+
 document.getElementById('register-company').addEventListener('submit', function(e) {
     e.preventDefault();
     const companyName = document.getElementById('company-name').value;
@@ -7,7 +18,7 @@ document.getElementById('register-company').addEventListener('submit', function(
     const city = document.getElementById('city').value;
     const contactEmail = document.getElementById('contact-email').value;
     const postalCode = document.getElementById('postal-code').value;
-    const telephoneCompany = document.getElementById('telephone-company').value;
+    //const telephone = document.getElementById('telephone-company');
     const street = document.getElementById('street').value;
     const logoFile = document.getElementById('logo').files[0];
     const houseNumber = document.getElementById('house-number').value;
