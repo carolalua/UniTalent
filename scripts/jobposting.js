@@ -44,6 +44,12 @@ document.getElementById('add-language').addEventListener('click', function() {
     // Add an event listener to the delete button to remove the group
     deleteButton.addEventListener('click', function() {
         languageSection.removeChild(languageGroup);
+        const languages = document.querySelectorAll('.languagerequirement');
+        if (languages.length === 2) {
+            document.getElementById('add-language').style.display = 'none';
+        } else {
+            document.getElementById('add-language').style.display = 'block';
+        }
     });
     
     // Append language and proficiency fields to the languageGroup div
@@ -53,6 +59,13 @@ document.getElementById('add-language').addEventListener('click', function() {
     
     // Append the whole languageGroup to the languageSection
     languageSection.appendChild(languageGroup);
+    
+    const languages = document.querySelectorAll('.languagerequirement');
+    if (languages.length === 2) {
+        document.getElementById('add-language').style.display = 'none';
+    } else {
+        document.getElementById('add-language').style.display = 'block';
+    }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
