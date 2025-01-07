@@ -135,6 +135,13 @@ function populateJobDetails(job) {
         const tagBox = document.createElement("div");
         tagBox.className = "tag-box";
         tagBox.textContent = tag;
+
+        // Add event listener to handle tag clicks
+        tagBox.addEventListener("click", () => {
+            // Navigate to jobs.html with the tag as a query parameter
+            const encodedTag = encodeURIComponent(tag);
+            window.location.href = `./jobs.html?tag=${encodedTag}`;
+        });
         tagsContainer.appendChild(tagBox);
     });
 

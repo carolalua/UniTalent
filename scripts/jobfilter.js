@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const toSlug = (name) => name.toLowerCase().replace(/\s+/g, "-");
 
   // Initial filter based on search parameters
+  const tagFilter = urlParams.get("tag")?.toLowerCase() || ""; // Get the tag parameter from the URL
+
   let filteredJobs = jobDatabase.filter((job) => {
     const matchesTitle =
       !searchTitle ||
@@ -37,8 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const matchesCategory =
       !selectedCategory || job.summary.category.toLowerCase() === selectedCategory;
 
-    return matchesTitle && matchesLocation && matchesCategory;
+    const matchesTag =
+      !tagFilter || job.tags.some((tag) => tag.toLowerCase() === tagFilter);
+
+    return matchesTitle && matchesLocation && matchesCategory && matchesTag;
   });
+
 
   // Sort jobs and render them initially
   filteredJobs.sort((a, b) => new Date(b.postingTime) - new Date(a.postingTime));
