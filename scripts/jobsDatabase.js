@@ -3821,7 +3821,7 @@ const jobDatabase = [
       logo: "HotelRoyale.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Part-Time",
       location: "Hamburg"
     },
@@ -3854,7 +3854,7 @@ const jobDatabase = [
     },
     tags: [
       "Part-time",
-      "Hotels & Tourism",
+      "Tourism",
       "Hamburg",
       "Customer Service",
       "Tourism"
@@ -3876,7 +3876,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Working Student – Customer Service",
       jobType: "Part-Time",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -3892,7 +3892,7 @@ const jobDatabase = [
       logo: "GrandPlaza.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Internship",
       location: "Berlin"
     },
@@ -3925,7 +3925,7 @@ const jobDatabase = [
     },
     tags: [
       "Internship",
-      "Hotels & Tourism",
+      "Tourism",
       "Berlin",
       "Food & Beverage",
       "Customer Service"
@@ -3947,7 +3947,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Intern – Food & Beverage Department",
       jobType: "Internship",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -4106,7 +4106,7 @@ const jobDatabase = [
       logo: "TravelWorld.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Part-Time",
       location: "Berlin"
     },
@@ -4139,7 +4139,7 @@ const jobDatabase = [
     },
     tags: [
       "Part-time",
-      "Hotels & Tourism",
+      "Tourism",
       "Berlin",
       "Tourism Management",
       "Customer Service"
@@ -4161,7 +4161,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Working Student – Tour Management",
       jobType: "Part-Time",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -4177,7 +4177,7 @@ const jobDatabase = [
       logo: "EliteResorts.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Internship",
       location: "Hamburg"
     },
@@ -4210,7 +4210,7 @@ const jobDatabase = [
     },
     tags: [
       "Internship",
-      "Hotels & Tourism",
+      "Tourism",
       "Hamburg",
       "Event Planning",
       "Customer Service"
@@ -4232,7 +4232,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Intern – Event Planning",
       jobType: "Internship",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -4391,7 +4391,7 @@ const jobDatabase = [
       logo: "LuxuryHotels.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Part-Time",
       location: "Munich"
     },
@@ -4424,7 +4424,7 @@ const jobDatabase = [
     },
     tags: [
       "Part-time",
-      "Hotels & Tourism",
+      "Tourism",
       "Munich",
       "Guest Services",
       "Customer Service"
@@ -4446,7 +4446,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Working Student – Guest Services",
       jobType: "Part-Time",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -4462,7 +4462,7 @@ const jobDatabase = [
       logo: "HotelGlobe.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Internship",
       location: "Berlin"
     },
@@ -4495,7 +4495,7 @@ const jobDatabase = [
     },
     tags: [
       "Internship",
-      "Hotels & Tourism",
+      "Tourism",
       "Berlin",
       "Event Planning",
       "Hospitality"
@@ -4517,7 +4517,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Intern – Event Management",
       jobType: "Internship",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -4677,7 +4677,7 @@ const jobDatabase = [
       logo: "CityHotelsGroup.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Part-Time",
       location: "Frankfurt"
     },
@@ -4710,7 +4710,7 @@ const jobDatabase = [
     },
     tags: [
       "Part-time",
-      "Hotels & Tourism",
+      "Tourism",
       "Frankfurt",
       "Guest Relations",
       "Customer Service"
@@ -4732,7 +4732,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Working Student – Front Office Operations",
       jobType: "Part-Time",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -4748,7 +4748,7 @@ const jobDatabase = [
       logo: "GlobalTravelCo.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Internship",
       location: "Munich"
     },
@@ -4781,7 +4781,7 @@ const jobDatabase = [
     },
     tags: [
       "Internship",
-      "Hotels & Tourism",
+      "Tourism",
       "Munich",
       "Tour Management",
       "Customer Support"
@@ -4803,7 +4803,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Intern – Tour Management",
       jobType: "Internship",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -4963,7 +4963,7 @@ const jobDatabase = [
       logo: "EliteHotelsGroup.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Part-Time",
       location: "Berlin"
     },
@@ -4996,7 +4996,7 @@ const jobDatabase = [
     },
     tags: [
       "Part-time",
-      "Hotels & Tourism",
+      "Tourism",
       "Berlin",
       "Event Coordination",
       "Hospitality"
@@ -5018,7 +5018,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Working Student – Event Coordination",
       jobType: "Part-Time",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -5034,7 +5034,7 @@ const jobDatabase = [
       logo: "ExploreWorldTravel.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Internship",
       location: "Dresden"
     },
@@ -5068,7 +5068,7 @@ const jobDatabase = [
     },
     tags: [
       "Internship",
-      "Hotels & Tourism",
+      "Tourism",
       "Dresden",
       "Travel Coordination",
       "Customer Support"
@@ -5090,7 +5090,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Intern – Travel Coordination",
       jobType: "Internship",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -5250,7 +5250,7 @@ const jobDatabase = [
       logo: "RoyalStayHotels.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Part-Time",
       location: "Hamburg"
     },
@@ -5284,7 +5284,7 @@ const jobDatabase = [
     },
     tags: [
       "Part-time",
-      "Hotels & Tourism",
+      "Tourism",
       "Hamburg",
       "Front Office",
       "Customer Service"
@@ -5306,7 +5306,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Working Student – Front Office Support",
       jobType: "Part-Time",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -5322,7 +5322,7 @@ const jobDatabase = [
       logo: "TravelProExperts.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Internship",
       location: "Munich"
     },
@@ -5356,7 +5356,7 @@ const jobDatabase = [
     },
     tags: [
       "Internship",
-      "Hotels & Tourism",
+      "Tourism",
       "Munich",
       "Tour Planning",
       "Customer Management"
@@ -5378,7 +5378,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Intern – Tour Planning & Customer Management",
       jobType: "Internship",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -5538,7 +5538,7 @@ const jobDatabase = [
       logo: "SeasideHotels.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Part-Time",
       location: "Bremen"
     },
@@ -5572,7 +5572,7 @@ const jobDatabase = [
     },
     tags: [
       "Part-time",
-      "Hotels & Tourism",
+      "Tourism",
       "Bremen",
       "Event Management",
       "Customer Service"
@@ -5594,7 +5594,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Working Student – Event Management",
       jobType: "Part-Time",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -5610,7 +5610,7 @@ const jobDatabase = [
       logo: "HolidayBlissTours.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Internship",
       location: "Düsseldorf"
     },
@@ -5644,7 +5644,7 @@ const jobDatabase = [
     },
     tags: [
       "Internship",
-      "Hotels & Tourism",
+      "Tourism",
       "Düsseldorf",
       "Travel Coordination",
       "Customer Support"
@@ -5666,7 +5666,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Intern – Travel Coordination",
       jobType: "Internship",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -5826,7 +5826,7 @@ const jobDatabase = [
       logo: "LuxuryStays.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Part-Time",
       location: "Leipzig"
     },
@@ -5860,7 +5860,7 @@ const jobDatabase = [
     },
     tags: [
       "Part-time",
-      "Hotels & Tourism",
+      "Tourism",
       "Leipzig",
       "Guest Relations",
       "Hospitality"
@@ -5882,7 +5882,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Working Student – Guest Relations",
       jobType: "Part-Time",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -5898,7 +5898,7 @@ const jobDatabase = [
       logo: "AdventureTours.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Internship",
       location: "Munich"
     },
@@ -5932,7 +5932,7 @@ const jobDatabase = [
     },
     tags: [
       "Internship",
-      "Hotels & Tourism",
+      "Tourism",
       "Munich",
       "Tour Planning",
       "Travel"
@@ -5954,7 +5954,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Intern – Tour Planning",
       jobType: "Internship",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -6116,7 +6116,7 @@ const jobDatabase = [
       logo: "EliteHotels.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Part-Time",
       location: "Munich"
     },
@@ -6150,7 +6150,7 @@ const jobDatabase = [
     },
     tags: [
       "Part-time",
-      "Hotels & Tourism",
+      "Tourism",
       "Munich",
       "Event Management",
       "Hospitality"
@@ -6172,7 +6172,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Working Student – Event Management",
       jobType: "Part-Time",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -6188,7 +6188,7 @@ const jobDatabase = [
       logo: "ExploreTravel.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Internship",
       location: "Berlin"
     },
@@ -6222,7 +6222,7 @@ const jobDatabase = [
     },
     tags: [
       "Internship",
-      "Hotels & Tourism",
+      "Tourism",
       "Berlin",
       "Travel Planning",
       "Customer Service"
@@ -6244,7 +6244,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Intern – Travel Planning & Engagement",
       jobType: "Internship",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -6406,7 +6406,7 @@ const jobDatabase = [
       logo: "LuxuryStays.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Part-Time",
       location: "Hamburg"
     },
@@ -6440,7 +6440,7 @@ const jobDatabase = [
     },
     tags: [
       "Part-time",
-      "Hotels & Tourism",
+      "Tourism",
       "Hamburg",
       "Customer Service",
       "Hospitality"
@@ -6462,7 +6462,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Working Student – Guest Concierge Services",
       jobType: "Part-Time",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -6478,7 +6478,7 @@ const jobDatabase = [
       logo: "AdventureAwaits.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Internship",
       location: "Munich"
     },
@@ -6512,7 +6512,7 @@ const jobDatabase = [
     },
     tags: [
       "Internship",
-      "Hotels & Tourism",
+      "Tourism",
       "Munich",
       "Travel Planning",
       "Customer Engagement"
@@ -6534,7 +6534,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Intern – Guided Tour Management",
       jobType: "Internship",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",
@@ -7132,7 +7132,7 @@ const jobDatabase = [
       logo: "Hilton.png"
     },
     summary: {
-      category: "Hotels & Tourism",
+      category: "Tourism",
       jobType: "Part-Time",
       location: "Berlin"
     },
@@ -7167,7 +7167,7 @@ const jobDatabase = [
     },
     tags: [
       "Part-time",
-      "Hotels & Tourism",
+      "Tourism",
       "Berlin",
       "Customer Service",
       "Hospitality"
@@ -7189,7 +7189,7 @@ const jobDatabase = [
     overview: {
       jobTitle: "Working Student – Guest Services Support",
       jobType: "Part-Time",
-      category: "Hotels & Tourism",
+      category: "Tourism",
       experience: "Entry level",
       degree: "Bachelor",
       gender: "All",

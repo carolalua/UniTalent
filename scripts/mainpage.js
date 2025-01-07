@@ -110,7 +110,7 @@ const categories = jobDatabase.reduce((acc, job) => {
   "Administration": { icon: "📁", name: "Administration", jobCount: 0 },
   "Commerce": { icon: "🛍️", name: "Commerce", jobCount: 0 },
   "Construction": { icon: "🏗️", name: "Construction", jobCount: 0 },
-  "Hotels & Tourism": { icon: "🏨", name: "Hotels & Tourism", jobCount: 0 },
+  "Tourism": { icon: "🏨", name: "Tourism", jobCount: 0 },
   "Education": { icon: "🎓", name: "Education", jobCount: 0 },
   "Financial": { icon: "💰", name: "Financial", jobCount: 0 },
   "Transport": { icon: "🚌", name: "Transport", jobCount: 0 },
