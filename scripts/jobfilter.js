@@ -1,4 +1,4 @@
-const jobDatabase = JSON.parse(localStorage.getItem('jobDatabase'));
+const jobDatabase = JSON.parse(localStorage.getItem('jobDatabase')).filter(job => job.status !== "Closed");
 
 document.addEventListener("DOMContentLoaded", () => {
   const jobListingsContainer = document.getElementById("job-listings");

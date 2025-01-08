@@ -24,11 +24,11 @@ function generateJobTable() {
     jobTitle.textContent = job.overview.jobTitle;
     row.appendChild(jobTitle);
 
-    // Status (For simplicity, assuming all jobs are 'Open')
+    // Status
     const status = document.createElement("td");
 
-    status.className = 'status-open';
-    status.textContent = 'Open';
+    status.className = job.status === 'Closed' ? 'status-closed' : 'status-open';
+    status.textContent = job.status || 'Open';
     row.appendChild(status);
 
     // Date Posted
@@ -45,6 +45,10 @@ function generateJobTable() {
     const applicants = document.createElement("td");
     applicants.textContent = job.applicantCount;  // Placeholder, replace with actual number
     row.appendChild(applicants);
+
+    row.addEventListener('click', () => {
+      window.location.href = `jobposting_edit.html?id=${job.id}`;
+    });
 
     // Append the row to the table body
     jobListBody.appendChild(row);
