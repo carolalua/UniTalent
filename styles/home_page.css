@@ -98,7 +98,7 @@ select {
   appearance: none; /* Remove default arrow (for custom arrow support) */
   -webkit-appearance: none; /* Safari compatibility */
   -moz-appearance: none; /* Firefox compatibility */
-  background-image: url('/images/ios-arrow-dropdown.svg'); /* Custom dropdown arrow icon */
+  background-image: url('../images/ios-arrow-dropdown.svg'); /* Custom dropdown arrow icon */
   background-repeat: no-repeat;
   background-position: right 10px center; /* Position arrow */
   background-size: 25px; /* Adjust arrow size */
