@@ -45,6 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return matchesTitle && matchesLocation && matchesCategory && matchesTag;
   });
 
+  document.getElementById('filter-input').value = searchTitle;
+  document.getElementById('category').value = selectedCategory;
 
   // Sort jobs and render them initially
   filteredJobs.sort((a, b) => new Date(b.postingTime) - new Date(a.postingTime));
