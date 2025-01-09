@@ -6375,8 +6375,8 @@ const jobDatabase = [
     ],
     languages: {
       English: {
-        required: true,
-        proficiency: "Fluent"
+        required: false,
+        proficiency: "Basic"
       },
       German: {
         required: false,
@@ -7101,8 +7101,8 @@ const jobDatabase = [
     ],
     languages: {
       English: {
-        required: true,
-        proficiency: "Fluent"
+        required: false,
+        proficiency: "Basic"
       },
       German: {
         required: false,
@@ -7247,8 +7247,8 @@ const jobDatabase = [
     ],
     languages: {
       English: {
-        required: true,
-        proficiency: "Fluent"
+        required: false,
+        proficiency: "Basic"
       },
       German: {
         required: true,
