@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+#home {
+  font-weight: normal;
+  color: var(--text-orange);
+}
 .hero-header-container {
   background-image: url(../images/Hero.png);
   background-repeat: no-repeat;
