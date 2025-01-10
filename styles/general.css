@@ -232,6 +232,10 @@ header {
   background-color: #cc7a16;
 }
 
+.user {
+  color: #f08504;
+}
+
 .footer-content {
   display: flex;
   justify-content: space-between;

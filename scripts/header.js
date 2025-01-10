@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdownfirst.style.display = 'none';
       dropdownsecond.style.display = 'none';
       idUserGreeting.style.display = 'block';
-      greetingElement.textContent = 'Hey ' + userName + '!';
+      greetingElement.innerHTML = 'Hey <span class="user">' + userName + '!</span>';
       loginText.innerHTML = `
           <a href="${accountUrl}">My Account</a>
           <a href="${logoutUrl}" id="logout-link">Logout</a>
